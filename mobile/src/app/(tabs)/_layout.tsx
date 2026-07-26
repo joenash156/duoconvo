@@ -30,6 +30,7 @@ export default function TabsLayout() {
         tabBarActiveTintColor: colors.primary,
         tabBarInactiveTintColor: theme === "dark" ? "#8B9198" : "#71717A",
         tabBarBackground: () => <TabBarBackground />,
+        sceneStyle: { backgroundColor: colors.background },
         tabBarStyle: {
           position: "absolute",
           left: TAB_BAR_HORIZONTAL_MARGIN,
@@ -104,8 +105,8 @@ export default function TabsLayout() {
               focused={focused}
               color={color}
               size={size * 1.2}
-              filledName="person"
-              outlineName="person-outline"
+              filledName="settings"
+              outlineName="settings-outline"
             />
           ),
         }}

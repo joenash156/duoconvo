@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "",
+    "name": "DuoConvo",
     "slug": "duoconvo",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -29,7 +29,7 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
+          "backgroundColor": "#0D9488",
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
         }

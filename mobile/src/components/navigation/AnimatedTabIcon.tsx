@@ -8,8 +8,7 @@ import Animated, {
   withSpring,
 } from "react-native-reanimated";
 import { useTheme } from "@/contexts/ThemeContext";
-
-type IoniconName = React.ComponentProps<typeof Ionicons>["name"];
+import { IoniconName } from "@/types/icon.types";
 
 type AnimatedTabIconProps = {
   focused: boolean;

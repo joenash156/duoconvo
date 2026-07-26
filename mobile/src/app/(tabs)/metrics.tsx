@@ -1,31 +1,27 @@
-import { Ionicons } from "@expo/vector-icons";
+import LottieView from "lottie-react-native";
 import { Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { Header } from "@/components/ui/Header";
 import { TAB_BAR_BOTTOM_MARGIN, TAB_BAR_HEIGHT } from "@/constants/layout";
-import { useTheme } from "@/contexts/ThemeContext";
-import { getThemeColors } from "@/themes/colors";
 
-export default function Evidence() {
+export default function Metrics() {
   const insets = useSafeAreaInsets();
-  const { theme } = useTheme();
-  const colors = getThemeColors(theme);
 
   return (
-    <View
-      className="flex-1 bg-white dark:bg-zinc-950"
-      style={{ paddingTop: insets.top }}
-    >
-      <View className="px-6 pt-4">
-        <Text className="text-2xl font-bold text-foreground dark:text-zinc-50">AI Evidence</Text>
-      </View>
+    <View className="flex-1 bg-white dark:bg-zinc-950">
+      <Header title="Metrics" />
 
       <View
-        className="flex-1 items-center justify-center gap-4 px-10"
+        className="flex-1 items-center justify-center gap-2 px-10"
         style={{ paddingBottom: TAB_BAR_HEIGHT + TAB_BAR_BOTTOM_MARGIN + insets.bottom }}
       >
-        <View className="h-16 w-16 items-center justify-center rounded-full bg-card dark:bg-zinc-900">
-          <Ionicons name="sparkles-outline" size={28} color={colors.primary} />
-        </View>
+        <LottieView
+          source={require("@/assets/icons/animated/metrics.json")}
+          autoPlay
+          loop
+          style={{ width: 220, height: 124 }}
+          webStyle={{ width: 220, height: 124 }}
+        />
         <Text className="text-center text-lg font-semibold text-foreground dark:text-zinc-50">
           See the AI at work
         </Text>
