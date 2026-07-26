@@ -1,4 +1,5 @@
 import { Ionicons } from "@expo/vector-icons";
+import * as Haptics from "expo-haptics";
 import { useState } from "react";
 import { Pressable, Text, View } from "react-native";
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from "react-native-reanimated";
@@ -27,6 +28,7 @@ export default function Translate() {
   }));
 
   const handleSwap = () => {
+    Haptics.selectionAsync();
     swapRotation.value = withSpring(swapRotation.value + 180, { damping: 14, stiffness: 140 });
     setSpokenLanguage(targetLanguage);
     setTargetLanguage(spokenLanguage);

@@ -29,7 +29,7 @@ export function Header({ title, subtitle, showBackButton, onBackPress, rightElem
             accessibilityLabel="Go back"
             onPress={onBackPress ?? (() => router.back())}
             hitSlop={8}
-            className="h-10 w-10 items-center justify-center rounded-full active:opacity-70"
+            className="h-12 w-12 items-center justify-center rounded-full active:bg-zinc-100 dark:active:bg-zinc-800"
           >
             <Ionicons name="arrow-back" size={20} color={colors.foreground} />
           </Pressable>

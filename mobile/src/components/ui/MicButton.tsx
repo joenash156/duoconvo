@@ -1,4 +1,6 @@
 import { Ionicons } from "@expo/vector-icons";
+import { setAudioModeAsync, useAudioPlayer } from "expo-audio";
+import * as Haptics from "expo-haptics";
 import { useEffect } from "react";
 import { Pressable, StyleSheet, View } from "react-native";
 import Animated, {
@@ -15,6 +17,8 @@ import Animated, {
 import { useTheme } from "@/contexts/ThemeContext";
 import { getThemeColors } from "@/themes/colors";
 
+setAudioModeAsync({ playsInSilentMode: false });
+
 type MicButtonProps = {
   isListening: boolean;
   onPress: () => void;
@@ -24,6 +28,16 @@ type MicButtonProps = {
 export function MicButton({ isListening, onPress, size = 150 }: MicButtonProps) {
   const { theme } = useTheme();
   const colors = getThemeColors(theme);
+  const startSound = useAudioPlayer(require("@/assets/audio/record-sound.mp3"));
+  const stopSound = useAudioPlayer(require("@/assets/audio/stop-sound.mp3"));
+
+  const handlePress = () => {
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+    const sound = isListening ? stopSound : startSound;
+    sound.seekTo(0);
+    sound.play();
+    onPress();
+  };
 
   const pressScale = useSharedValue(1);
   const ringA = useSharedValue(0);
@@ -79,7 +93,7 @@ export function MicButton({ isListening, onPress, size = 150 }: MicButtonProps) 
       <Pressable
         accessibilityRole="button"
         accessibilityLabel={isListening ? "Stop listening" : "Start listening"}
-        onPress={onPress}
+        onPress={handlePress}
         onPressIn={() => {
           // eslint-disable-next-line react-hooks/immutability -- Reanimated shared values are intentionally mutated via `.value`; the compiler's immutability rule doesn't yet recognize this pattern.
           pressScale.value = withSpring(0.92, { damping: 14, stiffness: 220 });
