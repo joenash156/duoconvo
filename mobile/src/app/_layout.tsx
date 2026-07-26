@@ -1,5 +1,7 @@
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Stack, ThemeProvider as NavigationThemeProvider } from "expo-router";
+import * as SystemUI from "expo-system-ui";
+import { useEffect } from "react";
 import { View } from "react-native";
 import { ThemeProvider, useTheme } from "@/contexts/ThemeContext";
 import { queryClient } from "@/services/queryClient";
@@ -10,6 +12,13 @@ import "../../global.css";
 function RootStack() {
   const { theme } = useTheme();
   const colors = getThemeColors(theme);
+
+  // Keep the native window behind native-stack screens in sync with the app.
+  // Without this, Android can briefly expose its default white window surface
+  // while returning from a nested route.
+  useEffect(() => {
+    void SystemUI.setBackgroundColorAsync(colors.background);
+  }, [colors.background]);
 
   return (
     <NavigationThemeProvider value={appNavigationTheme[theme]}>
