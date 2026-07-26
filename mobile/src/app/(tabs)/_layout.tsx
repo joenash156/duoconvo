@@ -1,4 +1,3 @@
-import { StyleSheet, Text, View } from 'react-native'
 import { Tabs } from 'expo-router'
 
 export default function TabsLayout() {
@@ -13,5 +12,3 @@ export default function TabsLayout() {
     </Tabs>
   )
 }
-
-const styles = StyleSheet.create({})

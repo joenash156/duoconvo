@@ -1,9 +1,12 @@
 export type ThemeColors = {
-  bg: string;
-  text: string;
-}
+  primary: string;
+  secondary: string;
+  background: string;
+  card: string;
+  foreground: string;
+};
 
 export type ThemeScheme = {
   light: ThemeColors;
   dark: ThemeColors;
-}
+};
