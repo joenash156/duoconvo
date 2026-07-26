@@ -1,6 +1,7 @@
 import { BlurView } from "expo-blur";
 import { GlassView, isLiquidGlassAvailable } from "expo-glass-effect";
 import { Platform, StyleSheet, View } from "react-native";
+import { tabBarBlurTargetRef } from "@/components/navigation/blurTarget";
 import { useTheme } from "@/contexts/ThemeContext";
 import { getThemeColors } from "@/themes/colors";
 
@@ -24,7 +25,8 @@ export function TabBarBackground() {
         style={StyleSheet.absoluteFill}
         intensity={Platform.OS === "ios" ? 60 : 100}
         tint={theme === "dark" ? "systemChromeMaterialDark" : "systemChromeMaterialLight"}
-        blurMethod="dimezisBlurViewSdk31Plus"
+        blurMethod={Platform.OS === "android" ? "dimezisBlurViewSdk31Plus" : "none"}
+        blurTarget={tabBarBlurTargetRef}
       />
       <View
         style={[

@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "PowerShell(Get-NetTCPConnection -LocalPort 8090 -ErrorAction SilentlyContinue)",
-      "PowerShell(Get-Process node -ErrorAction SilentlyContinue)"
+      "PowerShell(Get-Process node -ErrorAction SilentlyContinue)",
+      "Bash(node verify6.js)"
     ]
   }
 }

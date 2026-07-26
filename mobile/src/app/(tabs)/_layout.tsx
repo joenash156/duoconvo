@@ -1,6 +1,8 @@
+import { BlurTargetView } from "expo-blur";
 import { Tabs } from "expo-router/js-tabs";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { AnimatedTabIcon } from "@/components/navigation/AnimatedTabIcon";
+import { tabBarBlurTargetRef } from "@/components/navigation/blurTarget";
 import { TabBarBackground } from "@/components/navigation/TabBarBackground";
 import {
   TAB_BAR_BOTTOM_MARGIN,
@@ -16,101 +18,103 @@ export default function TabsLayout() {
   const insets = useSafeAreaInsets();
 
   return (
-    <Tabs
-      screenOptions={{
-        headerShown: false,
-        tabBarHideOnKeyboard: true,
-        animation: "shift",
-        tabBarShowLabel: true,
-        tabBarLabelStyle: {
-          fontSize: 12.5,
-          fontWeight: "600",
-          marginTop: -2,
-        },
-        tabBarActiveTintColor: colors.primary,
-        tabBarInactiveTintColor: theme === "dark" ? "#8B9198" : "#71717A",
-        tabBarBackground: () => <TabBarBackground />,
-        sceneStyle: { backgroundColor: colors.background },
-        tabBarStyle: {
-          position: "absolute",
-          left: TAB_BAR_HORIZONTAL_MARGIN,
-          right: TAB_BAR_HORIZONTAL_MARGIN,
-          bottom: insets.bottom + TAB_BAR_BOTTOM_MARGIN,
-          height: TAB_BAR_HEIGHT,
-          borderRadius: 32,
-          borderTopWidth: 0,
-          paddingTop: 2,
-          marginHorizontal: 10,
-          paddingHorizontal: 8,
-          overflow: "hidden",
-          elevation: 12,
-          shadowColor: theme === "dark" ? "#002E30" : "#0a8282",
-          shadowOffset: { width: 0, height: 2 },
-          shadowOpacity: theme === "dark" ? 0.45 : 0.15,
-          shadowRadius: 20,
-        },
-      }}
-    >
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: "Translate",
-          tabBarIcon: ({ focused, color, size }) => (
-            <AnimatedTabIcon
-              focused={focused}
-              color={color}
-              size={size * 1.2}
-              filledName="language"
-              outlineName="language-outline"
-            />
-          ),
+    <BlurTargetView ref={tabBarBlurTargetRef} style={{ flex: 1 }}>
+      <Tabs
+        screenOptions={{
+          headerShown: false,
+          tabBarHideOnKeyboard: true,
+          animation: "shift",
+          tabBarShowLabel: true,
+          tabBarLabelStyle: {
+            fontSize: 12.5,
+            fontWeight: "600",
+            marginTop: -2,
+          },
+          tabBarActiveTintColor: colors.primary,
+          tabBarInactiveTintColor: theme === "dark" ? "#8B9198" : "#71717A",
+          tabBarBackground: () => <TabBarBackground />,
+          sceneStyle: { backgroundColor: colors.background },
+          tabBarStyle: {
+            position: "absolute",
+            left: TAB_BAR_HORIZONTAL_MARGIN,
+            right: TAB_BAR_HORIZONTAL_MARGIN,
+            bottom: insets.bottom + TAB_BAR_BOTTOM_MARGIN,
+            height: TAB_BAR_HEIGHT,
+            borderRadius: 32,
+            borderTopWidth: 0,
+            paddingTop: 2,
+            marginHorizontal: 10,
+            paddingHorizontal: 8,
+            overflow: "hidden",
+            elevation: 12,
+            shadowColor: theme === "dark" ? "#002E30" : "#0a8282",
+            shadowOffset: { width: 0, height: 2 },
+            shadowOpacity: theme === "dark" ? 0.45 : 0.15,
+            shadowRadius: 20,
+          },
         }}
-      />
-      <Tabs.Screen
-        name="history"
-        options={{
-          title: "History",
-          tabBarIcon: ({ focused, color, size }) => (
-            <AnimatedTabIcon
-              focused={focused}
-              color={color}
-              size={size * 1.2}
-              filledName="time"
-              outlineName="time-outline"
-            />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="metrics"
-        options={{
-          title: "Metrics",
-          tabBarIcon: ({ focused, color, size }) => (
-            <AnimatedTabIcon
-              focused={focused}
-              color={color}
-              size={size * 1.2}
-              filledName="stats-chart"
-              outlineName="stats-chart-outline"
-            />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="settings"
-        options={{
-          title: "Settings",
-          tabBarIcon: ({ focused, color, size }) => (
-            <AnimatedTabIcon
-              focused={focused}
-              color={color}
-              size={size * 1.2}
-              filledName="settings"
-              outlineName="settings-outline"
-            />
-          ),
-        }}
-      />
-    </Tabs>
+      >
+        <Tabs.Screen
+          name="index"
+          options={{
+            title: "Translate",
+            tabBarIcon: ({ focused, color, size }) => (
+              <AnimatedTabIcon
+                focused={focused}
+                color={color}
+                size={size * 1.2}
+                filledName="language"
+                outlineName="language-outline"
+              />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="history"
+          options={{
+            title: "History",
+            tabBarIcon: ({ focused, color, size }) => (
+              <AnimatedTabIcon
+                focused={focused}
+                color={color}
+                size={size * 1.2}
+                filledName="time"
+                outlineName="time-outline"
+              />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="metrics"
+          options={{
+            title: "Metrics",
+            tabBarIcon: ({ focused, color, size }) => (
+              <AnimatedTabIcon
+                focused={focused}
+                color={color}
+                size={size * 1.2}
+                filledName="stats-chart"
+                outlineName="stats-chart-outline"
+              />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="settings"
+          options={{
+            title: "Settings",
+            tabBarIcon: ({ focused, color, size }) => (
+              <AnimatedTabIcon
+                focused={focused}
+                color={color}
+                size={size * 1.2}
+                filledName="settings"
+                outlineName="settings-outline"
+              />
+            ),
+          }}
+        />
+      </Tabs>
+    </BlurTargetView>
   );
 }

@@ -47,7 +47,7 @@ export function OptionsModal<T extends string>({
           style={{ paddingBottom: insets.bottom + 16 }}
         >
           <View className="mb-3 h-1 w-10 self-center rounded-full bg-zinc-300 dark:bg-zinc-700" />
-          <Text className="mb-2 px-2 text-lg font-bold text-foreground dark:text-zinc-50">
+          <Text className="mb-2 px-2 text-lg text-center font-bold text-foreground dark:text-zinc-50">
             {title}
           </Text>
           {options.map((option) => {
