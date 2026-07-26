@@ -2,8 +2,10 @@ import { Text, View, StyleSheet } from "react-native";
 
 export default function Index() {
   return (
-    <View style={styles.container}>
-      <Text>Edit src/app/index.tsx to edit this screen. It works</Text>
+    <View style={styles.container}
+      // className="font-bold"
+    >
+      <Text className="text-red-600 font-bold">Edit src/app/index.tsx to edit this screen.</Text>
     </View>
   );
 }
