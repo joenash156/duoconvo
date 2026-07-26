@@ -21,7 +21,7 @@ type MicButtonProps = {
   size?: number;
 };
 
-export function MicButton({ isListening, onPress, size = 96 }: MicButtonProps) {
+export function MicButton({ isListening, onPress, size = 150 }: MicButtonProps) {
   const { theme } = useTheme();
   const colors = getThemeColors(theme);
 

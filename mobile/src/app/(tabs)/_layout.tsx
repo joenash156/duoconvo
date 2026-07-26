@@ -43,7 +43,7 @@ export default function TabsLayout() {
           paddingHorizontal: 8,
           overflow: "hidden",
           elevation: 12,
-          shadowColor: "#000000",
+          shadowColor: theme === "dark" ? "#002E30" : "#0a8282",
           shadowOffset: { width: 0, height: 2 },
           shadowOpacity: theme === "dark" ? 0.45 : 0.15,
           shadowRadius: 20,

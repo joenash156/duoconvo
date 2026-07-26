@@ -15,12 +15,12 @@ export default function Translate() {
     >
       <View className="px-6 pt-4">
         <Text className="text-2xl font-bold text-foreground dark:text-zinc-50">DuoConvo</Text>
-        <Text className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
+        <Text className="mt-1 text-zinc-500 dark:text-zinc-400">
           Speak naturally, we&apos;ll handle the rest.
         </Text>
       </View>
 
-      <View className="flex-1 items-center justify-center gap-6 px-6">
+      <View className="flex-1 items-center justify-center px-6">
         <MicButton isListening={isListening} onPress={() => setIsListening((prev) => !prev)} />
         <Text className="text-base font-medium text-foreground dark:text-zinc-50">
           {isListening ? "Listening..." : "Tap to speak"}
