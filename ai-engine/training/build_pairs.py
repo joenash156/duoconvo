@@ -83,21 +83,21 @@ def save_pairs(positive_pairs, negative_pairs):
 
 def main():
 
-    canonical_df, paraphrase_df = load_datasets()
+  canonical_df, paraphrase_df = load_datasets()
 
-    positive_pairs = generate_positive_pairs(
-      canonical_df,
-      paraphrase_df
-    )
+  positive_pairs = generate_positive_pairs(
+    canonical_df,
+    paraphrase_df
+  )
 
-    negative_pairs = generate_negative_pairs(
-      canonical_df
-    )
+  negative_pairs = generate_negative_pairs(
+    canonical_df
+  )
 
-    save_pairs(
-      positive_pairs,
-      negative_pairs
-    )
+  save_pairs(
+    positive_pairs,
+    negative_pairs
+  )
 
 
 if __name__ == "__main__":
