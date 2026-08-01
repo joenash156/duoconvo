@@ -3,6 +3,10 @@
     "Convo",
     "dotlottie",
     "duoconvo",
-    "lottiefiles"
+    "FAISS",
+    "lottiefiles",
+    "numpy",
+    "scikit",
+    "tqdm"
   ]
 }
