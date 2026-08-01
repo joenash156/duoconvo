@@ -17,10 +17,13 @@ from config import (
 
 random.seed(RANDOM_STATE)
 
+NEGATIVE_SAMPLES_PER_SENTENCE = 5
+
 
 def load_datasets():
   canonical_df = pd.read_csv(CURATED_DATASET)
   paraphrase_df = pd.read_csv(PARAPHRASES_DATASET)
+
   return canonical_df, paraphrase_df
 
 
@@ -34,9 +37,8 @@ def generate_positive_pairs(canonical_df, paraphrase_df):
     matches = paraphrase_df[
       paraphrase_df["concept_code"] == concept
     ]
-
+    
     for _, row in matches.iterrows():
-
       pairs.append({
         "sentence_a": canonical_sentence,
         "sentence_b": row["paraphrase"],
@@ -46,52 +48,60 @@ def generate_positive_pairs(canonical_df, paraphrase_df):
   return pairs
 
 
-def generate_negative_pairs(canonical_df):
+
+def generate_negative_pairs(canonical_df, paraphrase_df):
 
   pairs = []
 
-  sentences = canonical_df["english"].tolist()
-  concepts = canonical_df["concept_code"].tolist()
-  
-  for i in range(len(sentences)):
-    current_sentence = sentences[i]
-    current_concept = concepts[i]
+  all_sentences = list(canonical_df["english"])
 
-    while True:
-      random_index = random.randint(0, len(sentences) - 1)
+  all_sentences.extend(paraphrase_df["paraphrase"].tolist())
 
-      if concepts[random_index] != current_concept:
-        pairs.append({
-          "sentence_a": current_sentence,
-          "sentence_b": sentences[random_index],
-          "label": 0
-        })
-
-        break
+  for sentence in all_sentences:
+    for _ in range(NEGATIVE_SAMPLES_PER_SENTENCE):
+      negative_sentence = random.choice(all_sentences)
+      if sentence == negative_sentence:
+        continue
+      
+      pairs.append({
+        "sentence_a": sentence,
+        "sentence_b": negative_sentence,
+        "label": 0
+      })
 
   return pairs
 
 
+
+def remove_duplicates(df):
+  df = df.drop_duplicates()
+  return df
+
+
+
 def save_pairs(positive_pairs, negative_pairs):
-
   df = pd.DataFrame(positive_pairs + negative_pairs)
+  df = remove_duplicates(df)
+  df = df.sample(frac=1, random_state=RANDOM_STATE)
 
-  df.to_csv(SENTENCE_PAIRS_DATASET, index=False)
+  df.to_csv(
+    SENTENCE_PAIRS_DATASET,
+    index=False
+  )
 
-  print(f"✅ Saved {len(df)} sentence pairs.")
+  print(f"Saved {len(df)} sentence pairs.")
 
 
 def main():
-
   canonical_df, paraphrase_df = load_datasets()
-
   positive_pairs = generate_positive_pairs(
-    canonical_df,
-    paraphrase_df
+      canonical_df,
+      paraphrase_df
   )
 
   negative_pairs = generate_negative_pairs(
-    canonical_df
+    canonical_df,
+    paraphrase_df
   )
 
   save_pairs(
@@ -101,4 +111,4 @@ def main():
 
 
 if __name__ == "__main__":
-  main()
+   main()

@@ -1,1 +1,2097 @@
 sentence_a,sentence_b,label
+Can you tell me the price?,How much should I pay?,1
+How much does it cost before I decide?,I'm well thank you.,0
+Can the price come down?,What's the cost per kilogram?,0
+Good evening,Hi there.,0
+"Good afternoon, nice to see you.",Is this your final price?,0
+It's nice to have you here.,Which one is less expensive?,0
+What's today's price?,"Good morning, boss.",0
+What's your most affordable one?,How may I be of help?,0
+What brings you here today?,Feel at home.,0
+How much are you charging?,Feel free to sit.,0
+How are things?,Hey.,0
+Can you give me today's price?,How much for a basket?,0
+How are you?,Hi,0
+How much does it currently cost?,What do you charge for one?,0
+"Good morning, madam.",Good morning,0
+Can I know the price first?,Please tell me the cost.,1
+What are you looking for?,What are you searching for?,1
+What is the cost of this?,"Hello, how are you?",0
+What's the cheapest one?,Which one is the least expensive?,1
+Can you tell me the price?,Hi there.,0
+How much for this one?,Can I help you find something?,0
+How much for this?,Please come in.,0
+Have a seat.,Take a seat.,0
+How are you?,How are things?,1
+Thank you for your time.,How can I be of assistance?,0
+Can I help you find something?,What's the price of this item?,0
+How can I assist you today?,What do you need today?,1
+Please look around.,Hope you're having a good afternoon.,0
+What's the cost of all these?,Can you total everything?,1
+Hello there.,Have a seat.,0
+What's the cost of all these?,What are you selling this for?,0
+Hope you're doing well.,"Welcome, make yourself comfortable.",0
+"I'm fine, thanks.",How much do I pay altogether?,0
+What do you need?,How much do you charge per basket?,0
+How can I assist you today?,How may I assist you today?,1
+How much for this item?,What's today's selling price?,0
+Feel free to look around.,Please sit down.,0
+What's the latest price?,How may I assist you?,0
+Is this expensive?,Is it affordable?,1
+Can I know the price first?,Let me know the price first.,1
+Could I check your prices?,Evening! How are you?,0
+How much is this?,What's the total cost for everything?,0
+Greetings.,Go ahead and come in.,0
+Good to see you.,How may I assist you?,0
+Please come in.,"Come in, please.",1
+What does one basket cost?,What's the cost of all these?,0
+Is that your lowest price?,How can I assist you today?,0
+Do you have a cheaper one?,Can you show me your prices?,0
+"Good evening, boss.",Browse as much as you like.,0
+How much does it cost today?,What do you want to buy?,0
+Take a seat.,How much are you charging now?,0
+What can I help you with today?,Take a chair.,0
+Have a seat.,Take a chair.,1
+Hello,What's your price?,0
+Good morning,"Good morning, boss.",0
+Nice to meet you.,Can I help you find something?,0
+Hello.,This place is open to you.,0
+Glad you're back.,How much do I need to pay?,0
+Can I have the price first?,"Good afternoon, nice to see you.",0
+Welcome back.,You're free to come anytime.,0
+"Good evening, boss.",How may I assist you?,0
+Show me the cheapest one.,What do you charge for one?,0
+Good evening to you.,Hey.,0
+Which one is cheaper?,How much do you charge per basket?,0
+Is this cheap or expensive?,How much per basket?,0
+Can you give me today's price?,Good to see you.,0
+Can I know the cost?,What's the price now?,0
+Can I know the cost?,Hello.,0
+What is your lowest price?,Take a look at what we have.,0
+"Good evening, madam.",How much does one cost?,0
+Why is this so expensive?,We're glad you came.,0
+How much is it before I choose?,Please tell me the cost.,0
+Can I help you find something?,Can I help you find anything?,1
+You can sit here.,What is your lowest price?,0
+Thank you for coming.,Thanks for stopping by.,1
+Feel free to come in.,Afternoon.,0
+How much is this?,How much are you selling this for?,0
+How much does this cost?,What's the cheapest one?,0
+How much for one?,Hey there.,0
+Can I help you find something?,Hello.,0
+Can I know the basket price?,How much will everything come to?,0
+Have a seat.,Great meeting you.,0
+Feel free to come in.,What is the current price?,0
+Do you need help finding something?,Can I help you find anything?,0
+Welcome,I'm okay thank you.,0
+How much do you charge per basket?,"Good evening, boss.",0
+Good to see you again.,I'm happy to see you again.,1
+What's the cost of all these?,How much do I pay altogether?,1
+Can I see the price list?,Is this the lowest you'll sell it for?,0
+Is it costly?,What's the price for one?,0
+"I am fine, thank you.",I'm okay thank you.,1
+Hi there.,I'm okay thank you.,0
+Is this the final price?,Is this your final price?,1
+Is this worth the price?,What would you like to shop for?,0
+How much is one item?,Can you calculate the total price?,0
+Which is more affordable?,What's your price for a basket?,0
+Can I know the price?,Good afternoon to you.,0
+What's today's price?,How much will this cost me?,0
+Do you have a cheaper one?,How much do I pay for two?,0
+What's the price for two?,What can I get for you today?,0
+Which one is the least expensive?,What do you need?,0
+Can you tell me the price first?,We're happy to have you here.,0
+Good morning to you.,"Good morning, madam.",0
+Wonderful meeting you.,Can I help you find anything?,0
+Welcome back.,How have you been?,0
+"Boss, how much be this?","I'm very well, thank you.",0
+Welcome,How much is one item?,0
+Can you calculate the total price?,What's the grand total?,0
+How is everything?,What is your lowest price?,0
+Is this expensive?,Can you tell me the price?,0
+Would you like me to help you?,It's great to have you back.,0
+How much does it cost?,Could I check your prices?,0
+Good afternoon,What's the total cost for everything?,0
+May I have the price list?,How much do I pay for two?,0
+Wonderful meeting you.,How can I help you today?,0
+Afternoon! How are you?,You are always welcome.,0
+Which item would you like?,Can you tell me the current price?,0
+You're welcome here.,What are you interested in?,0
+You're always welcome here.,Great meeting you.,0
+Can you show me your prices?,Please have a seat.,0
+How much per basket?,What's your price for a basket?,1
+Hi,Good to see you.,1
+You're free to come anytime.,"Morning, how are you?",0
+Everything okay?,Which product do you need?,0
+How much would everything cost?,How much will all of these cost?,1
+What do you charge for this?,Welcome,0
+Good evening,Everything okay?,0
+How much per basket?,You're welcome anytime.,0
+Can I know the price first?,What's the amount before I buy?,1
+How much will all of these cost?,Go ahead and come in.,0
+How much for one?,Good evening,0
+Hi,Go ahead and come in.,0
+Can I know the basket price?,How much does a kilogram cost?,0
+Which one should I buy if I want to save money?,How's your day going?,0
+How much is this?,How much per basket?,0
+Nice to meet you.,Great meeting you.,1
+What will you take for this?,How may I be of help?,0
+How much is this?,You're welcome here.,0
+How much are you selling it?,Make yourself at home.,0
+How may I assist you?,Which one is less expensive?,0
+How much per kilogram?,What's the amount for all these?,0
+Can I know the price for two?,Greetings.,0
+What are you selling this for?,"Good evening, madam.",0
+Nice evening to you.,"Welcome, make yourself comfortable.",0
+How are you?,How's your day going?,1
+I'm happy to meet you.,You're most welcome.,0
+Please come in.,You can come in now.,1
+What will all these cost me?,Come in.,0
+Hello there.,How have you been?,0
+What can I do for you?,"Please, come in.",0
+How are you doing?,Good to see you.,0
+How's your day going?,Can I see the price list?,0
+It's good to see you again.,What's the price?,0
+Hello,Hi there.,1
+How much should I pay?,Good to have you here again.,0
+How much would everything cost?,Can you calculate the total price?,1
+Could you tell me the cost?,You're always welcome here.,0
+Doing well thanks.,Can I help you?,0
+Browse as much as you like.,Look around at your own pace.,0
+What would you like to buy?,What can I get for you today?,1
+Can I know the price first?,I'd like to know the price first.,1
+What's the price?,What can I do for you?,0
+You're welcome here.,You're welcome anytime.,1
+I'm well thank you.,What do you need today?,0
+How are you doing?,What do you charge for one?,0
+Hello,Greetings.,1
+How much is two?,What would you like today?,0
+What do you charge for one?,Hey.,0
+Happy to meet you.,Go ahead and sit down.,0
+How much is everything together?,What's your price per kilo?,0
+What's your selling price?,Which option is cheaper?,0
+"Good morning, madam.",How much is one basket?,0
+"Please, come in.",Welcome back again.,0
+How's your day going?,Do you need help finding something?,0
+What's your selling price?,What are you looking for?,0
+How much is this?,It's great to have you back.,0
+How is everything?,How may I assist you today?,0
+"Good morning, boss.",How can I help you today?,0
+What would you like to buy?,How much is it?,0
+This place is open to you.,What's your final offer?,0
+This place is open to you.,What would you like to purchase?,0
+Which product do you need?,Welcome.,0
+You're welcome.,Have a seat.,0
+What do you want to buy?,Is the price high?,0
+What's the price now?,Good to see you again.,0
+I'm happy to see you again.,Have a look around.,0
+Come in.,Which item would you like?,0
+Feel free to browse.,How much is this item?,0
+What do you need today?,Why is this so expensive?,0
+What can I help you with today?,Thanks for your visit.,0
+I'm happy to meet you.,Which option is cheaper?,0
+Please make yourself comfortable.,You're welcome anytime.,0
+Good morning to you.,Is there a catalogue with prices?,0
+Is that your final offer?,How may I serve you today?,0
+Browse as much as you like.,Good evening to you.,0
+Can you tell me the current price?,How may I serve you today?,0
+How much is this going for?,What's the total for two?,0
+You're most welcome.,Is the price high?,0
+Is the price high?,Which one should I buy if I want to save money?,0
+What's the cheapest one?,Which one has the lowest price?,1
+What's the price at the moment?,How much will this cost me?,0
+How much per basket?,What does one basket cost?,1
+Hope to see you again.,Where is your price list?,0
+Can I help you find something?,Is it affordable?,0
+Can you tell me the price?,Glad you're back.,0
+"Boss, how much be this?",Good to see you again.,0
+Does this cost a lot?,What's the price today?,0
+Come in.,Hey there.,0
+How are you?,How is everything?,1
+What's the price now?,Give me your best offer.,0
+Are you doing well?,How much does it currently cost?,0
+Where is your price list?,Please make yourself comfortable.,0
+Thank you for your time.,We appreciate your visit.,0
+What's the price of this item?,What's your selling price?,1
+Pleased to meet you.,How much does one cost?,0
+You can sit here.,How are you?,0
+How may I help you?,How can I help you?,1
+Thank you for visiting.,What will you take for this?,0
+What is the amount?,Give me your best offer.,0
+How can I be of assistance?,How much do I pay for two?,0
+Good to see you.,How much is it right now?,0
+We appreciate your visit.,What do you need?,0
+Glad you're back.,Can you tell me the price?,0
+How may I help you?,How may I serve you?,1
+What can I help you with?,Have a seat.,0
+What's the price of this item?,How much for a single one?,0
+How can I help you today?,Doing well thanks.,0
+What are you looking for?,What do you want to buy?,1
+How much for one?,What's the cost per kilogram?,0
+How much are two together?,Welcome.,0
+Can I help you with anything?,Can I know the price?,0
+Please come in.,Come inside.,1
+Evening! How are you?,I'm okay thank you.,0
+Hi there.,What's the cheapest item?,0
+How much do you charge per kilo?,Which item would you like?,0
+Is this the lowest you'll sell it for?,Nice evening to you.,0
+You can check everything.,What's the cost of this item?,0
+You're welcome anytime.,How much for two?,0
+What's the price per basket?,How much is one item?,0
+Which item would you like?,I'm well thank you.,0
+What is the cost of this?,How much do I need to pay?,0
+Morning.,What do you charge for this?,0
+Can I help you?,Welcome back.,0
+What do you charge for one?,Can the price come down?,0
+How much do all these cost?,How much does it cost?,0
+Where is your price list?,How much is it today?,0
+Hope you're doing well.,Can you tell me the current price?,0
+"Hello, how are you?",How much do I pay for all these?,0
+How can I assist you today?,What's the price?,0
+Give me your best offer.,What's the lowest you'll accept?,0
+How much for each kilogram?,What's the amount before I buy?,0
+Afternoon.,Which one has a lower price?,0
+How much is each basket?,What's your most affordable one?,0
+What's the cost of one?,Where is your price list?,0
+Can I know how much it costs?,How much is two?,0
+How much is it for a kilo?,Can you tell me the price?,0
+How much are two together?,Glad to have you.,0
+What's the total price?,How much for one?,0
+How much would everything cost?,What's the total cost for everything?,1
+Everything okay?,How much do I pay altogether?,0
+Feel free to look around.,I'm well thank you.,0
+Good to see you again.,Welcome back.,1
+Please have a seat.,Nice seeing you again.,0
+How much is it today?,"I am fine, thank you.",0
+"Good morning, boss.",How much for two?,0
+Do you have a price list?,Is there a catalogue with prices?,1
+Let me know the price first.,How can I help you?,0
+How much will all of these cost?,"Welcome, make yourself comfortable.",0
+Is there a catalogue with prices?,Look around at your own pace.,0
+Would you like some assistance?,Can you calculate the total price?,0
+Pleasant afternoon.,What is the amount?,0
+What are you interested in?,Which one is less expensive?,0
+Tell me the price.,Can you reduce it further?,0
+Feel at home.,Pleasant afternoon.,0
+Can you show me your prices?,"Good evening, boss.",0
+Can I know the cost?,What's the cost per kilogram?,0
+Hope you're having a good afternoon.,You're always welcome here.,0
+How much does it currently cost?,How much do all these cost?,0
+Happy morning.,Take a look at what we have.,0
+Good to see you.,Hey.,0
+Is there a catalogue with prices?,How much do I need to pay?,0
+I'm doing well thank you.,How may I serve you today?,0
+Nice seeing you again.,How much are you selling it?,0
+You're welcome here.,This place is open to you.,1
+What will all these cost me?,How much will this cost me?,0
+Doing well thanks.,Hello there.,0
+How much is two?,How much does this cost?,0
+What will I pay for this?,How much will one be?,0
+There's a seat for you.,Let me know the price first.,0
+What are you interested in buying?,Glad to have you.,0
+How much is it for a kilo?,How much for two?,0
+What's the amount before I buy?,What do you want to buy?,0
+What's the total cost for everything?,Would you like me to help you?,0
+You're welcome here.,Feel at home.,1
+Can you reduce it a little?,"Come in, please.",0
+"Between these, which is cheaper?","I am fine, thank you.",0
+Is this the final price?,Is that your final offer?,1
+Please come in.,What's the price per kilogram?,0
+How much do I pay for one?,Can you tell me the current price?,0
+Which option is cheaper?,"Between these, which is cheaper?",0
+How have you been?,You're free to come anytime.,0
+Can the price come down?,How much does a kilogram cost?,0
+How much is one basket?,How are you doing?,0
+How much are you selling this for?,Glad you're back.,0
+Great meeting you.,Welcome in.,0
+What is the current price?,Is there anything you need today?,0
+You're free to come anytime.,It's a pleasure meeting you.,0
+It's good to see you again.,"Good evening, madam.",0
+Can you total everything?,"Hi, how are you?",0
+"Good afternoon, madam.",What will I pay for this?,0
+How much does this cost?,What do you charge for this?,1
+Afternoon.,Which costs the least?,0
+Hi,"Hi, how are you?",1
+Is this expensive?,Is the price high?,1
+Good afternoon,Pleasant afternoon.,1
+Is it affordable?,Why is this so expensive?,0
+Can you show me your prices?,You're welcome anytime.,0
+Is that the last amount?,Evening! How are you?,0
+How much is two?,Welcome back again.,0
+Which costs less?,What are you selling this for?,0
+How much will this cost me?,You're most welcome.,0
+Good afternoon,What are you interested in?,0
+Can I know the price first?,How much is it before I choose?,1
+How much for two items?,What's the total for two?,0
+What brings you here today?,May I have the price list?,0
+Is this the final price?,Show me the cheapest one.,0
+What are you selling this for?,Hello there.,0
+How much per basket?,Hello,0
+Does this cost a lot?,Good morning,0
+Is that your lowest price?,How much are you selling this for?,0
+"I'm fine, thanks.","Good afternoon, madam.",0
+It's a pleasure meeting you.,What's the cost per kilogram?,0
+Nice to see you.,Glad you're back.,0
+What's the price per basket?,You can check everything.,0
+Can I know the price first?,What's the current selling price?,0
+Can I help you find something?,Can I help you?,1
+How much are you asking for this?,What's your selling price?,0
+What's the latest price?,How much does it cost?,0
+I'm okay thank you.,Good morning,0
+Which costs the least?,What are you buying today?,0
+How much does this cost?,Can I know the cost?,1
+Can you tell me the current price?,Good to see you again.,0
+There's a seat for you.,Which one is cheaper?,0
+What's your most affordable one?,Come in.,0
+Feel free to sit.,What's the grand total?,0
+Does this cost a lot?,Do you keep a price catalogue?,0
+We're happy to have you here.,Tell me the price.,0
+How much is it before I choose?,Welcome back again.,0
+"Good morning, boss.",Do you need help finding something?,0
+Hey there.,Afternoon.,0
+How much for two items?,How can I be of assistance?,0
+"Hello, how are you?",Good evening,0
+Thanks for coming.,What's your selling price?,0
+What's the cost of this item?,What brings you here today?,0
+Feel free to look around.,Please look around.,1
+Hello,How much are two together?,0
+Hey.,I'm well thank you.,0
+Thanks for stopping by.,"Good evening, boss.",0
+Do you keep a price catalogue?,I'm well thank you.,0
+Is this worth the price?,How much is this going for?,0
+Can you tell me the price?,How much is it?,1
+"Good afternoon, boss.",How much is the total?,0
+How much for one?,What do you charge for one?,1
+"Good morning, madam.",What brings you here today?,0
+How much are you selling this for?,How much is this?,1
+Pleasant evening.,How much will this cost me?,0
+Can I know how much it costs?,What can I do for you today?,0
+How much will you sell this?,What's the amount before I buy?,0
+Feel free to look around.,Do you have a list of prices?,0
+Good morning,Hope you're having a good morning.,1
+Welcome,Glad to have you.,1
+What will two cost?,Great meeting you.,0
+I'd like to know the price first.,Thanks for your visit.,0
+How much per basket?,What's the cost of one?,0
+What will all these cost me?,What's the price?,0
+How can I assist you today?,What can I do for you today?,1
+Happy morning.,What's the price per kilogram?,0
+Can you tell me the price?,You're always welcome here.,0
+What can I get for you today?,Welcome.,0
+Hi,Hello.,1
+Please sit down.,How much is this?,0
+Good morning,What's the cheapest one?,0
+How much does a kilogram cost?,What's the price now?,0
+Hey there.,Hey.,0
+"I am fine, thank you.",I'm doing great.,1
+Hope you're doing well.,Tell me the price.,0
+What would you like to purchase?,"Hello, how are you?",0
+Is this expensive?,Can you offer a better price?,0
+How have you been?,"Hi, how are you?",0
+Which option is cheaper?,What would you like to shop for?,0
+Can I help you find something?,How much is it for a kilo?,0
+Make yourself at home.,Which option is cheaper?,0
+How may I assist you?,I'm happy to see you again.,0
+Is this the final price?,Can the price come down?,1
+What can I do for you?,How much are you selling it today?,0
+Nice to see you.,What are you buying today?,0
+Happy to meet you.,How much does it cost today?,0
+How much for one?,What's the price for one?,1
+Is there a catalogue with prices?,Good afternoon,0
+Good morning,"Morning, how are you?",1
+How much are you selling it?,How much for two items?,0
+What will I pay for this?,May I assist you?,0
+How have you been?,How much do you charge per kilo?,0
+How much do I pay for two?,Hey.,0
+How much for a single one?,This place is open to you.,0
+How much for a basket?,Morning! Nice to see you.,0
+Is that your final offer?,How much is this?,0
+Can you calculate the total price?,Hope you're doing well.,0
+"Hi, how are you?",How much do I pay for all these?,0
+What's today's selling price?,Do you have a list of prices?,0
+What's your best price?,Is that your lowest price?,1
+We're happy to have you here.,What will I pay for this?,0
+Can I help you with anything?,Welcome back again.,0
+Good to see you again.,Good to have you here again.,1
+Make yourself at home.,Where is your price list?,0
+How much for one?,What's the cost of one?,1
+Welcome,"Welcome, please come in.",1
+What do you need?,Can I know how much it costs?,0
+How much does it currently cost?,How much is the total?,0
+Take a seat.,What's today's selling price?,0
+What is the current price?,How can I be of assistance?,0
+What do you charge for one?,What are you searching for?,0
+Take a seat.,How much should I pay?,0
+Hey.,Hope you're doing well.,0
+What's the current selling price?,You're welcome.,0
+Do you have a price list?,Can you do any better?,0
+What's your selling price?,How much is this going for?,0
+How much do you charge per kilo?,Can you tell me the current price?,0
+Can you tell me the price?,How much are you selling it?,1
+Show me the cheapest one.,How much for a basket?,0
+I'm happy to meet you.,How much do I pay altogether?,0
+"I'm very well, thank you.",Take a seat.,0
+How much is it today?,Have a seat please.,0
+What's the total for two?,Pleased to meet you.,0
+Is it costly?,Which is more affordable?,0
+How much for everything?,Good morning,0
+What are you searching for?,What's the price for one?,0
+Come inside.,Please make yourself comfortable.,0
+What are you interested in buying?,I'm doing well thank you.,0
+How much is the total?,How much are you asking for this?,0
+Welcome back again.,Nice evening to you.,0
+You can come in now.,Do you need help finding something?,0
+What's your best price?,"Come in, please.",0
+What's your best price?,Give me your best offer.,1
+Make yourself at home.,Can you reduce it a little?,0
+I'm well thank you.,Feel at home.,0
+Good afternoon,Good afternoon to you.,1
+You're welcome here.,You're always welcome here.,1
+What's your selling price?,"Good morning, madam.",0
+What's your final offer?,"Good evening, madam.",0
+Is this expensive?,What are you interested in buying?,0
+How much per kilogram?,How much for each kilogram?,1
+How much are you asking for this?,What is the amount?,0
+What are you buying today?,What would you like to buy?,0
+Is this worth the price?,How much does it currently cost?,0
+What's the price?,What's the cost per kilogram?,0
+Can I help you find something?,May I assist you?,1
+Can you tell me the price first?,Is that the last amount?,0
+I'm happy to see you again.,Nice to meet you.,0
+Are you doing well?,What can I get for you?,0
+What are you buying today?,How much for everything?,0
+Is this expensive?,Good evening to you.,0
+I'm doing well thank you.,What would you like?,0
+Which costs the least?,What's the price for one?,0
+What can I get for you?,Wonderful meeting you.,0
+Hello,Hello there.,1
+What is the total amount?,Nice to see you.,0
+Tell me the price.,Good to see you.,0
+Can I know the price?,Feel at home.,0
+Hello.,How much does it currently cost?,0
+You're welcome here.,We're happy to have you here.,1
+"Good evening, boss.",Can you offer a better price?,0
+Can you tell me the price first?,"Good evening, madam.",0
+Is there anything you need today?,You're welcome.,0
+Thanks for your visit.,What would you like?,0
+How have you been?,How much are you selling this for?,0
+How may I be of help?,Hello.,0
+"Morning, how are you?",What does one basket cost?,0
+Take a chair.,Let me know the price first.,0
+What would you like to buy?,Which item would you like?,1
+Hey.,Can you give me today's price?,0
+"I am fine, thank you.",Take a chair.,0
+How much will this cost me?,Is that your lowest price?,0
+Can I see the price list?,What would you like to purchase?,0
+Good afternoon,"Good afternoon, nice to see you.",1
+How can I be of assistance?,Welcome,0
+Is there any room for negotiation?,What's the cheapest item?,0
+We appreciate your visit.,Can I know the basket price?,0
+What do you want to buy?,How much is everything together?,0
+You're welcome.,Feel free to sit.,0
+How much would everything cost?,What is the total amount?,1
+How may I help you?,What's the price per basket?,0
+"Good morning, boss.",What are you searching for?,0
+You can come in now.,Afternoon! How are you?,0
+How much would everything cost?,What's today's selling price?,0
+Why is this so expensive?,What can I help you with?,0
+Please make yourself comfortable.,Hey.,0
+How much are you selling this for?,What will you take for this?,1
+Nice to meet you.,Hello there.,0
+Can I help you?,"Welcome, please come in.",0
+How much should I pay?,Can I know the price?,0
+How much does this cost?,Good evening to you.,0
+Which one is cheaper?,Is there any room for negotiation?,0
+Which one costs less?,Can you do any better?,0
+Hi,Hi there.,1
+What is the amount?,How may I help you?,0
+"Welcome, make yourself comfortable.",Would you like some assistance?,0
+How much do you want for this?,How may I be of help?,0
+You can check everything.,What do you need?,0
+How much is this?,What's your price for a basket?,0
+It's good to see you again.,What do you need today?,0
+How much does it currently cost?,What would you like to shop for?,0
+Feel free to look around.,Have a look around.,1
+"Welcome, make yourself comfortable.",Are you doing well?,0
+How can I help you today?,Which is more affordable?,0
+How may I assist you today?,Welcome back again.,0
+Nice to see you.,How much does it cost?,0
+Glad to have you.,What's the amount for all these?,0
+How much is this item?,Take a seat.,0
+I'm well thank you.,What's the price per kilogram?,0
+How much do all these cost?,How much is one kilogram?,0
+Could I check your prices?,Why is this so expensive?,0
+You're free to come anytime.,May I assist you?,0
+How much is this?,"Boss, how much be this?",0
+It's a pleasure meeting you.,Hello.,0
+"Come in, please.",Thanks for stopping by.,0
+Is that your lowest price?,What would you like to purchase?,0
+What's the price per kilogram?,What's your price for a basket?,0
+What's your price per kilo?,What are you looking for?,0
+What does one basket cost?,How much is it?,0
+Do you have a list of prices?,What's the latest price?,0
+Does this cost a lot?,Please tell me the cost.,0
+How may I be of help?,Can you reduce it further?,0
+Do you need help finding something?,What's the grand total?,0
+Hope you're having a good afternoon.,What's your selling price?,0
+Thank you for visiting.,You are always welcome.,0
+How much for one?,Take a look at what we have.,0
+What are you searching for?,How much is this going for?,0
+What's the latest price?,How much for two items?,0
+Feel free to come in.,What is the amount?,0
+What do you need today?,How can I assist you today?,0
+How much does one cost?,How can I help you today?,0
+"Hello, how are you?",Come in.,0
+How much do I pay for all these?,How much for this one?,0
+How much are you charging?,What's the cheapest one?,0
+How much do you charge per kilo?,How much are you selling it?,0
+What would you like to buy?,Which product do you need?,1
+What's the price for one?,Doing well thanks.,0
+Can I know the basket price?,Welcome,0
+What's your price per kilo?,You can come in now.,0
+How may I serve you?,How much do I pay for one?,0
+Afternoon! How are you?,Good to see you.,0
+How much are you selling this for?,What would you like to shop for?,0
+How much would everything cost?,What's the price per basket?,0
+How are you doing?,Go ahead and sit down.,0
+Good to see you again.,Glad you're back.,1
+What's the lowest you'll accept?,You can sit here.,0
+What's the total for two?,How are you doing?,0
+Can you total everything?,How much is it before I choose?,0
+Which one costs less?,Which one should I buy if I want to save money?,1
+Hey.,Do you have a list of prices?,0
+How much is this?,Can you tell me the price?,1
+How much are you selling it today?,Thank you for your time.,0
+How much are you selling this for?,What's the cost of all these?,0
+I'm fine thanks.,How much for everything?,0
+Feel free to look around.,Feel free to browse.,1
+How much per kilogram?,Thank you for your time.,0
+Is there any room for negotiation?,What is the amount?,0
+Hi,How much is it for a kilo?,0
+Feel free to look around.,Browse as much as you like.,1
+How may I help you?,What do you need?,1
+What's the price?,Can I help you find anything?,0
+How much will this cost me?,What's the amount before I buy?,0
+How much for this item?,What's the total price?,0
+"Welcome, make yourself comfortable.",We're glad you came.,0
+What is the current price?,How much is one item?,0
+Thank you for coming.,Thank you for visiting.,1
+What's the amount before I buy?,How may I assist you today?,0
+What are you looking for?,What are you interested in?,1
+Can you give me today's price?,What would you like today?,0
+Do you need any help?,Hope you're having a pleasant evening.,0
+Thanks for stopping by.,Which item are you looking for?,0
+How can I assist you today?,Is there anything you need today?,1
+Great meeting you.,We're glad you came.,0
+Can I know how much it costs?,"Good morning, madam.",0
+Good afternoon,Can I have the price first?,0
+How can I help you today?,I'm happy to see you again.,0
+Can I know the cost?,How much for everything?,0
+Doing well thanks.,Where is your price list?,0
+"Hello, how are you?",How much do I pay for one?,0
+Is that the last amount?,Which one is cheaper?,0
+What's the total cost for everything?,"Hi, how are you?",0
+Pleasant afternoon.,"I'm very well, thank you.",0
+How much does it cost?,Can you make it cheaper?,0
+Feel free to come in.,Could you tell me the cost?,0
+How much do you charge per kilo?,What do you charge for one?,0
+Good evening,Evening! How are you?,1
+Good afternoon,Hope you're having a good afternoon.,1
+Please tell me the price.,How much are two together?,0
+Pleasant evening.,Good to see you.,0
+What can I do for you today?,How much is two?,0
+What brings you here today?,Good evening,0
+How much is one basket?,What's the price now?,0
+Is it affordable?,"Good afternoon, boss.",0
+Thank you for coming.,Thanks for coming.,1
+Please have a seat.,Can I help you find something?,0
+You're welcome anytime.,How much will this cost me?,0
+Welcome.,What can I get for you?,0
+How much for two?,How much is it right now?,0
+"I am fine, thank you.","I'm fine, thanks.",1
+How much is this going for?,Is this worth the price?,0
+Please tell me the cost.,How much will everything come to?,0
+How much are you selling it today?,Glad to meet you.,0
+Thanks for coming.,What brings you here today?,0
+What's the price?,Give me your best offer.,0
+Can you tell me the price?,"Boss, how much be this?",0
+Is that the last amount?,How much will all of these cost?,0
+Hope to see you again.,Which option is cheaper?,0
+How much is everything together?,Show me the cheapest one.,0
+How much do you want for this?,Can I see the price list?,0
+What's the price of this item?,How much is this going for?,1
+Welcome back.,Do you keep a price catalogue?,0
+What's the cost per kilogram?,Do you have a list of prices?,0
+Happy to meet you.,What can I do for you today?,0
+Can I help you with anything?,How much will this cost me?,0
+Can I know the price?,What's the cost of this item?,0
+Is it costly?,Can you make it cheaper?,0
+How much for everything?,It's great to have you back.,0
+Please come in.,How may I be of help?,0
+Can I know the price for two?,Hope you're having a pleasant evening.,0
+Hi,Hello there.,1
+How much are you charging now?,"Please, come in.",0
+How much are you charging now?,Nice seeing you again.,0
+Which has the lower cost?,You're welcome.,0
+"Good evening, boss.",How much for two items?,0
+We're happy to have you here.,Nice evening to you.,0
+Tell me the price.,Could you tell me the cost?,0
+Take a chair.,How much would everything cost?,0
+Welcome in.,What's the cost of one?,0
+It's nice to have you here.,What is the current price today?,0
+Hello there.,Show me the cheapest one.,0
+Is it costly?,Hey there.,0
+Hey.,I'm fine thanks.,0
+What's your best price?,Can you do any better?,1
+"Morning, how are you?",I'm doing well thank you.,0
+Thank you for coming.,We appreciate your visit.,1
+Browse as much as you like.,Could I check your prices?,0
+How much per basket?,How much do you charge per basket?,1
+Pleasant afternoon.,"Good morning, madam.",0
+Can I have the price first?,We're happy to have you here.,0
+How much do I pay altogether?,Can I help you?,0
+What's the cost of all these?,How much is the total?,1
+Is there any room for negotiation?,Do you have a price list?,0
+Have a seat.,Have a look around.,0
+Which product do you need?,How much do you want for this?,0
+"Good afternoon, nice to see you.",Hope to see you again.,0
+How much does one cost?,We're glad you came.,0
+You're always welcome here.,What would you like to buy?,0
+What can I help you with?,Do you need help finding something?,0
+Which costs less?,Feel free to browse.,0
+Hope to see you again.,Is this overpriced?,0
+May I assist you?,Hello.,0
+Can you offer a better price?,What's the cost per kilogram?,0
+Happy morning.,What's the cost of all these?,0
+How much for one?,How much is one item?,1
+Afternoon.,Can you calculate the total price?,0
+Morning.,Take your time looking around.,0
+What's today's selling price?,Can you show me your prices?,0
+You're welcome.,How much is the total?,0
+Can I help you find something?,I'm doing well thank you.,0
+Evening.,How much is the total?,0
+You're welcome here.,What will two cost?,0
+Please make yourself comfortable.,What can I do for you today?,0
+What do you charge for one?,Have a seat please.,0
+Which product do you need?,Which one has the lowest price?,0
+It's great to have you back.,"Good evening, madam.",0
+You're welcome anytime.,Morning! Nice to see you.,0
+What's your price for a basket?,What do you need?,0
+How can I assist you today?,How may I serve you today?,1
+What's your price per kilo?,"Hi, how are you?",0
+Which one costs less?,What's your final offer?,0
+How much does one cost?,Do you have a cheaper one?,0
+What are you interested in buying?,Is this your final price?,0
+How much will all of these cost?,Thanks for stopping by.,0
+What's today's price?,You're welcome here.,0
+How can I assist you today?,What can I help you with today?,1
+Nice to meet you.,Pleased to meet you.,1
+Feel free to browse.,Hope you're having a pleasant evening.,0
+Which one is cheaper?,Is it costly?,0
+Happy morning.,How much will one be?,0
+It's a pleasure meeting you.,Feel free to come in.,0
+Take a chair.,How much are you charging?,0
+What would you like?,You're welcome anytime.,0
+Can you give me today's price?,How much are you selling it today?,1
+Nice evening to you.,How much do I pay for two?,0
+Morning! Nice to see you.,I'm happy to meet you.,0
+How much does a kilogram cost?,"Good afternoon, nice to see you.",0
+How much for this item?,Can I know the price for two?,0
+Come inside.,Which product do you need?,0
+How much is it for a kilo?,What's the current selling price?,0
+What are you selling this for?,Hope you're having a good afternoon.,0
+"Boss, how much be this?",Can I know the basket price?,0
+Feel at home.,"Good evening, boss.",0
+How much do you want for this?,Happy to meet you.,0
+What are you interested in?,May I assist you?,0
+Hi there.,Can you reduce it further?,0
+How much is it for a kilo?,It's nice to have you here.,0
+Good to see you.,"Please, come in.",0
+Good afternoon to you.,How much are you charging?,0
+Can you do any better?,Good evening,0
+Good morning,Morning! Nice to see you.,1
+Nice to see you.,Hope you're having a good morning.,0
+Have a seat.,Go ahead and sit down.,1
+What do you need?,There's a seat for you.,0
+Would you like some assistance?,You're welcome here.,0
+How much for this?,How much do I pay altogether?,0
+What's the price?,Hey.,0
+How may I serve you?,Which one is the least expensive?,0
+Can I know the price for two?,How can I help you?,0
+What do you want to buy?,How are you?,0
+Evening.,What can I do for you?,0
+How can I help you?,How much is two?,0
+"I'm fine, thanks.",Please tell me the price.,0
+Hope you're having a good morning.,Good morning,0
+Can I help you?,"Good morning, boss.",0
+What's your best price?,Can you offer a better price?,1
+Evening! How are you?,"Good afternoon, madam.",0
+What would you like to purchase?,How much are you selling it today?,0
+Wonderful meeting you.,How much is it for a kilo?,0
+Good morning to you.,Which product do you need?,0
+How much will this cost me?,How are you doing?,0
+What would you like to shop for?,I'm happy to see you again.,0
+How much do I pay for two?,Thank you for visiting.,0
+What can I do for you?,How much is it today?,0
+How may I be of help?,How much for this?,0
+How are things?,What's the price per kilogram?,0
+Have a seat.,What's the lowest you'll accept?,0
+Nice evening to you.,Welcome in.,0
+Thank you for coming.,We're glad you came.,1
+You're welcome anytime.,What's the grand total?,0
+Is this the final price?,What's your most affordable one?,0
+Which one has a lower price?,How much do I pay altogether?,0
+Please come in.,Take a seat.,1
+How much are you charging?,Thank you for coming.,0
+You're always welcome here.,Doing well thanks.,0
+Browse as much as you like.,How much is the total?,0
+How are you?,How are you doing?,1
+Welcome back again.,Hope you're having a good morning.,0
+Can you offer a better price?,You can sit here.,0
+How are things?,May I have the price list?,0
+It's good to see you again.,What's the total price?,0
+We're glad you came.,Browse as much as you like.,0
+Is this the final price?,Is there any room for negotiation?,1
+How much for this?,Can I help you?,0
+How can I help you?,What's today's selling price?,0
+"Good afternoon, boss.","Good morning, boss.",0
+You're free to come anytime.,What's the price?,0
+Please look around.,Which one should I buy if I want to save money?,0
+Can I know the price first?,Which one is less expensive?,0
+You're welcome here.,Please come in.,0
+Hi there.,What are you selling this for?,0
+"Between these, which is cheaper?",How may I be of help?,0
+There's a seat for you.,What does one basket cost?,0
+Can you do any better?,Can I know how much it costs?,0
+Come inside.,Glad you're back.,0
+What's the cost per kilogram?,Afternoon! How are you?,0
+May I have the price list?,Is there anything you need today?,0
+Welcome back again.,Good afternoon,0
+Do you have a price list?,Where is your price list?,1
+Morning! Nice to see you.,It's great to have you back.,0
+How much are you asking for this?,This place is open to you.,0
+How much will one be?,Glad to have you.,0
+Can you reduce it a little?,What is your selling price?,0
+What's the price?,Good evening to you.,0
+Go ahead and come in.,What's the cost of this item?,0
+What would you like to buy?,What's the price?,0
+How much for two?,What's the price for two?,1
+You can come in now.,What can I get for you today?,0
+Good to have you here again.,Please have a seat.,0
+We appreciate your visit.,Which is more affordable?,0
+How much per basket?,Have a seat.,0
+Glad to meet you.,How can I be of assistance?,0
+Would you like me to help you?,Let me know the price first.,0
+How much for two?,How much do I pay for two?,1
+Do you need help finding something?,Feel free to browse.,0
+Could you tell me the cost?,"Morning, how are you?",0
+Is this overpriced?,Which costs the least?,0
+How much does this cost?,How much for this one?,0
+How much is this?,How much are you charging?,1
+Come in.,Is that your lowest price?,0
+How much is one basket?,Nice evening to you.,0
+Hope to see you again.,What does one basket cost?,0
+Good morning,Happy morning.,1
+Have a seat please.,Afternoon! How are you?,0
+How are you?,What's the price?,0
+Thank you for coming.,Is this the lowest you'll sell it for?,0
+I'm doing great.,Please make yourself comfortable.,0
+Have a seat.,There's a seat for you.,1
+How much is the total?,Can you make it cheaper?,0
+How much for two?,What's the total for two?,1
+Hey.,Can I help you with anything?,0
+How much do I pay altogether?,How much is this going for?,0
+Is that your final offer?,Go ahead and come in.,0
+Can I know the price for two?,Can you offer a better price?,0
+Have a look around.,What is the current price today?,0
+Can I know the price for two?,I'm doing great.,0
+How much is each basket?,Hello.,0
+Could I check your prices?,How much are you asking for this?,0
+Which option is cheaper?,What's the cheapest item?,0
+Which is more affordable?,Come inside.,0
+What are you searching for?,We appreciate your visit.,0
+What's the price of this item?,How may I assist you today?,0
+Can you tell me today's price?,Can I know the cost?,0
+Hi,Would you like some assistance?,0
+How much will all of these cost?,How much for a basket?,0
+What will all these cost me?,Make yourself at home.,0
+"Welcome, please come in.",What would you like?,0
+What's your best price?,May I assist you?,0
+"Good afternoon, nice to see you.",How much is it today?,0
+Good evening,Evening.,1
+What would you like to shop for?,What is the cost of this?,0
+Let me know the price first.,Is there a catalogue with prices?,0
+What does one basket cost?,Come inside.,0
+How much for two?,How much are two together?,1
+Glad you're back.,What will all these cost me?,0
+Is there anything you need today?,Hello there.,0
+"I am fine, thank you.",Feel free to browse.,0
+Is this overpriced?,What's the total for two?,0
+"Welcome, please come in.",Great meeting you.,0
+Good to have you here again.,What can I help you with?,0
+Is this expensive?,Is it costly?,1
+"I'm very well, thank you.",Is the price high?,0
+How much is it?,I'm okay thank you.,0
+Happy to meet you.,How much is this going for?,0
+How much is this?,Hi there.,0
+"I am fine, thank you.",Doing well thanks.,1
+Do you have a price list?,Can I see the price list?,1
+Which item would you like?,Do you need any help?,0
+"Come in, please.",How much is each basket?,0
+Hey there.,Feel at home.,0
+Good afternoon,Afternoon! How are you?,1
+We're glad you came.,What's the price per basket?,0
+Tell me the price.,Feel free to come in.,0
+What's the amount before I buy?,Thanks for stopping by.,0
+Go ahead and come in.,Is there a catalogue with prices?,0
+How much does this cost?,How much will this cost me?,1
+Good morning,How much is one basket?,0
+Hey there.,What is your selling price?,0
+Have a seat.,Please make yourself comfortable.,1
+"Come in, please.",What would you like to purchase?,0
+Good evening,Welcome back again.,0
+It's nice meeting you.,Give me your best offer.,0
+What's the price for one?,Can you reduce it a little?,0
+How much are you selling it?,How much will all of these cost?,0
+Can you tell me the price?,Could you tell me the cost?,1
+What are you searching for?,I'm fine thanks.,0
+Can you offer a better price?,I'm doing great.,0
+What's the price today?,What is the cost of this?,0
+How are you?,Are you doing well?,1
+"Morning, how are you?",Hi there.,0
+"Good morning, madam.",Is the price high?,0
+What will two cost?,Nice to see you.,0
+What's the price of this item?,How much should I pay?,0
+How much is this item?,What's the amount before I buy?,0
+Which one has a lower price?,What's today's price?,0
+What is your selling price?,Good to have you here again.,0
+Show me the cheapest one.,What's the price per kilogram?,0
+What's the current selling price?,Take your time looking around.,0
+How much are you selling this for?,Is this the lowest you'll sell it for?,0
+How much for this?,How much is it before I choose?,0
+Can you give me today's price?,Can you tell me today's price?,1
+How much does it currently cost?,Hello.,0
+Can I know the price first?,"Boss, how much be this?",0
+How much for two?,What will two cost?,1
+Hello there.,Can you give me today's price?,0
+Is this expensive?,Does this cost a lot?,1
+How may I help you?,How much will this cost me?,0
+What is the current price?,How much does it currently cost?,1
+How much for a basket?,What's your most affordable one?,0
+What's the total cost for everything?,How much is one basket?,0
+Can you tell me the current price?,What's the cost per kilogram?,0
+Welcome in.,Evening! How are you?,0
+What would you like to purchase?,What is the current price?,0
+How may I be of service today?,Can I help you?,0
+Can I have the price first?,Is there any room for negotiation?,0
+Good to see you again.,How much for one?,0
+Please sit down.,Have a seat.,0
+Good evening,"Good evening, boss.",1
+Can you calculate the total price?,Is this worth the price?,0
+Hope to see you again.,What would you like to shop for?,0
+How much for two items?,Nice to see you.,0
+Good evening,Hope you're having a pleasant evening.,1
+Can you tell me today's price?,Please look around.,0
+Good evening to you.,Can you tell me the price first?,0
+How may I serve you?,How much for this item?,0
+Can you tell me the price?,Happy morning.,0
+What's your best price?,How much is one item?,0
+I'm fine thanks.,Are you doing well?,0
+What can I get for you today?,How may I be of help?,0
+Come in.,Can I see the price list?,0
+What's the cost of all these?,What's the price?,0
+"I'm very well, thank you.",Can you tell me today's price?,0
+Where is your price list?,Tell me the price.,0
+What's the price?,Welcome,0
+What can I get for you?,How much will this cost me?,0
+How may I help you?,How may I be of help?,1
+What's the total price?,Take a seat.,0
+Can you reduce it further?,I'm okay thank you.,0
+What brings you here today?,Pleased to meet you.,0
+I'm fine thanks.,Please look around.,0
+What would you like to buy?,What would you like today?,1
+Hello,Could you tell me the cost?,0
+Which item would you like?,Good to see you.,0
+Which one costs less?,Which one is cheaper?,1
+How can I assist you today?,How may I be of service today?,1
+Good evening,"Morning, how are you?",0
+What's the amount?,Afternoon! How are you?,0
+What's the amount for all these?,How much are you selling it today?,0
+How much for two?,What do you charge for this?,0
+What's the cost of this item?,How much do I pay for two?,0
+Would you like me to help you?,How may I assist you?,0
+Do you need help finding something?,How much does it currently cost?,0
+Can you make it cheaper?,What brings you here today?,0
+Good evening,Pleasant evening.,1
+Glad to have you.,Nice to meet you.,0
+Can I know the cost?,Good evening to you.,0
+How much do you charge per kilo?,How much do you want for this?,0
+What's the current selling price?,What's the cheapest one?,0
+How much do I pay for all these?,Can I know the basket price?,0
+Can the price come down?,What is the current price?,0
+Go ahead and sit down.,Please look around.,0
+Feel at home.,Morning! Nice to see you.,0
+Is this overpriced?,What's the price per basket?,0
+Which costs the least?,What's the amount for all these?,0
+You're welcome here.,You are always welcome.,1
+How much for everything?,Glad you're back.,0
+Nice to meet you.,Feel free to browse.,0
+"Good evening, boss.",Could I check your prices?,0
+What are you buying today?,I'm happy to see you again.,0
+What do you charge for one?,"Good afternoon, madam.",0
+How much per kilogram?,How much is it today?,0
+Is this your final price?,Have a seat.,0
+Which one is cheaper?,"Welcome, make yourself comfortable.",0
+What's the cost of all these?,What's the total price?,1
+How much would everything cost?,What's the grand total?,1
+I'd like to know the price first.,What's the cheapest item?,0
+You are always welcome.,What are you searching for?,0
+How much for a single one?,You can sit here.,0
+Which has the lower cost?,What's the total price?,0
+What's the cost per kilogram?,"Between these, which is cheaper?",0
+Is this the final price?,Can I know the basket price?,0
+How may I serve you?,Let me know the price first.,0
+What's your price?,What do you need?,0
+Happy to meet you.,How much does it currently cost?,0
+How is everything?,How much is the total?,0
+What is the total amount?,What do you want to buy?,0
+How are you?,How have you been?,1
+What's the total price?,How much for a single one?,0
+Which one costs less?,"Between these, which is cheaper?",1
+How have you been?,Hey there.,0
+Hey there.,Do you need help finding something?,0
+How much will everything come to?,Can you reduce it further?,0
+"Please, come in.",What will you take for this?,0
+Which one has the lowest price?,What's the total cost for everything?,0
+How much is one basket?,Do you have a price list?,0
+"Welcome, make yourself comfortable.",What will two cost?,0
+What will you take for this?,Tell me the price.,0
+Hope you're having a pleasant evening.,Have a seat please.,0
+Which one is less expensive?,Is it costly?,0
+May I assist you?,I'm doing great.,0
+How much for a basket?,Give me your best offer.,0
+I'm doing well thank you.,How much are you selling this for?,0
+What's the price of this item?,Can I know the price?,1
+Take your time looking around.,Hello.,0
+Hey.,What's the price?,0
+Have a seat.,Have a seat please.,1
+Can the price come down?,Is it affordable?,0
+How can I help you today?,Which one has a lower price?,0
+Good to see you again.,Nice seeing you again.,1
+What will two cost?,You're free to come anytime.,0
+What's your final offer?,Good afternoon,0
+How much do I need to pay?,What will you take for this?,0
+Which is more affordable?,May I have the price list?,0
+Good to see you.,You're welcome.,0
+What's the cheapest one?,What's the cheapest item?,1
+Go ahead and sit down.,"Good afternoon, madam.",0
+I'd like to know the price first.,What do you charge for this?,0
+How much is this?,Can I know the price for two?,0
+Which option is cheaper?,Hello.,0
+"Good morning, madam.",You're welcome.,0
+Go ahead and come in.,How much is two?,0
+Make yourself at home.,Which costs the least?,0
+Good to see you.,How can I assist you today?,0
+How can I help you today?,Can the price come down?,0
+How much for this item?,What is your lowest price?,0
+What are you interested in buying?,Take a look at what we have.,0
+How are you?,Everything okay?,1
+What's the total cost for everything?,How much is everything together?,0
+What is the total amount?,What's the current selling price?,0
+Hope you're having a good afternoon.,What's the lowest you'll accept?,0
+What is the current price?,How much are you charging now?,1
+Good morning to you.,What would you like today?,0
+"Good morning, boss.",What can I do for you today?,0
+Evening! How are you?,Can you total everything?,0
+Let me know the price first.,Morning! Nice to see you.,0
+I'd like to know the price first.,How much will all of these cost?,0
+What do you charge for this?,How much will all of these cost?,0
+What would you like to buy?,Glad to have you.,0
+"Welcome, make yourself comfortable.",What can I help you with today?,0
+Pleased to meet you.,What can I do for you today?,0
+What's the price?,How can I assist you today?,0
+Hi,Hey there.,1
+Which item are you looking for?,Glad to have you.,0
+We're happy to have you here.,How much do I pay for two?,0
+What's the total for two?,Please sit down.,0
+Can you give me today's price?,What's the current selling price?,0
+Good morning to you.,Hello there.,0
+How much per basket?,What's the price per basket?,1
+Hi,Can I help you find anything?,0
+How much are you charging?,How may I help you?,0
+What is the current price?,Can you tell me the current price?,1
+Good morning,How much will one be?,0
+What's the price for two?,I'm happy to meet you.,0
+Welcome back.,Would you like me to help you?,0
+What are you looking for?,What is your lowest price?,0
+"Boss, how much be this?",What's the cheapest item?,0
+Do you have a price list?,Hello.,0
+How much should I pay?,How can I help you today?,0
+Look around at your own pace.,How much are you charging?,0
+Which item are you looking for?,Good to see you.,0
+Is this the lowest you'll sell it for?,Please look around.,0
+It's great to have you back.,What's the current selling price?,0
+What does one basket cost?,Hello there.,0
+How much is everything together?,How have you been?,0
+How much should I pay?,Glad to meet you.,0
+"I'm very well, thank you.",Can you make it cheaper?,0
+Which one costs less?,Which has the lower cost?,1
+Look around at your own pace.,What is the cost of this?,0
+Good morning,What's the total cost for everything?,0
+Can you reduce it further?,Can I know the basket price?,0
+What is the amount?,What's the current selling price?,0
+What do you need today?,Take a chair.,0
+What's the cheapest one?,Nice seeing you again.,0
+How much per kilogram?,What's the price per kilogram?,1
+What would you like to purchase?,Please come in.,0
+What's the cheapest one?,Do you have a cheaper one?,1
+Evening.,Please tell me the price.,0
+Hi there.,How much will you sell this?,0
+Greetings.,"Welcome, make yourself comfortable.",0
+"I'm fine, thanks.",How much are you charging?,0
+Can you offer a better price?,What's the price per kilogram?,0
+What's today's price?,How's your day going?,0
+What can I help you with today?,How much is everything together?,0
+Hello.,What's the price at the moment?,0
+How much is two?,Tell me the price.,0
+Everything okay?,Feel at home.,0
+Evening! How are you?,What does one basket cost?,0
+How much per kilogram?,Take a chair.,0
+How much does this cost?,How much would everything cost?,0
+Good afternoon to you.,How's your day going?,0
+Thanks for your visit.,What's your price?,0
+How much do I pay for one?,Hope you're doing well.,0
+Is this overpriced?,Make yourself at home.,0
+What can I do for you?,How may I serve you today?,0
+What's the price of this item?,"Come in, please.",0
+It's a pleasure meeting you.,What do you charge for this?,0
+What's the price of this item?,How much should I pay?,1
+What's the cost of one?,How much per basket?,0
+Good afternoon,"Good afternoon, boss.",1
+Can I help you find something?,Do you need help finding something?,1
+How's your day going?,Which one is cheaper?,0
+Glad to have you.,Hello,0
+How much will one be?,Thanks for coming.,0
+Can I help you find something?,Would you like some assistance?,1
+How much does it cost before I decide?,Can I see the price list?,0
+Which one costs less?,Which one has a lower price?,1
+What would you like to buy?,What would you like to shop for?,1
+You can sit here.,Thank you for your time.,0
+Happy morning.,How much are you charging?,0
+What is the current price today?,You're welcome anytime.,0
+How much is this item?,Make yourself at home.,0
+Which one costs less?,Which is more affordable?,1
+Thank you for visiting.,How much for a single one?,0
+Can you tell me the price?,What is the current price today?,0
+Nice to meet you.,It's nice meeting you.,1
+Can you offer a better price?,How is everything?,0
+Take a look at what we have.,Which one is the least expensive?,0
+What's the price of this item?,Could you tell me the cost?,0
+Hope you're having a good afternoon.,Which one is the least expensive?,0
+What's the latest price?,Does this cost a lot?,0
+What will you take for this?,How much do all these cost?,0
+How much does it cost before I decide?,Where is your price list?,0
+Hi,Hey.,1
+What are you selling this for?,Which one should I buy if I want to save money?,0
+How much are two together?,Go ahead and sit down.,0
+You're welcome here.,Do you keep a price catalogue?,0
+How much does it cost today?,Can I know the price?,0
+Have a seat please.,What's today's selling price?,0
+Please make yourself comfortable.,How much does it cost?,0
+How much is this?,What is the cost of this?,1
+What's the price today?,What is your selling price?,0
+Please come in.,How may I be of service today?,0
+How much is this?,What will I pay for this?,1
+Hey there.,Is this the final price?,0
+What will I pay for this?,Good to see you again.,0
+Nice to meet you.,It's a pleasure meeting you.,1
+What's the amount for all these?,Please look around.,0
+How much for this one?,How may I be of help?,0
+How may I help you?,How may I assist you?,1
+How much will one be?,Hello,0
+Which has the lower cost?,Hello there.,0
+Morning! Nice to see you.,Can I know the basket price?,0
+What's your most affordable one?,Evening.,0
+I'd like to know the price first.,This place is open to you.,0
+"Welcome, please come in.",Hope you're having a good afternoon.,0
+Can you tell me today's price?,How can I be of assistance?,0
+Thank you for coming.,Thank you for your time.,1
+What's the amount?,You are always welcome.,0
+How much are you charging now?,What's the price per basket?,0
+What would you like to buy?,What are you buying today?,1
+How much for this item?,Have a seat.,0
+"I'm very well, thank you.",Please tell me the price.,0
+Good afternoon,Feel free to look around.,0
+How much is this going for?,Can I know the basket price?,0
+What can I get for you today?,Good afternoon,0
+How much do I need to pay?,What can I get for you today?,0
+How much does it cost today?,How may I help you?,0
+Which has the lower cost?,"Welcome, please come in.",0
+Nice to meet you.,Glad to meet you.,1
+Take a look at what we have.,How may I help you?,0
+What are you buying today?,How much are you charging?,0
+Which one has the lowest price?,Feel free to come in.,0
+Can I know the price first?,How much does it cost before I decide?,1
+Can you tell me the price?,What's the price?,1
+Can you give me today's price?,What's today's price?,1
+What is the cost of this?,How much are two together?,0
+Can the price come down?,Do you need any help?,0
+Hello there.,How much should I pay?,0
+How much for two?,Can I know the price for two?,1
+Hello there.,"Good afternoon, madam.",0
+What's the price now?,How much is this?,0
+What's the cheapest item?,Good to see you.,0
+What can I do for you today?,How much for each kilogram?,0
+Glad you're back.,How much will everything come to?,0
+Please sit down.,"Good morning, boss.",0
+How much is it today?,What brings you here today?,0
+Can I know the price first?,What's the cost of this item?,0
+What can I help you with?,I'd like to know the price first.,0
+Afternoon! How are you?,"Good afternoon, boss.",0
+How much is each basket?,Can I have the price first?,0
+How much is each basket?,What's the current selling price?,0
+How are you doing?,What's your price?,0
+Welcome.,Can you tell me the current price?,0
+Which costs the least?,"Boss, how much be this?",0
+How much should I pay?,What's the total cost for everything?,0
+How much for one?,Which one is cheaper?,0
+How much for one?,How much will one be?,1
+Can you tell me the price?,Please tell me the price.,1
+How are you doing?,How much do you charge per kilo?,0
+How much does it cost?,What would you like to purchase?,0
+You are always welcome.,How much for one?,0
+Is this expensive?,Is this cheap or expensive?,1
+What's the price?,It's nice to have you here.,0
+You're welcome here.,Make yourself at home.,1
+What is your lowest price?,Can you tell me the price first?,0
+How much do I need to pay?,You're welcome anytime.,0
+How much is this?,"Boss, how much be this?",1
+Can you reduce it further?,Happy morning.,0
+How much is the total?,Hope to see you again.,0
+Can you tell me the price?,How much do I pay for one?,0
+What's your best price?,What's your final offer?,1
+"I'm fine, thanks.",How much will everything come to?,0
+What's the cost of all these?,How much for everything?,1
+Is this expensive?,Can I know the basket price?,0
+Can I see the price list?,Take a chair.,0
+Please come in.,"Please, come in.",1
+How are you?,Hope you're doing well.,1
+How much will everything come to?,What's your best price?,0
+Good afternoon to you.,Please make yourself comfortable.,0
+Which one is less expensive?,It's nice to have you here.,0
+Is this cheap or expensive?,Feel at home.,0
+Do you keep a price catalogue?,Show me the cheapest one.,0
+What's the latest price?,What is your lowest price?,0
+Hope you're doing well.,What's the price for two?,0
+Thanks for your visit.,Is this overpriced?,0
+Can I help you find anything?,What's your price for a basket?,0
+How much does it cost?,Can I have the price first?,0
+Please come in.,Please have a seat.,1
+How much is it?,How much does it cost?,0
+It's nice meeting you.,I'm doing well thank you.,0
+What is the cost of this?,It's nice meeting you.,0
+It's nice meeting you.,What does one basket cost?,0
+How much is this?,Take a seat.,0
+How much are you charging now?,What is your selling price?,0
+Do you have a list of prices?,Hope you're having a good morning.,0
+Greetings.,Which one is cheaper?,0
+Is this the final price?,Is that the last amount?,1
+"Good afternoon, boss.",Which item would you like?,0
+How much per kilogram?,What's your price per kilo?,1
+How much should I pay?,How much does a kilogram cost?,0
+Have a seat.,Please sit down.,1
+You're most welcome.,Thanks for coming.,0
+Can I know the price first?,How much should I pay?,0
+What do you need?,What's the price of this item?,0
+Glad you're back.,How much do you charge per kilo?,0
+How much does it cost before I decide?,You're free to come anytime.,0
+Good to have you here again.,Make yourself at home.,0
+What's the cost of all these?,What's the amount for all these?,1
+What's your best price?,What's the lowest you'll accept?,1
+How much would everything cost?,How much is everything together?,1
+Welcome,It's nice to have you here.,1
+Is this expensive?,Is this overpriced?,1
+What will I pay for this?,How much is one item?,0
+Can I know the price first?,Can I have the price first?,1
+Which one is less expensive?,How are you?,0
+Please have a seat.,What's the price for one?,0
+Good evening,Nice evening to you.,1
+Which one costs less?,Which costs less?,1
+How much will one be?,Can I know the price for two?,0
+Is this your final price?,Which one is the least expensive?,0
+What's the cheapest one?,What's your most affordable one?,1
+How much for two?,How much is two?,1
+Nice seeing you again.,Can you tell me the price first?,0
+Great meeting you.,How much do I pay for one?,0
+How much for this one?,May I assist you?,0
+How may I assist you?,What are you looking for?,0
+How much is it for a kilo?,What are you searching for?,0
+Good morning,"Good morning, boss.",1
+What are you looking for?,What do you need?,1
+Welcome,How much are you selling it?,0
+Nice evening to you.,Hey.,0
+Can I have the price first?,What's the current selling price?,0
+What do you need?,Feel free to browse.,0
+How much per basket?,How much is one basket?,1
+Is there any room for negotiation?,Feel free to come in.,0
+Give me your best offer.,Hey.,0
+Feel free to sit.,What is the cost of this?,0
+How much per basket?,Can I know the basket price?,1
+Hello,What's the cost per kilogram?,0
+How much for one?,How much for a single one?,1
+Go ahead and sit down.,How are you doing?,0
+Can you tell me the current price?,Please sit down.,0
+What's today's price?,Feel free to look around.,0
+What's the price for two?,Evening.,0
+Thanks for your visit.,Which is more affordable?,0
+Can I help you find anything?,What's the price?,0
+How may I serve you?,Feel free to browse.,0
+Is the price high?,You're free to come anytime.,0
+What's the cost per kilogram?,What's the price now?,0
+What's the cost of all these?,What's the current selling price?,0
+Please come in.,Go ahead and come in.,1
+It's nice meeting you.,Great meeting you.,0
+Feel free to look around.,Look around at your own pace.,1
+How much is it right now?,Welcome.,0
+Do you have a price list?,Do you keep a price catalogue?,1
+What do you need today?,How are things?,0
+Could you tell me the cost?,Please tell me the price.,0
+What are you looking for?,What would you like?,1
+How are things?,What would you like to purchase?,0
+What would you like to shop for?,I'm doing great.,0
+How much per kilogram?,How much is it for a kilo?,1
+How much are you selling this for?,What's your price?,1
+Are you doing well?,What are you searching for?,0
+Take your time looking around.,Happy morning.,0
+How are you?,How are things?,0
+What is your lowest price?,Please tell me the cost.,0
+You can sit here.,What will you take for this?,0
+May I assist you?,What's the amount for all these?,0
+How much is this?,What's the price?,1
+Which product do you need?,What are you looking for?,0
+Where is your price list?,Pleasant evening.,0
+Could I check your prices?,Glad to meet you.,0
+"Morning, how are you?",How are things?,0
+How much for two?,How much for two items?,1
+Good evening to you.,Everything okay?,0
+Could you tell me the cost?,Can I see the price list?,0
+How's your day going?,There's a seat for you.,0
+How much is the total?,How much are two together?,0
+Is it affordable?,Can you do any better?,0
+Morning.,What do you want to buy?,0
+Afternoon! How are you?,You can come in now.,0
+You're free to come anytime.,"Good morning, boss.",0
+I'm okay thank you.,Take a chair.,0
+Which one costs less?,Please make yourself comfortable.,0
+Thanks for coming.,"Between these, which is cheaper?",0
+Nice to see you.,Thanks for your visit.,0
+Good to see you.,Which option is cheaper?,0
+What's the cost of all these?,How much do all these cost?,1
+How much will you sell this?,What's the cost per kilogram?,0
+Have a seat please.,Hello.,0
+Can you make it cheaper?,How much do you charge per kilo?,0
+What's the price today?,What do you need?,0
+Is this the final price?,Can you make it cheaper?,1
+Please tell me the cost.,How much do I pay altogether?,0
+How are things?,Evening.,0
+How much does it cost today?,Thanks for coming.,0
+"I am fine, thank you.","I'm very well, thank you.",1
+Can you give me today's price?,How much is it today?,1
+Is there a catalogue with prices?,Which costs less?,0
+How much for two?,How may I assist you?,0
+Thanks for stopping by.,How may I serve you?,0
+What's the grand total?,How much do you charge per basket?,0
+Good to have you here again.,How much will one be?,0
+Doing well thanks.,Which one costs less?,0
+How much is it right now?,How can I assist you today?,0
+What is the current price today?,Please sit down.,0
+How may I be of help?,This place is open to you.,0
+I'm fine thanks.,How much will one be?,0
+What's the price of this item?,What's the cost of this item?,1
+How are you?,How much are you charging?,0
+How much are you asking for this?,What's the amount?,0
+What are you looking for?,What brings you here today?,1
+What's the price for one?,Feel at home.,0
+Do you have a price list?,Can I know the basket price?,0
+Pleasant evening.,Can I know the cost?,0
+How much do I pay for one?,What can I get for you today?,0
+How much for two items?,Welcome,0
+Have a look around.,How may I serve you today?,0
+Feel free to browse.,How much will all of these cost?,0
+Nice to meet you.,How much does it currently cost?,0
+"Good afternoon, madam.",Can you give me today's price?,0
+Have a look around.,How much do you charge per kilo?,0
+Do you have a cheaper one?,How much are you selling it today?,0
+How much is one kilogram?,Do you have a cheaper one?,0
+Good to see you again.,How much is this?,0
+Give me your best offer.,Hope you're having a pleasant evening.,0
+This place is open to you.,Hey there.,0
+Let me know the price first.,How much for everything?,0
+Can you do any better?,What's the price of this item?,0
+How much for this one?,Which option is cheaper?,0
+Which one has a lower price?,What's the cost of one?,0
+What is your selling price?,"Please, come in.",0
+Hello there.,You can come in now.,0
+Nice seeing you again.,Can I have the price first?,0
+How much will everything come to?,It's nice meeting you.,0
+How much do all these cost?,Can I know the basket price?,0
+How much for two?,What's the price?,0
+How much are you selling it?,Can you tell me the price first?,0
+Glad to meet you.,"Morning, how are you?",0
+Is this the final price?,Let me know the price first.,0
+How much for each kilogram?,How much are you asking for this?,0
+Is this worth the price?,What is the current price?,0
+Give me your best offer.,How much is it for a kilo?,0
+How much do all these cost?,You're welcome.,0
+How much for each kilogram?,"Good afternoon, madam.",0
+Glad to meet you.,How much are you charging?,0
+I'm well thank you.,How may I be of service today?,0
+Please sit down.,You can sit here.,0
+Glad to meet you.,Can you tell me today's price?,0
+Hope you're having a good morning.,How much is everything together?,0
+Good to see you.,Can you calculate the total price?,0
+I'm okay thank you.,I'm happy to see you again.,0
+What can I get for you?,Can I help you find something?,0
+How much are you selling it today?,What's the current selling price?,0
+Take your time looking around.,Which option is cheaper?,0
+Take a look at what we have.,Do you need help finding something?,0
+How much is it today?,How may I serve you today?,0
+How much for a single one?,"I'm very well, thank you.",0
+How much for one?,How much do I pay for one?,1
+What's your most affordable one?,Which one is cheaper?,0
+Is that the last amount?,How much is this going for?,0
+"Good afternoon, nice to see you.",I'm happy to meet you.,0
+How much are you selling it?,What's the cost per kilogram?,0
+Which item are you looking for?,Would you like me to help you?,0
+Is this the final price?,Can you reduce it further?,1
+What's the cheapest one?,Which option is cheaper?,1
+What's the grand total?,Feel free to browse.,0
+How much do I pay for two?,What can I help you with?,0
+Can I help you with anything?,What would you like to shop for?,0
+Is this the lowest you'll sell it for?,What's the price at the moment?,0
+Which one should I buy if I want to save money?,What's the price?,0
+You're welcome here.,How much for two items?,0
+Have a seat please.,What is your lowest price?,0
+What's your best price?,Good to see you.,0
+What's the cost of all these?,How much do I pay for one?,0
+Can I know the basket price?,What's the current selling price?,0
+What's the cost of one?,How much does one cost?,0
+Can you make it cheaper?,Nice evening to you.,0
+How may I be of service today?,What would you like?,0
+What are you looking for?,What's the amount for all these?,0
+How may I serve you today?,What's your price for a basket?,0
+How's your day going?,Hey.,0
+You're welcome.,How much is two?,0
+Please tell me the price.,How much do I need to pay?,0
+Good afternoon,"Good afternoon, madam.",1
+Which one is the least expensive?,Good afternoon to you.,0
+How much are you selling this for?,How much are you asking for this?,1
+What will you take for this?,What does one basket cost?,0
+How much per kilogram?,How much do you charge per kilo?,1
+Good morning,"Good morning, madam.",1
+Which is more affordable?,Is this the final price?,0
+How much is one item?,"Hi, how are you?",0
+Welcome.,Is this your final price?,0
+How may I be of service today?,What do you need?,0
+Can you show me your prices?,Have a seat.,0
+What's the cheapest item?,I'm happy to see you again.,0
+Hope you're having a good morning.,How much does it cost?,0
+Hello.,It's great to have you back.,0
+Good afternoon to you.,Nice evening to you.,0
+How can I assist you today?,How are you doing?,0
+Good to see you again.,How is everything?,0
+Take a look at what we have.,How may I serve you?,0
+How can I be of assistance?,Which costs the least?,0
+Can you tell me the price?,You can check everything.,0
+Which one has the lowest price?,What would you like to purchase?,0
+Can you tell me the price?,What's the amount?,1
+Which one should I buy if I want to save money?,How much should I pay?,0
+Hi there.,Can you tell me the current price?,0
+It's great to have you back.,Are you doing well?,0
+How much are two together?,What's your price per kilo?,0
+Good afternoon,Afternoon.,1
+Welcome in.,You can sit here.,0
+Which costs less?,How much do all these cost?,0
+How much are you selling it today?,Welcome.,0
+You're welcome.,Is there anything you need today?,0
+How much do I pay for one?,How much do I pay for two?,0
+Thank you for coming.,How much are you asking for this?,0
+What's the price per kilogram?,Hello there.,0
+Do you keep a price catalogue?,Is this expensive?,0
+How much do all these cost?,"Good afternoon, nice to see you.",0
+Tell me the price.,Is there any room for negotiation?,0
+What's your final offer?,How may I assist you?,0
+What's the amount?,Good morning,0
+Please come in.,Feel free to come in.,1
+Can you do any better?,Which costs the least?,0
+Which product do you need?,How much should I pay?,0
+What are you interested in?,What's the price for two?,0
+What's the cheapest item?,How's your day going?,0
+Everything okay?,"Morning, how are you?",0
+You're most welcome.,What's the price?,0
+What would you like?,Is the price high?,0
+How much do I pay for two?,Take your time looking around.,0
+"Between these, which is cheaper?",Hello,0
+How much do I pay altogether?,Can you do any better?,0
+What's the cost of all these?,What will all these cost me?,1
+Great meeting you.,How much per basket?,0
+Can I know the price?,Can you reduce it further?,0
+Do you have a cheaper one?,Do you need any help?,0
+Which option is cheaper?,What can I do for you?,0
+How much does one cost?,"Boss, how much be this?",0
+What's the total for two?,How much do you charge per basket?,0
+How much is the total?,How much for two?,0
+Welcome.,What are you interested in buying?,0
+What would you like today?,I'm well thank you.,0
+How is everything?,You're welcome here.,0
+How much for a single one?,What's the total price?,0
+Can I help you find anything?,Thanks for your visit.,0
+What would you like today?,You're welcome here.,0
+Please tell me the cost.,"Good morning, madam.",0
+"Good evening, madam.",Is this the final price?,0
+Can you do any better?,Go ahead and sit down.,0
+What is your lowest price?,Which one has the lowest price?,0
+"I am fine, thank you.",Can you offer a better price?,0
+Feel free to look around.,Take your time looking around.,1
+How much for one?,How much does one cost?,1
+Can I help you?,What are you looking for?,0
+Welcome,How much is it today?,0
+How much would everything cost?,Which one should I buy if I want to save money?,0
+Good evening,Good evening to you.,1
+How much for everything?,Have a seat.,0
+Thank you for visiting.,How much is this going for?,0
+Welcome in.,How much are you charging?,0
+It's nice meeting you.,How much for each kilogram?,0
+Good to see you.,What's the cost per kilogram?,0
+How much is this going for?,Good to see you.,0
+Is this the final price?,Is this the lowest you'll sell it for?,1
+What's the price at the moment?,Is this the lowest you'll sell it for?,0
+How much is it before I choose?,Please look around.,0
+I'm okay thank you.,What's the cost of this item?,0
+What can I do for you today?,How much will you sell this?,0
+Thank you for coming.,Hope to see you again.,1
+Evening.,What's the price per basket?,0
+How much are you selling this for?,What is your selling price?,1
+How may I be of help?,How much are you charging?,0
+How much should I pay?,Would you like some assistance?,0
+I'm happy to see you again.,Hello,0
+How is everything?,"Come in, please.",0
+How much does a kilogram cost?,I'd like to know the price first.,0
+You can come in now.,Take a seat.,0
+Give me your best offer.,How may I assist you?,0
+Hello,"Hello, how are you?",1
+What's the price for two?,How much is one item?,0
+"I am fine, thank you.",Good evening to you.,0
+Evening! How are you?,Everything okay?,0
+Could you tell me the cost?,I'm happy to see you again.,0
+Is the price high?,What can I help you with today?,0
+I'm happy to see you again.,How much is one item?,0
+What do you need?,Can I have the price first?,0
+What's the lowest you'll accept?,Good evening to you.,0
+Which item are you looking for?,"I'm fine, thanks.",0
+Hope you're having a pleasant evening.,How much for this?,0
+Can you give me today's price?,There's a seat for you.,0
+Do you keep a price catalogue?,"Good afternoon, nice to see you.",0
+Can you make it cheaper?,Can you reduce it further?,0
+Doing well thanks.,What's the price today?,0
+What is the amount?,What's the price of this item?,0
+Do you have a price list?,May I have the price list?,1
+What is the current price?,What's the grand total?,0
+How may I serve you today?,Is there a catalogue with prices?,0
+How much for each kilogram?,Can I help you find something?,0
+How much is this?,Is this the final price?,0
+What would you like today?,"Between these, which is cheaper?",0
+How much per kilogram?,How much is one kilogram?,1
+How much does it cost before I decide?,Afternoon.,0
+We appreciate your visit.,How much will this cost me?,0
+What would you like today?,Nice to meet you.,0
+What's your final offer?,How much is it?,0
+Good to see you again.,How much is everything together?,0
+How much is it right now?,What's the price of this item?,0
+Hope you're having a good morning.,Have a look around.,0
+What's the price of this item?,What are you selling this for?,1
+How much would everything cost?,Please tell me the cost.,0
+Have a seat.,You can sit here.,1
+How much do I pay altogether?,Could I check your prices?,0
+Which one is cheaper?,Let me know the price first.,0
+Hey.,How much do all these cost?,0
+Thanks for stopping by.,Hope to see you again.,0
+Greetings.,Which costs the least?,0
+How much will you sell this?,Which one has a lower price?,0
+What are you interested in?,Is this the final price?,0
+What can I do for you today?,How much for this item?,0
+How much will you sell this?,Please tell me the price.,0
+Please tell me the cost.,What can I get for you today?,0
+"Hi, how are you?",What's the current selling price?,0
+What is the current price?,What's the price now?,1
+What's the cost of one?,Is this the lowest you'll sell it for?,0
+How can I be of assistance?,What would you like?,0
+Can I help you find something?,Do you need any help?,1
+Can you tell me the price?,How much is it before I choose?,0
+How may I assist you today?,Is this the lowest you'll sell it for?,0
+What's the total price?,Which is more affordable?,0
+What would you like to buy?,Feel at home.,0
+Morning! Nice to see you.,Is this overpriced?,0
+What's your price for a basket?,What's the cost of all these?,0
+Why is this so expensive?,What will you take for this?,0
+You're always welcome here.,How much will this cost me?,0
+Is the price high?,What's the total for two?,0
+Can you tell me today's price?,Pleasant afternoon.,0
+Which one has a lower price?,Is it affordable?,0
+Everything okay?,How much per kilogram?,0
+How much do I pay for all these?,How much do I pay for two?,0
+What's the price?,Please look around.,0
+How much does this cost?,How much for this?,1
+Is this the final price?,What will you take for this?,0
+How much is it right now?,Afternoon.,0
+Morning.,Hi there.,0
+Can I help you with anything?,"Good evening, madam.",0
+How much are you selling this for?,How may I serve you?,0
+Good evening,Welcome back.,0
+What are you looking for?,Show me the cheapest one.,0
+"I am fine, thank you.",I'm fine thanks.,1
+How much do I pay for one?,Happy morning.,0
+Which one is less expensive?,How much is one kilogram?,0
+How may I serve you today?,Can I help you with anything?,0
+What's your price for a basket?,Good morning to you.,0
+How much is one kilogram?,What does one basket cost?,0
+How much per kilogram?,How much does a kilogram cost?,1
+What does one basket cost?,Hope to see you again.,0
+Do you have a list of prices?,Could I check your prices?,0
+Can you show me your prices?,What's today's selling price?,0
+How can I help you?,How much is it before I choose?,0
+What's the price now?,Do you keep a price catalogue?,0
+What is your selling price?,Hi there.,0
+Go ahead and sit down.,Hey.,0
+How much is one basket?,What does one basket cost?,0
+Welcome.,How much for two items?,0
+What is the current price?,How much is it right now?,1
+Where is your price list?,How is everything?,0
+Please look around.,You're always welcome here.,0
+What would you like to shop for?,Good morning,0
+Is this cheap or expensive?,Can you show me your prices?,0
+How much should I pay?,I'm happy to see you again.,0
+Hello.,How much do you want for this?,0
+How much do you want for this?,You're free to come anytime.,0
+"Between these, which is cheaper?",Can you total everything?,0
+What's the price at the moment?,You're welcome anytime.,0
+Good to have you here again.,I'm doing well thank you.,0
+How much does it cost today?,We're glad you came.,0
+Feel free to look around.,There's a seat for you.,0
+How much is this item?,How are you doing?,0
+What's the grand total?,What would you like to shop for?,0
+How much do I pay for all these?,Can I know the price for two?,0
+Can you reduce it further?,It's good to see you again.,0
+How can I assist you today?,Please have a seat.,0
+What do you charge for this?,What are you looking for?,0
+I'm doing great.,"Between these, which is cheaper?",0
+Please make yourself comfortable.,What does one basket cost?,0
+Come inside.,Nice to see you.,0
+Which one is the least expensive?,How is everything?,0
+Is this cheap or expensive?,What's the cost of one?,0
+Do you have a price list?,Can you show me your prices?,1
+"Hi, how are you?",Come inside.,0
+Is that your lowest price?,How may I serve you?,0
+Would you like me to help you?,"Hello, how are you?",0
+May I have the price list?,How much should I pay?,0
+Is that your final offer?,Pleased to meet you.,0
+Do you have a price list?,Could I check your prices?,1
+Please tell me the price.,Take your time looking around.,0
+How may I serve you today?,Feel free to sit.,0
+What do you charge for this?,Please come in.,0
+How much for two?,Feel free to come in.,0
+Feel free to look around.,You can check everything.,1
+Please tell me the price.,Can I help you?,0
+How much do I pay for two?,How much do I pay for all these?,0
+Is this the lowest you'll sell it for?,What is the amount?,0
+Let me know the price first.,How much is this?,0
+What's your best price?,Can you reduce it a little?,1
+Pleasant afternoon.,How much is everything together?,0
+Look around at your own pace.,"Boss, how much be this?",0
+What's the cost per kilogram?,Go ahead and come in.,0
+How much is one item?,Hey.,0
+Is it affordable?,How much per basket?,0
+Which has the lower cost?,Which item are you looking for?,0
+What is the total amount?,Thanks for coming.,0
+How much is this?,How much for this one?,1
+How much for a basket?,What do you need today?,0
+Would you like some assistance?,How much for this item?,0
+Browse as much as you like.,How are you?,0
+Can I help you find something?,Would you like me to help you?,1
+You can come in now.,You're always welcome here.,0
+Welcome back again.,Good to see you again.,0
+Welcome,Happy morning.,0
+How much for a basket?,Make yourself at home.,0
+Can I see the price list?,Would you like me to help you?,0
+Can you tell me the price first?,Have a seat.,0
+Go ahead and sit down.,Evening.,0
+How can I assist you today?,How can I help you today?,1
+"Good afternoon, boss.",This place is open to you.,0
+Do you need any help?,How's your day going?,0
+What would you like to buy?,What would you like to purchase?,1
+Can you give me today's price?,What's today's selling price?,1
+How much will everything come to?,What will two cost?,0
+"Between these, which is cheaper?",What are you interested in buying?,0
+What are you selling this for?,Good evening to you.,0
+Is this expensive?,Why is this so expensive?,1
+Come inside.,May I have the price list?,0
+What's the lowest you'll accept?,"Boss, how much be this?",0
+Is that your final offer?,You're always welcome here.,0
+Afternoon! How are you?,How much is this?,0
+What's the total cost for everything?,Nice evening to you.,0
+Do you have a cheaper one?,This place is open to you.,0
+How may I help you?,Feel free to come in.,0
+How much for each kilogram?,Good afternoon to you.,0
+Please tell me the price.,What do you want to buy?,0
+What's the cheapest one?,What would you like to shop for?,0
+How can I assist you today?,Have a seat.,0
+How much is this?,There's a seat for you.,0
+How much does this cost?,What is the amount?,1
+What's your price?,You're welcome here.,0
+How much are you selling this for?,How much for this item?,1
+How much will one be?,You're welcome here.,0
+Feel free to sit.,What are you interested in?,0
+Can you make it cheaper?,Good evening,0
+There's a seat for you.,How much will this cost me?,0
+Which one costs less?,Can I know the price for two?,0
+What's the price for two?,Why is this so expensive?,0
+What is the cost of this?,How much does one cost?,0
+Does this cost a lot?,Which one is less expensive?,0
+How may I serve you today?,Hey.,0
+What's the amount for all these?,Is that your lowest price?,0
+Which one has a lower price?,Can the price come down?,0
+How may I help you?,How can I be of assistance?,1
+Pleasant evening.,How much are you asking for this?,0
+What is the total amount?,Make yourself at home.,0
+Is it costly?,You're welcome.,0
+Thanks for stopping by.,How much does one cost?,0
+Thank you for coming.,Browse as much as you like.,0
+What is the current price?,What's the current selling price?,1
+Please have a seat.,How much will everything come to?,0
+How much is one kilogram?,How much does it cost?,0
+Please tell me the cost.,How may I be of help?,0
+Morning.,How much is the total?,0
+How much do I need to pay?,How have you been?,0
+What's your price?,Go ahead and come in.,0
+Go ahead and come in.,What is the amount?,0
+Can I know the price?,How much is this item?,0
+What's the cost of this item?,Come in.,0
+How much does this cost?,How much is this?,1
+How much would everything cost?,How much will everything come to?,1
+Morning! Nice to see you.,Hey.,0
+What's the current selling price?,What would you like today?,0
+What can I get for you today?,It's great to have you back.,0
+How much for two items?,How much for this?,0
+How much does a kilogram cost?,Can I help you find anything?,0
+What are you looking for?,What can I get for you?,1
+Hello,Welcome.,1
+What's the grand total?,How much is each basket?,0
+What's the price per basket?,"Come in, please.",0
+What is your selling price?,Thank you for visiting.,0
+Can I help you?,How much would everything cost?,0
+How much is this?,What's the price for two?,0
+Good evening,"Good evening, madam.",1
+You're welcome here.,You're free to come anytime.,1
+Have a seat.,How much is this?,0
+Feel free to browse.,"Good afternoon, madam.",0
+You can check everything.,Pleasant evening.,0
+Can I help you find anything?,You can sit here.,0
+What can I get for you?,What's the price?,0
+What would you like to buy?,What can I do for you?,0
+Evening.,Hi there.,0
+How much do I pay altogether?,What's the cost of all these?,0
+What are you looking for?,Evening! How are you?,0
+What is the current price?,What's the price at the moment?,1
+What's the price today?,What's the total for two?,0
+Which costs less?,It's a pleasure meeting you.,0
+How much does this cost?,What's the price?,1
+You're most welcome.,What's your final offer?,0
+Do you have a list of prices?,How may I assist you today?,0
+What are you interested in buying?,Can you calculate the total price?,0
+What will I pay for this?,Can you tell me the price?,0
+You're most welcome.,How much does it currently cost?,0
+What's the amount?,We're glad you came.,0
+What do you need?,Take a seat.,0
+How much do you charge per basket?,How much should I pay?,0
+Do you need any help?,How much is this going for?,0
+Hello there.,Thank you for your time.,0
+How much is one kilogram?,What is the total amount?,0
+How may I assist you today?,You can check everything.,0
+Have a seat.,Feel free to sit.,1
+I'm happy to meet you.,Hello there.,0
+Is this your final price?,Can I know the basket price?,0
+What would you like?,What's the price per kilogram?,0
+Nice to meet you.,I'm happy to meet you.,1
+Can you tell me the price?,Can I know how much it costs?,1
+Take a chair.,What's the latest price?,0
+Hello,How may I serve you?,0
+What are you buying today?,We appreciate your visit.,0
+Good evening to you.,Please sit down.,0
+Nice to meet you.,Wonderful meeting you.,1
+How much are you selling this for?,How much do you want for this?,1
+"Please, come in.","Good afternoon, madam.",0
+Can you reduce it a little?,Would you like some assistance?,0
+How much for everything?,How much would everything cost?,0
+Hope you're having a pleasant evening.,How are you doing?,0
+How may I help you?,What can I help you with today?,0
+Take your time looking around.,"Good afternoon, boss.",0
+What can I get for you today?,What can I get for you?,0
+How much will you sell this?,I'm well thank you.,0
+You're welcome anytime.,What will all these cost me?,0
+What's the price?,I'm fine thanks.,0
+You can check everything.,Can I know how much it costs?,0
+Which one should I buy if I want to save money?,Is this expensive?,0
+What's the cheapest item?,Can I know the price first?,0
+Pleasant evening.,Nice seeing you again.,0
+It's nice to have you here.,"Good evening, madam.",0
+What brings you here today?,Hi there.,0
+How much are you charging now?,How much does one cost?,0
+It's great to have you back.,Is the price high?,0
+Can you reduce it further?,Which is more affordable?,0
+I'm well thank you.,How much are you selling it?,0
+Good morning,Morning.,1
+How can I help you?,Hey there.,0
+What's the price per kilogram?,How much is two?,0
+What do you need?,How much will you sell this?,0
+Which one has the lowest price?,How much do I need to pay?,0
+Is this the lowest you'll sell it for?,Doing well thanks.,0
+How can I be of assistance?,What's the price?,0
+May I assist you?,Take a look at what we have.,0
+How much is one item?,What can I do for you today?,0
+How much is two?,How much for this item?,0
+What is the current price?,What's the latest price?,1
+Is there anything you need today?,What's the total cost for everything?,0
+Feel free to sit.,Could I check your prices?,0
+How can I assist you today?,What is the cost of this?,0
+How much is everything together?,Can I have the price first?,0
+How much are you selling it today?,How much does one cost?,0
+Do you need any help?,Hey there.,0
+How much per basket?,How much is each basket?,1
+Hey there.,How is everything?,0
+Hey there.,Can I help you?,0
+We appreciate your visit.,How much are you selling it today?,0
+What's your selling price?,What's the total for two?,0
+Take a chair.,Great meeting you.,0
+"Please, come in.",How is everything?,0
+What's the grand total?,What do you need?,0
+Is this expensive?,Is this worth the price?,1
+Can you give me today's price?,What is the current price today?,1
+What's the cheapest one?,Browse as much as you like.,0
+What's the cheapest item?,Glad to have you.,0
+Welcome,"Welcome, make yourself comfortable.",1
+What can I help you with today?,Please make yourself comfortable.,0
+Take a seat.,Go ahead and come in.,0
+How much do I pay for all these?,Welcome.,0
+We're glad you came.,You are always welcome.,0
+What's the price of this item?,How much is this item?,1
+What's your price for a basket?,This place is open to you.,0
+There's a seat for you.,"I'm fine, thanks.",0
+Can you total everything?,How much for each kilogram?,0
+How are you?,How much are you asking for this?,0
+Feel free to come in.,Hello,0
+What are you looking for?,Which item are you looking for?,1
+Hope you're having a good morning.,Pleasant evening.,0
+What's the cost of one?,How much for this item?,0
+Thank you for visiting.,You're most welcome.,0
+What's the price for one?,Come in.,0
+I'm doing great.,How much is one item?,0
+What do you need today?,Nice to see you.,0
+How much do I need to pay?,What do you need?,0
+What's your best price?,Afternoon! How are you?,0
+Have a look around.,How much are you asking for this?,0
+Do you need any help?,How may I serve you today?,0
+Can I help you find something?,Can I help you with anything?,1
+Pleased to meet you.,How much is this?,0
+"Morning, how are you?",Take a seat.,0
+Hey.,What's the price per basket?,0
+Can you give me today's price?,How much does it cost today?,1
+How may I help you?,It's good to see you again.,0
+Do you need help finding something?,How can I help you?,0
+What's the price?,Great meeting you.,0
+How much is it before I choose?,Can I help you?,0
+How may I assist you today?,How much are you asking for this?,0
+How much are you charging?,How much will one be?,0
+Feel free to sit.,Feel free to browse.,0
+What will two cost?,Hey.,0
+Thank you for coming.,I'm well thank you.,0
+What can I help you with?,How much does it cost before I decide?,0
+Nice seeing you again.,Can you tell me the price?,0
+What's your most affordable one?,Great meeting you.,0
+Can you give me today's price?,What's the price today?,1
+Look around at your own pace.,Come in.,0
+"Good afternoon, madam.",Hello.,0
+What's the cheapest one?,Good to see you again.,0
+What's the price per kilogram?,What would you like to buy?,0
+What can I do for you today?,How much should I pay?,0
+What's the amount?,How much does it cost?,0
+Would you like some assistance?,Browse as much as you like.,0
+Pleasant afternoon.,How much is one kilogram?,0
+Please come in.,Happy to meet you.,0
+Good afternoon to you.,Can I help you find anything?,0
+Hello,Hey.,1
+How much will everything come to?,What is the cost of this?,0
+Which one is less expensive?,Show me the cheapest one.,0
+How much will this cost me?,Good afternoon to you.,0
+Which one costs less?,Which one is less expensive?,1
+What's your final offer?,How much for this item?,0
+"Welcome, please come in.",Is this overpriced?,0
+How much does a kilogram cost?,What can I get for you today?,0
+Hi,Nice to see you.,1
+Pleased to meet you.,How can I assist you today?,0
+How much for a single one?,What is the cost of this?,0
+Thank you for coming.,Thanks for your visit.,1
+Good to see you again.,It's great to have you back.,1
+Welcome back again.,Which one should I buy if I want to save money?,0
+What's the cheapest one?,What can I help you with today?,0
+How much would everything cost?,How much do I pay for all these?,1
+Which is more affordable?,What's the price?,0
+Welcome,Come in.,1
+"Hello, how are you?",Hope you're having a good afternoon.,0
+Can you tell me the price first?,What's the price today?,0
+How may I help you?,What can I help you with?,1
+Hey.,What's the price of this item?,0
+What can I help you with?,How may I be of help?,0
+We're glad you came.,Do you have a price list?,0
+What's the lowest you'll accept?,How much do you charge per basket?,0
+What can I do for you?,Can I know the price?,0
+How may I assist you today?,Does this cost a lot?,0
+Which one is the least expensive?,What would you like to purchase?,0
+Great meeting you.,How may I serve you?,0
+Nice evening to you.,How may I assist you?,0
+What's the cost of all these?,What will all these cost me?,0
+You are always welcome.,Hey there.,0
+What do you want to buy?,What's the cost per kilogram?,0
+Can I have the price first?,How much is it?,0
+I'm doing well thank you.,Welcome,0
+"I am fine, thank you.",I'm well thank you.,1
+What's the price?,What is your lowest price?,0
+How much is this?,How much does it cost?,1
+Do you have a price list?,Do you have a list of prices?,1
+What is your selling price?,May I have the price list?,0
+Could I check your prices?,Hey there.,0
+What's the total for two?,How much for two items?,0
+Wonderful meeting you.,How much are you selling it today?,0
+Pleased to meet you.,How may I assist you today?,0
+Thank you for your time.,What's the cost of all these?,0
+"Good evening, madam.","Boss, how much be this?",0
+"Good evening, madam.",Good afternoon to you.,0
+Have a look around.,We're happy to have you here.,0
+"Welcome, please come in.",What can I help you with today?,0
+Can you tell me the current price?,How much do I pay for one?,0
+I'm happy to see you again.,"Morning, how are you?",0
+Hi,"Good evening, boss.",0
+Glad to have you.,Do you have a price list?,0
+Please look around.,We're happy to have you here.,0
+How much is everything together?,Which one should I buy if I want to save money?,0
+How may I assist you?,How much do you charge per basket?,0
+What's today's selling price?,May I assist you?,0
+Make yourself at home.,What's the price for one?,0
+I'm happy to meet you.,How much will this cost me?,0
+"Please, come in.",Can I know the price?,0
+Hope you're having a pleasant evening.,What are you interested in buying?,0
+Please look around.,How much for this?,0
+How much should I pay?,What would you like?,0
+You are always welcome.,What would you like to buy?,0
+What's today's selling price?,"Good evening, boss.",0
+You can check everything.,How much does it cost today?,0
+Have a seat please.,Show me the cheapest one.,0
+"Come in, please.",What's the cheapest one?,0
+What would you like to buy?,What are you interested in buying?,1
+Can I know how much it costs?,Thank you for coming.,0
+Hello there.,How much do you charge per basket?,0
+Hi there.,Wonderful meeting you.,0
+How much are you asking for this?,What's the cost per kilogram?,0
+"Good afternoon, nice to see you.","I am fine, thank you.",0
+What's the current selling price?,Can you total everything?,0
+Which item are you looking for?,How much is it today?,0
+What's your price per kilo?,What's the cheapest item?,0
+How much for this?,Can you reduce it further?,0
+What do you charge for this?,You can come in now.,0
+What's the price now?,How may I help you?,0
+Hope you're having a pleasant evening.,Do you have a price list?,0
+"Good evening, madam.",How may I assist you?,0
+Can you tell me today's price?,Feel free to browse.,0
+Which item would you like?,Take your time looking around.,0
+What's today's selling price?,Hey.,0
+"Hi, how are you?",What can I do for you today?,0
+"Good afternoon, madam.",What's the total cost for everything?,0
+It's nice to have you here.,Can I know the price for two?,0
+Please have a seat.,Thanks for coming.,0
+Afternoon.,You're welcome.,0
+Take your time looking around.,What's the cost of one?,0
+What would you like today?,Where is your price list?,0
+Is there anything you need today?,Thank you for coming.,0
+It's a pleasure meeting you.,Is this the final price?,0
+This place is open to you.,Thank you for your time.,0
+Is this your final price?,Happy morning.,0
+How much is it?,Is this cheap or expensive?,0
+What's your price for a basket?,Would you like me to help you?,0
+Feel at home.,Which item are you looking for?,0
+"Boss, how much be this?",What's the price for two?,0
+What's your price?,Hope to see you again.,0
+How much should I pay?,"I am fine, thank you.",0
+Would you like me to help you?,"Good evening, madam.",0
+How much will all of these cost?,It's great to have you back.,0
+What is the current price today?,Can I have the price first?,0
+What do you need?,It's good to see you again.,0
+You're always welcome here.,You can sit here.,0
+Show me the cheapest one.,How much do I need to pay?,0
+How much does it cost?,Take a seat.,0
+Can you total everything?,Which product do you need?,0
+How much for this one?,How much for two?,0
+Which costs less?,May I assist you?,0
+Go ahead and come in.,How are things?,0
+Can you reduce it a little?,What's today's selling price?,0
+This place is open to you.,How much is it today?,0
+Hi there.,Have a look around.,0
+Feel free to look around.,Tell me the price.,0
+What do you want to buy?,Can I know the price first?,0
+You can sit here.,Welcome,0
+How much per kilogram?,What's the cost per kilogram?,1
+How much do you charge per basket?,Good to see you.,0
+What's the cost of this item?,What can I get for you?,0
+What is the current price today?,How much does it cost before I decide?,0
+Is that your lowest price?,How much is this?,0
+What's the amount before I buy?,May I have the price list?,0
+I'm doing great.,We're glad you came.,0
+How may I assist you?,Hope you're having a good morning.,0
+Hey there.,Welcome back again.,0
+How much does one cost?,How much is two?,0
+Are you doing well?,Which one is less expensive?,0
+Thank you for your time.,Welcome back.,0
+What's the total price?,How are you?,0
+Welcome,You're most welcome.,1
+Do you have a price list?,What's the price today?,0
+Is this your final price?,Is there any room for negotiation?,0
+How much is it before I choose?,"Good evening, madam.",0
+How much would everything cost?,You're always welcome here.,0
+Why is this so expensive?,Good afternoon to you.,0
+Feel at home.,There's a seat for you.,0
+What's the price today?,Is there a catalogue with prices?,0
+How much is each basket?,How much will everything come to?,0
+Would you like some assistance?,How much does it cost?,0
+How much is it?,Please come in.,0
+How may I be of service today?,Good to see you.,0
+It's great to have you back.,Can I know how much it costs?,0
+What is the amount?,"Good morning, boss.",0
+What can I get for you?,"Good afternoon, nice to see you.",0
+How much is one kilogram?,Take a seat.,0
+Hope you're doing well.,Is this the lowest you'll sell it for?,0
+What's the lowest you'll accept?,How are you?,0
+Thanks for your visit.,Can you tell me the price?,0
+What's your price?,What are you selling this for?,0
+How much per basket?,How much for a basket?,1
+Is there any room for negotiation?,What do you need today?,0
+What are you interested in?,Please tell me the price.,0
+I'm doing great.,Can you reduce it further?,0
+Which one costs less?,Come inside.,0
+Good to see you again.,How much is it today?,0
+Do you have a list of prices?,What are you searching for?,0
+Can you total everything?,What do you need?,0
+What will two cost?,What's the amount?,0
+Is this worth the price?,Can you offer a better price?,0
+Thanks for coming.,Can I have the price first?,0
+Welcome,You're welcome.,1
+What's the cheapest one?,Show me the cheapest one.,1
+What will all these cost me?,How much for two items?,0
+What's your best price?,What is your lowest price?,1
+How much do you charge per basket?,Welcome back.,0
+Nice to meet you.,Happy to meet you.,1
+Welcome in.,Can I know the price?,0
+Can I help you find anything?,Feel free to look around.,0
+How much per kilogram?,What brings you here today?,0
+Good to see you again.,It's good to see you again.,1
+What is the current price?,Nice to meet you.,0
+"Come in, please.",Good afternoon to you.,0
+Do you have a price list?,Please make yourself comfortable.,0
+How much is this going for?,Good evening to you.,0
+Glad to have you.,What's the grand total?,0
+Which costs the least?,Morning! Nice to see you.,0
+Is there a catalogue with prices?,What would you like?,0
+"Hi, how are you?",Which one is the least expensive?,0
+Can I know how much it costs?,Take your time looking around.,0
+Which one is the least expensive?,What will two cost?,0
+"Good afternoon, madam.",What can I do for you?,0
+What's the price?,Happy to meet you.,0
+Thanks for coming.,I'm well thank you.,0
+Thank you for your time.,What can I do for you today?,0
+Can I know the price first?,Can you tell me the price first?,1
+Look around at your own pace.,Thank you for coming.,0
+What's the price of this item?,Tell me the price.,1
+Show me the cheapest one.,Can you show me your prices?,0
+What's the amount for all these?,How much will this cost me?,0
+Thank you for coming.,What is the current price today?,0
+How much per basket?,Is there any room for negotiation?,0
+Hello,Hey there.,1
+Is the price high?,How much should I pay?,0
+"I am fine, thank you.",I'm doing well thank you.,1
+Welcome back.,Wonderful meeting you.,0
+Is this cheap or expensive?,How much for a single one?,0
+Can I see the price list?,How can I assist you today?,0
+What's the price for one?,What's the amount before I buy?,0
+Can you tell me the price?,I'm doing great.,0
+What are you searching for?,"Hello, how are you?",0
+What is your lowest price?,How may I serve you today?,0
+What would you like?,What's the price?,0
+Good to see you again.,Welcome back again.,1
+What do you need?,How much for two?,0
+How much do you charge per basket?,Can you tell me the price?,0
+How much is it right now?,What is your lowest price?,0
+What would you like?,What's the cost of all these?,0
+Good to see you.,What will you take for this?,0
+"I am fine, thank you.",How may I be of service today?,0
+What would you like to shop for?,Does this cost a lot?,0
+Is that the last amount?,Feel free to browse.,0
+We're glad you came.,Which item would you like?,0
+Feel free to look around.,Take a look at what we have.,1
+What's the price per basket?,How have you been?,0
+You are always welcome.,How much will all of these cost?,0
+Welcome,Welcome in.,1
+Good morning,Good morning to you.,1
+Are you doing well?,How much do I pay altogether?,0
+How much do you want for this?,How much are you selling this for?,0
+Hello there.,Please sit down.,0
+Can you calculate the total price?,What's your most affordable one?,0
+Can I know the basket price?,Is this worth the price?,0
+I'm doing well thank you.,What's your price for a basket?,0
+Nice seeing you again.,May I have the price list?,0
+How much are you selling this for?,How much will you sell this?,1
+Is this overpriced?,Hope you're having a good afternoon.,0
+Hi there.,Hello there.,0
+Good evening to you.,How are you?,0
+"Good afternoon, boss.",Hope you're doing well.,0
+What can I help you with today?,Welcome back.,0
+How may I help you?,What can I do for you?,1
+What would you like to purchase?,Good to see you.,0
+What's the price?,Can I know the price?,0
+What's the price at the moment?,Evening.,0
+How much is it?,Have a seat.,0
+It's nice to have you here.,How much will you sell this?,0
+What is the current price today?,What's the cost per kilogram?,0
+Please sit down.,You are always welcome.,0
+How much is this item?,Please tell me the price.,0
+Hello,Good to see you.,1
+May I assist you?,Great meeting you.,0
+What's your price per kilo?,"Good afternoon, madam.",0
+Is there anything you need today?,How much do you want for this?,0
+May I have the price list?,What can I get for you today?,0
+What are you looking for?,How much is this?,0
+Can you reduce it a little?,Can you give me today's price?,0
+How much does this cost?,How much do I need to pay?,1
+Nice to meet you.,What's the price at the moment?,0
+Which one has the lowest price?,Is there any room for negotiation?,0
+What's the price per kilogram?,How much for everything?,0
+Which one should I buy if I want to save money?,Go ahead and sit down.,0
+Come in.,What are you selling this for?,0
+Why is this so expensive?,What's the price for two?,0
+Take a seat.,Hello.,0
+What's the cheapest one?,Which costs the least?,1
+Hey there.,What's your price?,0
+How much does this cost?,Can I help you with anything?,0
+How much is it today?,How much do you want for this?,0
+Please come in.,What's your best price?,0
+Glad to meet you.,Hope you're having a good morning.,0
+Do you keep a price catalogue?,Nice seeing you again.,0
+Can you calculate the total price?,Do you have a price list?,0
+What's the price at the moment?,May I assist you?,0
+What's the amount before I buy?,Is the price high?,0

@@ -1,1 +1,321 @@
 concept_code,language,paraphrase
+PRICE_001,English,What's the price?
+PRICE_001,English,How much does it cost?
+PRICE_001,English,Can you tell me the price?
+PRICE_001,English,What is the cost of this?
+PRICE_001,English,How much for this one?
+PRICE_001,English,What will I pay for this?
+PRICE_001,English,How much are you charging?
+PRICE_001,English,"Boss, how much be this?"
+PRICE_002,English,How much is this item?
+PRICE_002,English,What's the cost of this item?
+PRICE_002,English,Can I know the price?
+PRICE_002,English,What are you selling this for?
+PRICE_002,English,How much should I pay?
+PRICE_002,English,What's your selling price?
+PRICE_002,English,Tell me the price.
+PRICE_002,English,How much is this going for?
+PRICE_003,English,What's the price?
+PRICE_003,English,How much is this?
+PRICE_003,English,How much will this cost me?
+PRICE_003,English,What is the amount?
+PRICE_003,English,Can I know the cost?
+PRICE_003,English,How much do I need to pay?
+PRICE_003,English,How much for this?
+PRICE_003,English,What do you charge for this?
+PRICE_004,English,What's the price?
+PRICE_004,English,How much is it?
+PRICE_004,English,Can I know how much it costs?
+PRICE_004,English,Please tell me the price.
+PRICE_004,English,What's the amount?
+PRICE_004,English,How much should I pay?
+PRICE_004,English,How much are you selling it?
+PRICE_004,English,Could you tell me the cost?
+PRICE_005,English,How much is this?
+PRICE_005,English,What's your price?
+PRICE_005,English,How much will you sell this?
+PRICE_005,English,How much for this item?
+PRICE_005,English,What is your selling price?
+PRICE_005,English,How much do you want for this?
+PRICE_005,English,How much are you asking for this?
+PRICE_005,English,What will you take for this?
+PRICE_006,English,What is your lowest price?
+PRICE_006,English,Can you offer a better price?
+PRICE_006,English,What's the lowest you'll accept?
+PRICE_006,English,Can you do any better?
+PRICE_006,English,Give me your best offer.
+PRICE_006,English,Is that your lowest price?
+PRICE_006,English,Can you reduce it a little?
+PRICE_006,English,What's your final offer?
+PRICE_007,English,Does this cost a lot?
+PRICE_007,English,Is the price high?
+PRICE_007,English,Why is this so expensive?
+PRICE_007,English,Is it affordable?
+PRICE_007,English,Is this overpriced?
+PRICE_007,English,Is this worth the price?
+PRICE_007,English,Is it costly?
+PRICE_007,English,Is this cheap or expensive?
+PRICE_008,English,Is this your final price?
+PRICE_008,English,Can you reduce it further?
+PRICE_008,English,Is there any room for negotiation?
+PRICE_008,English,Can the price come down?
+PRICE_008,English,Is that the last amount?
+PRICE_008,English,Is this the lowest you'll sell it for?
+PRICE_008,English,Can you make it cheaper?
+PRICE_008,English,Is that your final offer?
+PRICE_009,English,Can you tell me the price first?
+PRICE_009,English,I'd like to know the price first.
+PRICE_009,English,How much does it cost before I decide?
+PRICE_009,English,Please tell me the cost.
+PRICE_009,English,Can I have the price first?
+PRICE_009,English,What's the amount before I buy?
+PRICE_009,English,Let me know the price first.
+PRICE_009,English,How much is it before I choose?
+PRICE_010,English,How much is one item?
+PRICE_010,English,What's the price for one?
+PRICE_010,English,How much for a single one?
+PRICE_010,English,How much does one cost?
+PRICE_010,English,What's the cost of one?
+PRICE_010,English,How much will one be?
+PRICE_010,English,What do you charge for one?
+PRICE_010,English,How much do I pay for one?
+PRICE_011,English,How much is two?
+PRICE_011,English,What's the price for two?
+PRICE_011,English,How much for two items?
+PRICE_011,English,What will two cost?
+PRICE_011,English,How much do I pay for two?
+PRICE_011,English,Can I know the price for two?
+PRICE_011,English,How much are two together?
+PRICE_011,English,What's the total for two?
+PRICE_012,English,What's the price per kilogram?
+PRICE_012,English,How much is one kilogram?
+PRICE_012,English,How much do you charge per kilo?
+PRICE_012,English,How much for each kilogram?
+PRICE_012,English,What's your price per kilo?
+PRICE_012,English,How much does a kilogram cost?
+PRICE_012,English,How much is it for a kilo?
+PRICE_012,English,What's the cost per kilogram?
+PRICE_013,English,What's the price per basket?
+PRICE_013,English,How much is one basket?
+PRICE_013,English,How much for a basket?
+PRICE_013,English,What does one basket cost?
+PRICE_013,English,What's your price for a basket?
+PRICE_013,English,How much do you charge per basket?
+PRICE_013,English,Can I know the basket price?
+PRICE_013,English,How much is each basket?
+PRICE_014,English,How much do all these cost?
+PRICE_014,English,What's the total price?
+PRICE_014,English,How much for everything?
+PRICE_014,English,How much is the total?
+PRICE_014,English,What will all these cost me?
+PRICE_014,English,Can you total everything?
+PRICE_014,English,What's the amount for all these?
+PRICE_014,English,How much do I pay altogether?
+PRICE_015,English,Do you have a list of prices?
+PRICE_015,English,Can I see the price list?
+PRICE_015,English,May I have the price list?
+PRICE_015,English,Is there a catalogue with prices?
+PRICE_015,English,Can you show me your prices?
+PRICE_015,English,Do you keep a price catalogue?
+PRICE_015,English,Where is your price list?
+PRICE_015,English,Could I check your prices?
+PRICE_016,English,How much will all of these cost?
+PRICE_016,English,What's the total cost for everything?
+PRICE_016,English,How much do I pay for all these?
+PRICE_016,English,What is the total amount?
+PRICE_016,English,Can you calculate the total price?
+PRICE_016,English,How much is everything together?
+PRICE_016,English,What's the grand total?
+PRICE_016,English,How much will everything come to?
+PRICE_017,English,Which one is the least expensive?
+PRICE_017,English,What's the cheapest item?
+PRICE_017,English,Which costs the least?
+PRICE_017,English,Do you have a cheaper one?
+PRICE_017,English,What's your most affordable one?
+PRICE_017,English,Which option is cheaper?
+PRICE_017,English,Show me the cheapest one.
+PRICE_017,English,Which one has the lowest price?
+PRICE_018,English,Which one is cheaper?
+PRICE_018,English,Which costs less?
+PRICE_018,English,Which one has a lower price?
+PRICE_018,English,Which is more affordable?
+PRICE_018,English,"Between these, which is cheaper?"
+PRICE_018,English,Which one should I buy if I want to save money?
+PRICE_018,English,Which has the lower cost?
+PRICE_018,English,Which one is less expensive?
+PRICE_019,English,What's today's price?
+PRICE_019,English,How much is it today?
+PRICE_019,English,What's the price today?
+PRICE_019,English,Can you tell me today's price?
+PRICE_019,English,How much are you selling it today?
+PRICE_019,English,What's today's selling price?
+PRICE_019,English,How much does it cost today?
+PRICE_019,English,What is the current price today?
+PRICE_020,English,What's the latest price?
+PRICE_020,English,How much is it right now?
+PRICE_020,English,What's the current selling price?
+PRICE_020,English,How much does it currently cost?
+PRICE_020,English,Can you tell me the current price?
+PRICE_020,English,What's the price at the moment?
+PRICE_020,English,How much are you charging now?
+PRICE_020,English,What's the price now?
+GREETING_001,English,Morning.
+GREETING_001,English,Good morning to you.
+GREETING_001,English,"Morning, how are you?"
+GREETING_001,English,Hope you're having a good morning.
+GREETING_001,English,Happy morning.
+GREETING_001,English,"Good morning, boss."
+GREETING_001,English,"Good morning, madam."
+GREETING_001,English,Morning! Nice to see you.
+GREETING_002,English,Good afternoon to you.
+GREETING_002,English,Afternoon.
+GREETING_002,English,Hope you're having a good afternoon.
+GREETING_002,English,"Good afternoon, boss."
+GREETING_002,English,"Good afternoon, madam."
+GREETING_002,English,Pleasant afternoon.
+GREETING_002,English,Afternoon! How are you?
+GREETING_002,English,"Good afternoon, nice to see you."
+GREETING_003,English,Good evening to you.
+GREETING_003,English,Evening.
+GREETING_003,English,Hope you're having a pleasant evening.
+GREETING_003,English,"Good evening, boss."
+GREETING_003,English,"Good evening, madam."
+GREETING_003,English,Pleasant evening.
+GREETING_003,English,Evening! How are you?
+GREETING_003,English,Nice evening to you.
+GREETING_004,English,Hi there.
+GREETING_004,English,Hello there.
+GREETING_004,English,Hey.
+GREETING_004,English,Hey there.
+GREETING_004,English,Greetings.
+GREETING_004,English,Good to see you.
+GREETING_004,English,Welcome.
+GREETING_004,English,"Hello, how are you?"
+GREETING_005,English,Hello.
+GREETING_005,English,Hey.
+GREETING_005,English,Hi there.
+GREETING_005,English,Hey there.
+GREETING_005,English,Good to see you.
+GREETING_005,English,Nice to see you.
+GREETING_005,English,"Hi, how are you?"
+GREETING_005,English,Hello there.
+GREETING_006,English,You're welcome.
+GREETING_006,English,Welcome in.
+GREETING_006,English,Come in.
+GREETING_006,English,Glad to have you.
+GREETING_006,English,It's nice to have you here.
+GREETING_006,English,"Welcome, please come in."
+GREETING_006,English,"You're most welcome."
+GREETING_006,English,"Welcome, make yourself comfortable."
+GREETING_007,English,How are you doing?
+GREETING_007,English,How have you been?
+GREETING_007,English,How is everything?
+GREETING_007,English,How's your day going?
+GREETING_007,English,How are things?
+GREETING_007,English,Hope you're doing well.
+GREETING_007,English,Are you doing well?
+GREETING_007,English,Everything okay?
+GREETING_008,English,I'm doing well thank you.
+GREETING_008,English,I'm fine thanks.
+GREETING_008,English,I'm doing great.
+GREETING_008,English,I'm well thank you.
+GREETING_008,English,I'm okay thank you.
+GREETING_008,English,Doing well thanks.
+GREETING_008,English,"I'm fine, thanks."
+GREETING_008,English,"I'm very well, thank you."
+GREETING_009,English,It's nice meeting you.
+GREETING_009,English,I'm happy to meet you.
+GREETING_009,English,Pleased to meet you.
+GREETING_009,English,Glad to meet you.
+GREETING_009,English,It's a pleasure meeting you.
+GREETING_009,English,Wonderful meeting you.
+GREETING_009,English,Happy to meet you.
+GREETING_009,English,Great meeting you.
+GREETING_010,English,Please have a seat.
+GREETING_010,English,Come inside.
+GREETING_010,English,Feel free to come in.
+GREETING_010,English,Go ahead and come in.
+GREETING_010,English,Take a seat.
+GREETING_010,English,You can come in now.
+GREETING_010,English,"Please, come in."
+GREETING_010,English,"Come in, please."
+GREETING_011,English,How can I help you?
+GREETING_011,English,What can I do for you?
+GREETING_011,English,How may I assist you?
+GREETING_011,English,How may I be of help?
+GREETING_011,English,What do you need?
+GREETING_011,English,How can I be of assistance?
+GREETING_011,English,What can I help you with?
+GREETING_011,English,How may I serve you?
+GREETING_012,English,What do you need?
+GREETING_012,English,What would you like?
+GREETING_012,English,What are you interested in?
+GREETING_012,English,What do you want to buy?
+GREETING_012,English,What can I get for you?
+GREETING_012,English,Which item are you looking for?
+GREETING_012,English,What are you searching for?
+GREETING_012,English,What brings you here today?
+GREETING_013,English,Can I help you?
+GREETING_013,English,Do you need any help?
+GREETING_013,English,Would you like some assistance?
+GREETING_013,English,Can I help you find anything?
+GREETING_013,English,Do you need help finding something?
+GREETING_013,English,May I assist you?
+GREETING_013,English,Can I help you with anything?
+GREETING_013,English,Would you like me to help you?
+GREETING_014,English,Take your time looking around.
+GREETING_014,English,Feel free to browse.
+GREETING_014,English,Have a look around.
+GREETING_014,English,Look around at your own pace.
+GREETING_014,English,You can check everything.
+GREETING_014,English,Take a look at what we have.
+GREETING_014,English,Please look around.
+GREETING_014,English,Browse as much as you like.
+GREETING_015,English,Thanks for coming.
+GREETING_015,English,Thank you for visiting.
+GREETING_015,English,We appreciate your visit.
+GREETING_015,English,Thanks for stopping by.
+GREETING_015,English,Thank you for your time.
+GREETING_015,English,We're glad you came.
+GREETING_015,English,Hope to see you again.
+GREETING_015,English,Thanks for your visit.
+GREETING_016,English,Please sit down.
+GREETING_016,English,Take a chair.
+GREETING_016,English,Have a seat please.
+GREETING_016,English,Feel free to sit.
+GREETING_016,English,You can sit here.
+GREETING_016,English,Please make yourself comfortable.
+GREETING_016,English,Go ahead and sit down.
+GREETING_016,English,There's a seat for you.
+GREETING_017,English,It's good to see you again.
+GREETING_017,English,Welcome back.
+GREETING_017,English,I'm happy to see you again.
+GREETING_017,English,Nice seeing you again.
+GREETING_017,English,Glad you're back.
+GREETING_017,English,It's great to have you back.
+GREETING_017,English,Good to have you here again.
+GREETING_017,English,Welcome back again.
+GREETING_018,English,You are always welcome.
+GREETING_018,English,Feel at home.
+GREETING_018,English,You're welcome anytime.
+GREETING_018,English,This place is open to you.
+GREETING_018,English,We're happy to have you here.
+GREETING_018,English,You're free to come anytime.
+GREETING_018,English,Make yourself at home.
+GREETING_018,English,You're always welcome here.
+GREETING_019,English,How can I help you today?
+GREETING_019,English,What can I do for you today?
+GREETING_019,English,How may I assist you today?
+GREETING_019,English,What do you need today?
+GREETING_019,English,How may I be of service today?
+GREETING_019,English,What can I help you with today?
+GREETING_019,English,Is there anything you need today?
+GREETING_019,English,How may I serve you today?
+GREETING_020,English,What would you like today?
+GREETING_020,English,What would you like to purchase?
+GREETING_020,English,What are you buying today?
+GREETING_020,English,Which item would you like?
+GREETING_020,English,What can I get for you today?
+GREETING_020,English,What are you interested in buying?
+GREETING_020,English,Which product do you need?
+GREETING_020,English,What would you like to shop for?
