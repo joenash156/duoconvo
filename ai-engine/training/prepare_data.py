@@ -45,7 +45,7 @@ def validate_dataset(df):
   if len(missing) > 0:
     raise ValueError(f"Dataset is missing required columns: {missing}")
   
-  print("✅ Dataset validation passed.")
+  print("Dataset validation passed.")
 
 
 def show_dataset_summary(df):

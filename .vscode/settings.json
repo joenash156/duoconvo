@@ -1,12 +1,15 @@
 {
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
   "cSpell.words": [
     "Convo",
     "dotlottie",
     "duoconvo",
     "FAISS",
+    "huggingface",
     "lottiefiles",
     "numpy",
     "scikit",
     "tqdm"
-  ]
+  ],
+  "python-envs.defaultEnvManager": "ms-python.python:system"
 }

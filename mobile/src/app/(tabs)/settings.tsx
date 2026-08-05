@@ -78,8 +78,8 @@ export default function Settings() {
 
         <SectionLabel>Account</SectionLabel>
         <View className="mx-6 overflow-hidden rounded-2xl bg-card dark:bg-zinc-900">
-          <SettingsRow icon="log-in-outline" label="Sign In" />
-          <SettingsRow icon="person-add-outline" label="Register" isLast />
+          <SettingsRow icon="person-outline" label="Sign In / Register" />
+          {/* <SettingsRow icon="person-outline" label="Register" isLast /> */}
         </View>
       </ScrollView>
 

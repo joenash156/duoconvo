@@ -12,6 +12,8 @@ type SettingsRowProps = {
   isLast?: boolean;
 };
 
+// const isLastRowStyle = isLast ? "" : "border-b border-zinc-200 dark:border-zinc-800";
+
 export function SettingsRow({ icon, label, value, onPress, isLast }: SettingsRowProps) {
   const { theme } = useTheme();
   const colors = getThemeColors(theme);
@@ -21,9 +23,7 @@ export function SettingsRow({ icon, label, value, onPress, isLast }: SettingsRow
       accessibilityRole="button"
       accessibilityLabel={label}
       onPress={onPress}
-      className={`flex-row items-center gap-3 px-4 py-4 active:bg-black/5 dark:active:bg-white/5 ${
-        isLast ? "" : "border-b border-zinc-200 dark:border-zinc-800"
-      }`}
+      className={`flex-row items-center gap-3 px-4 py-4 active:bg-black/5 dark:active:bg-white/5`}
     >
       <Ionicons name={icon} size={20} color={colors.foreground} />
       <Text className="flex-1 text-sm font-medium text-foreground dark:text-zinc-50">{label}</Text>

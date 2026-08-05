@@ -7,3 +7,5 @@ numpy
 scikit-learn
 faiss-cpu
 tqdm
+accelerate
+huggingface_hub
