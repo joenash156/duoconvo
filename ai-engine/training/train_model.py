@@ -5,12 +5,21 @@ Fine-tune DuoConvo Sentence Transformer
 using sentence-transformers v5.
 """
 
+# Allow this script to be run directly from the project root.
+import sys
+from pathlib import Path
+
+AI_ENGINE_DIR = Path(__file__).resolve().parents[1]
+if str(AI_ENGINE_DIR) not in sys.path:
+  sys.path.insert(0, str(AI_ENGINE_DIR))
+
 # import necessary libraries
 import pandas as pd
 from config import (
   BASE_MODEL,
   BATCH_SIZE,
   EPOCHS,
+  MODEL_OUTPUT_DIR,
   SENTENCE_PAIRS_DATASET,
 )
 from sentence_transformers import SentenceTransformer
@@ -23,8 +32,6 @@ from sentence_transformers.sentence_transformer.training_args import (
 )
 
 from datasets import Dataset
-
-OUTPUT_MODEL_PATH = "../models/duoconvo-model"
 
 
 def load_dataset():
@@ -62,7 +69,7 @@ def main():
   
   # define training arguments
   args = SentenceTransformerTrainingArguments(
-    output_dir=OUTPUT_MODEL_PATH,
+    output_dir=str(MODEL_OUTPUT_DIR),
     num_train_epochs=EPOCHS,
     per_device_train_batch_size=BATCH_SIZE,
     learning_rate=2e-5,
@@ -90,7 +97,9 @@ def main():
   print("Saving model...")
   
   # save the model
-  model.save(OUTPUT_MODEL_PATH)
+  print(f"Saving model to: {MODEL_OUTPUT_DIR.resolve()}")
+  MODEL_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+  model.save(str(MODEL_OUTPUT_DIR))
 
   print("Done.")
 

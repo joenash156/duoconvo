@@ -1,0 +1,41 @@
+id,concept_code,domain,intent,english,twi,ga,ewe,french,notes,verification_status
+1,PRICE_001,Commerce,PRICE_INQUIRY,How much is this?,,,,,,PENDING
+2,PRICE_002,Commerce,PRICE_INQUIRY,What's the price of this item?,,,,,,PENDING
+3,PRICE_003,Commerce,PRICE_INQUIRY,How much does this cost?,,,,,,PENDING
+4,PRICE_004,Commerce,PRICE_INQUIRY,Can you tell me the price?,,,,,,PENDING
+5,PRICE_005,Commerce,PRICE_INQUIRY,How much are you selling this for?,,,,,,PENDING
+6,PRICE_006,Commerce,PRICE_INQUIRY,What's your best price?,,,,,,PENDING
+7,PRICE_007,Commerce,PRICE_INQUIRY,Is this expensive?,,,,,,PENDING
+8,PRICE_008,Commerce,PRICE_INQUIRY,Is this the final price?,,,,,,PENDING
+9,PRICE_009,Commerce,PRICE_INQUIRY,Can I know the price first?,,,,,,PENDING
+10,PRICE_010,Commerce,PRICE_INQUIRY,How much for one?,,,,,,PENDING
+11,PRICE_011,Commerce,PRICE_INQUIRY,How much for two?,,,,,,PENDING
+12,PRICE_012,Commerce,PRICE_INQUIRY,How much per kilogram?,,,,,,PENDING
+13,PRICE_013,Commerce,PRICE_INQUIRY,How much per basket?,,,,,,PENDING
+14,PRICE_014,Commerce,PRICE_INQUIRY,What's the cost of all these?,,,,,,PENDING
+15,PRICE_015,Commerce,PRICE_INQUIRY,Do you have a price list?,,,,,,PENDING
+16,PRICE_016,Commerce,PRICE_INQUIRY,How much would everything cost?,,,,,,PENDING
+17,PRICE_017,Commerce,PRICE_INQUIRY,What's the cheapest one?,,,,,,PENDING
+18,PRICE_018,Commerce,PRICE_INQUIRY,Which one costs less?,,,,,,PENDING
+19,PRICE_019,Commerce,PRICE_INQUIRY,Can you give me today's price?,,,,,,PENDING
+20,PRICE_020,Commerce,PRICE_INQUIRY,What is the current price?,,,,,,PENDING
+21,GREETING_001,Social,GREETING,Good morning,,,,,,PENDING
+22,GREETING_002,Social,GREETING,Good afternoon,,,,,,PENDING
+23,GREETING_003,Social,GREETING,Good evening,,,,,,PENDING
+24,GREETING_004,Social,GREETING,Hello,,,,,,PENDING
+25,GREETING_005,Social,GREETING,Hi,,,,,,PENDING
+26,GREETING_006,Social,GREETING,Welcome,,,,,,PENDING
+27,GREETING_007,Social,GREETING,How are you?,,,,,,PENDING
+28,GREETING_008,Social,GREETING,"I am fine, thank you.",,,,,,PENDING
+29,GREETING_009,Social,GREETING,Nice to meet you.,,,,,,PENDING
+30,GREETING_010,Social,GREETING,Please come in.,,,,,,PENDING
+31,GREETING_011,Social,GREETING,How may I help you?,,,,,,PENDING
+32,GREETING_012,Social,GREETING,What are you looking for?,,,,,,PENDING
+33,GREETING_013,Social,GREETING,Can I help you find something?,,,,,,PENDING
+34,GREETING_014,Social,GREETING,Feel free to look around.,,,,,,PENDING
+35,GREETING_015,Social,GREETING,Thank you for coming.,,,,,,PENDING
+36,GREETING_016,Social,GREETING,Have a seat.,,,,,,PENDING
+37,GREETING_017,Social,GREETING,Good to see you again.,,,,,,PENDING
+38,GREETING_018,Social,GREETING,You're welcome here.,,,,,,PENDING
+39,GREETING_019,Social,GREETING,How can I assist you today?,,,,,,PENDING
+40,GREETING_020,Social,GREETING,What would you like to buy?,,,,,,PENDING

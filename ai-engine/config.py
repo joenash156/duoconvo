@@ -9,7 +9,7 @@ Stores all project settings in one place so that the rest of the project doesn't
 from pathlib import Path
 
 # Project Paths
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 DATASETS_DIR = PROJECT_ROOT / "datasets"
 CURATED_DATASET = DATASETS_DIR / "curated" / "multilingual_phrases.csv"
@@ -20,6 +20,17 @@ VECTOR_DB_DIR = PROJECT_ROOT / "ai-engine" / "vector-db"
 
 # Base Model
 BASE_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+
+MODEL_OUTPUT_DIR = PROJECT_ROOT / "ai-engine" / "models" / "duoconvo-model"
+EMBEDDINGS_PATH = VECTOR_DB_DIR / "embeddings.npy"
+METADATA_PATH = VECTOR_DB_DIR / "metadata.csv"
+INDEX_PATH = VECTOR_DB_DIR / "duoconvo.index"
+
+# Backward-compatible output names used by the embedding generator.
+OUTPUT_EMBEDDINGS = EMBEDDINGS_PATH
+OUTPUT_METADATA = METADATA_PATH
+
+
 
 # Training Hyperparameters
 BATCH_SIZE = 16
@@ -35,4 +46,4 @@ CONFIDENCE_THRESHOLD = 0.85
 
 # Output Files
 TRAINED_MODEL_PATH = MODEL_DIR / "duoconvo-model"
-FAISS_INDEX_PATH = VECTOR_DB_DIR / "duoconvo.index"
+FAISS_INDEX_PATH = INDEX_PATH

@@ -4,6 +4,14 @@ prepare_data.py
 Loads and validates the DuoConvo datasets before training.
 """
 
+import sys
+from pathlib import Path
+
+# Allow this script to be run directly from the project root.
+AI_ENGINE_DIR = Path(__file__).resolve().parents[1]
+if str(AI_ENGINE_DIR) not in sys.path:
+  sys.path.insert(0, str(AI_ENGINE_DIR))
+
 import pandas as pd
 from config import CURATED_DATASET, PARAPHRASES_DATASET
 
