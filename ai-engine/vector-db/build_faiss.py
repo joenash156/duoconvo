@@ -5,7 +5,7 @@ Build a FAISS index from
 the generated embeddings.
 """
 
- 
+
 import sys
 from pathlib import Path
 

@@ -47,7 +47,7 @@ export default function TabsLayout() {
             paddingHorizontal: 8,
             overflow: "hidden",
             elevation: 12,
-            shadowColor: theme === "dark" ? "#002E30" : "#0a8282",
+            shadowColor: theme === "dark" ? "#002E30" : "#6fb0b0",
             shadowOffset: { width: 0, height: 2 },
             shadowOpacity: theme === "dark" ? 0.45 : 0.15,
             shadowRadius: 20,
@@ -62,7 +62,7 @@ export default function TabsLayout() {
               <AnimatedTabIcon
                 focused={focused}
                 color={color}
-                size={size * 1.2}
+                size={size * 1.05}
                 filledName="language"
                 outlineName="language-outline"
               />
@@ -77,7 +77,7 @@ export default function TabsLayout() {
               <AnimatedTabIcon
                 focused={focused}
                 color={color}
-                size={size * 1.2}
+                size={size * 1.05}
                 filledName="time"
                 outlineName="time-outline"
               />
@@ -92,7 +92,7 @@ export default function TabsLayout() {
               <AnimatedTabIcon
                 focused={focused}
                 color={color}
-                size={size * 1.2}
+                size={size * 1.05}
                 filledName="stats-chart"
                 outlineName="stats-chart-outline"
               />
@@ -107,7 +107,7 @@ export default function TabsLayout() {
               <AnimatedTabIcon
                 focused={focused}
                 color={color}
-                size={size * 1.2}
+                size={size * 1.05}
                 filledName="settings"
                 outlineName="settings-outline"
               />

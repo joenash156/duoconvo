@@ -57,7 +57,7 @@ export default function Translate() {
       <View className="flex-1 items-center justify-center px-6">
         <MicButton isListening={isListening} onPress={() => setIsListening((prev) => !prev)} />
         <Text className="mt-6 text-base font-medium text-foreground dark:text-zinc-50">
-          {isListening ? "Listening..." : "Tap to speak"}
+          {isListening ? "Listening..." : "Press the microphone to start speaking."}
         </Text>
       </View>
 

@@ -25,6 +25,7 @@ MODEL_OUTPUT_DIR = PROJECT_ROOT / "ai-engine" / "models" / "duoconvo-model"
 EMBEDDINGS_PATH = VECTOR_DB_DIR / "embeddings.npy"
 METADATA_PATH = VECTOR_DB_DIR / "metadata.csv"
 INDEX_PATH = VECTOR_DB_DIR / "duoconvo.index"
+TEST_PATH = PROJECT_ROOT / "ai-engine" / "evaluation" / "unseen_test.csv"
 
 # Backward-compatible output names used by the embedding generator.
 OUTPUT_EMBEDDINGS = EMBEDDINGS_PATH
