@@ -21,7 +21,7 @@ export const translationService = {
       type: "audio/m4a",
     } as unknown as Blob);
 
-    return apiClient.post<TranslationResult>("/translate/audio", formData);
+    return apiClient.postFormData<TranslationResult>("/translate/audio", formData);
   },
 
   getHistory: (page: number, limit = 20) =>

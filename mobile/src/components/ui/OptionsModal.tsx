@@ -1,5 +1,7 @@
 import { Ionicons } from "@expo/vector-icons";
-import { Modal, Pressable, Text, View } from "react-native";
+import { BlurView } from "expo-blur";
+import React from "react";
+import { Modal, Platform, Pressable, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useTheme } from "@/contexts/ThemeContext";
 import { getThemeColors } from "@/themes/colors";
@@ -35,14 +37,22 @@ export function OptionsModal<T extends string>({
 
   return (
     <Modal visible={visible} transparent animationType="slide" onRequestClose={onClose} statusBarTranslucent>
-      <View className="flex-1 justify-end">
+      <Pressable
+        accessibilityRole="button"
+        accessibilityLabel="Close"
+        onPress={onClose}
+        className="flex-1 justify-end"
+      >
+        {Platform.OS === "ios" ? (
+          <BlurView
+            intensity={12}
+            tint={theme === "dark" ? "dark" : "light"}
+            pointerEvents="none"
+            className="absolute inset-0"
+          />
+        ) : null}
         <Pressable
-          accessibilityRole="button"
-          accessibilityLabel="Close"
-          onPress={onClose}
-          className="absolute inset-0 bg-black/40"
-        />
-        <View
+          onPress={(event) => event.stopPropagation()}
           className="rounded-t-3xl bg-white px-4 pt-3 dark:bg-zinc-900"
           style={{ paddingBottom: insets.bottom + 16 }}
         >
@@ -86,8 +96,8 @@ export function OptionsModal<T extends string>({
               </Pressable>
             );
           })}
-        </View>
-      </View>
+        </Pressable>
+      </Pressable>
     </Modal>
   );
 }

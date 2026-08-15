@@ -21,8 +21,10 @@ const envSchema = z.object({
   CONFIDENCE_HIGH_THRESHOLD: z.coerce.number().min(0).max(1).default(0.6),
   CONFIDENCE_MEDIUM_THRESHOLD: z.coerce.number().min(0).max(1).default(0.35),
 
-  STT_PROVIDER: z.enum(["mock", "http"]).default("mock"),
+  STT_PROVIDER: z.enum(["mock", "http", "groq"]).default("mock"),
   STT_ENGINE_URL: z.string().default("http://localhost:8002"),
+  GROQ_API_KEY: z.string().optional(),
+  GROQ_STT_MODEL: z.string().default("whisper-large-v3-turbo"),
 
   TTS_PROVIDER: z.enum(["mock", "http"]).default("mock"),
   TTS_ENGINE_URL: z.string().default("http://localhost:8003"),

@@ -1,4 +1,5 @@
 import { Pressable, Text, PressableProps } from "react-native";
+import React from "react";
 
 type ButtonVariant = "primary" | "secondary" | "outline";
 

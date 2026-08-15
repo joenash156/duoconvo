@@ -48,6 +48,27 @@ Twi/Ga/Ewe      -> backend TTS   -> audioUrl -> mobile audio player (expo-audio)
 about this (`audioUrl: null`) rather than pretending. Set `TTS_PROVIDER=http` and
 `TTS_ENGINE_URL` once one exists; no other code changes are needed on either side.
 
+## Hybrid Speech-to-Text
+
+Whisper (run via Groq's free-tier API) does not have Twi, Ga, or Ewe in its trained
+language set - it would guess and transcribe them as the wrong language entirely rather
+than fail cleanly. So STT is split the same way TTS is:
+
+```text
+English/French  -> Groq Whisper API -> real transcription
+Twi/Ga/Ewe      -> honest mock transcription (no engine exists for these yet)
+```
+
+- `api/src/services/stt.service.ts` exports `GROQ_SUPPORTED_LANGUAGES` (`en`, `fr`).
+  `STT_PROVIDER=groq` only calls Groq for those two; everything else keeps the mock
+  placeholder regardless of the provider setting, so a low-confidence local-language
+  recording never gets silently mistranscribed as some other language.
+- Free tier: 2,000 requests/day via `console.groq.com` - no credit card required.
+  Set `GROQ_API_KEY` and `STT_PROVIDER=groq` in `api/.env`.
+- Real Twi/Ga/Ewe STT is an open problem, not something this batch solves - it would
+  need a specialized/fine-tuned model, which is a separate effort from the semantic
+  retrieval model in `ai-engine/`.
+
 ## Free-tier hosting readiness
 
 The Express API was built stateless and env-driven from the start, so it already meets

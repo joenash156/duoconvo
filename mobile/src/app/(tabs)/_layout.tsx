@@ -1,4 +1,5 @@
 import { BlurTargetView } from "expo-blur";
+import React from "react";
 import { Tabs } from "expo-router/js-tabs";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { AnimatedTabIcon } from "@/components/navigation/AnimatedTabIcon";
@@ -28,7 +29,7 @@ export default function TabsLayout() {
           tabBarLabelStyle: {
             fontSize: 12.5,
             fontWeight: "600",
-            marginTop: -2,
+            marginTop: -5,
           },
           tabBarActiveTintColor: colors.primary,
           tabBarInactiveTintColor: theme === "dark" ? "#8B9198" : "#71717A",
@@ -43,7 +44,7 @@ export default function TabsLayout() {
             borderRadius: 32,
             borderTopWidth: 0,
             paddingTop: 2,
-            marginHorizontal: 10,
+            marginHorizontal: 15,
             paddingHorizontal: 8,
             overflow: "hidden",
             elevation: 12,

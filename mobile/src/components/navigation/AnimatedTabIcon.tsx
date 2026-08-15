@@ -1,5 +1,5 @@
 import { Ionicons } from "@expo/vector-icons";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { ColorValue, StyleSheet, View } from "react-native";
 import Animated, {
   interpolate,
@@ -24,7 +24,7 @@ export function AnimatedTabIcon({
   size,
   filledName,
   outlineName,
-}: AnimatedTabIconProps) {
+}: Readonly<AnimatedTabIconProps>) {
   const { theme } = useTheme();
   const focusedValue = useSharedValue(focused ? 1 : 0);
 
@@ -61,8 +61,8 @@ export function AnimatedTabIcon({
         style={[
           {
             position: "absolute",
-            width: size * 3.2,
-            height: size * 1.9,
+            width: size * 3.4,
+            height: size * 1.95,
             borderRadius: 999,
             top: -size * 0.05,
           },

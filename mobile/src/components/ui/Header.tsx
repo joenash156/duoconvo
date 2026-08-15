@@ -1,6 +1,6 @@
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 import { Pressable, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useTheme } from "@/contexts/ThemeContext";
@@ -14,7 +14,7 @@ type HeaderProps = {
   rightElement?: ReactNode;
 };
 
-export function Header({ title, subtitle, showBackButton, onBackPress, rightElement }: HeaderProps) {
+export function Header({ title, subtitle, showBackButton, onBackPress, rightElement }: Readonly<HeaderProps>) {
   const insets = useSafeAreaInsets();
   const router = useRouter();
   const { theme } = useTheme();
