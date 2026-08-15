@@ -6,11 +6,13 @@ import intentRouter from "./intent.routes";
 import marketPhraseRouter from "./marketPhrase.routes";
 import modelVersionRouter from "./modelVersion.routes";
 import translationRouter from "./translation.routes";
+import ttsRouter from "./tts.routes";
 import unknownPhraseRouter from "./unknownPhrase.routes";
 
 const router = Router();
 
 router.use("/translate", translationRouter);
+router.use("/tts", ttsRouter);
 router.use("/conversations", conversationRouter);
 router.use("/evidence", evidenceRouter);
 router.use("/health", healthRouter);
