@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "",
+    "name": "DuoConvo",
     "slug": "duoconvo",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -40,6 +40,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "f58dca6e-b182-4536-8bda-1001d55b37e3"
+      }
     }
   }
 }

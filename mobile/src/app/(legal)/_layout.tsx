@@ -1,4 +1,5 @@
 import { Slot } from "expo-router";
+import React from "react";
 import { View } from "react-native";
 import { useTheme } from "@/contexts/ThemeContext";
 import { getThemeColors } from "@/themes/colors";

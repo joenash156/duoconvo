@@ -1,16 +1,22 @@
 import { env } from "../configs/env";
 
 /**
- * Whisper (what Groq runs) has no Twi, Ga, or Ewe in its trained language
- * set - those are too low-resource. Rather than let it guess and produce a
- * garbage transcription in the wrong language, only real languages get
- * real STT; everything else keeps the honest mock. Mirrors the TTS hybrid
- * split in tts.service.ts.
+ * Whisper (Groq) has no Twi, Ga, or Ewe in its trained language set.
+ * KhayaAI's Southern Ghana model (self-hosted, see
+ * ai-engine/app/stt_server.py) covers exactly those three but not
+ * English/French as reliably as Whisper does. So STT is routed per
+ * language to two independent, independently-toggled engines rather than
+ * one global provider - mirrors the TTS hybrid split in tts.service.ts.
  */
-const GROQ_SUPPORTED_LANGUAGES = ["en", "fr"] as const;
+const GROQ_LANGUAGES = ["en", "fr"] as const;
+const LOCAL_ENGINE_LANGUAGES = ["tw", "ga", "ee"] as const;
 
-function isGroqSupportedLanguage(language: string): boolean {
-  return (GROQ_SUPPORTED_LANGUAGES as readonly string[]).includes(language);
+function isGroqLanguage(language: string): boolean {
+  return (GROQ_LANGUAGES as readonly string[]).includes(language);
+}
+
+function isLocalEngineLanguage(language: string): boolean {
+  return (LOCAL_ENGINE_LANGUAGES as readonly string[]).includes(language);
 }
 
 /**
@@ -51,13 +57,10 @@ async function transcribeWithGroq(audioBuffer: Buffer, language: string): Promis
 }
 
 /**
- * Expected contract for a future custom STT service:
- *
- *   POST {STT_ENGINE_URL}/transcribe  (multipart/form-data)
- *   fields: audio (file), language (string)
- *   response: { "text": string }
+ * Local KhayaAI (DONDO) engine for Twi/Ga/Ewe - see
+ * ai-engine/app/stt_server.py's POST /transcribe contract.
  */
-async function transcribeFromHttpEngine(audioBuffer: Buffer, language: string): Promise<string> {
+async function transcribeWithLocalEngine(audioBuffer: Buffer, language: string): Promise<string> {
   const formData = new FormData();
   formData.append("language", language);
   formData.append("audio", new Blob([audioBuffer]), "recording.m4a");
@@ -68,7 +71,8 @@ async function transcribeFromHttpEngine(audioBuffer: Buffer, language: string): 
   });
 
   if (!response.ok) {
-    throw new Error(`STT engine responded with status ${response.status}`);
+    const errorBody = await response.text();
+    throw new Error(`Local STT engine responded with status ${response.status}: ${errorBody}`);
   }
 
   const data = (await response.json()) as { text: string };
@@ -77,14 +81,18 @@ async function transcribeFromHttpEngine(audioBuffer: Buffer, language: string): 
 
 export const sttService = {
   transcribe: (audioBuffer: Buffer, language: string): Promise<string> => {
-    if (env.STT_PROVIDER === "groq") {
-      return isGroqSupportedLanguage(language)
+    if (isGroqLanguage(language)) {
+      return env.STT_PROVIDER === "groq"
         ? transcribeWithGroq(audioBuffer, language)
         : Promise.resolve(transcribeMock());
     }
 
-    return env.STT_PROVIDER === "http"
-      ? transcribeFromHttpEngine(audioBuffer, language)
-      : Promise.resolve(transcribeMock());
+    if (isLocalEngineLanguage(language)) {
+      return env.STT_LOCAL_PROVIDER === "http"
+        ? transcribeWithLocalEngine(audioBuffer, language)
+        : Promise.resolve(transcribeMock());
+    }
+
+    return Promise.resolve(transcribeMock());
   },
 };

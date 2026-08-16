@@ -167,7 +167,7 @@ export default function Translate() {
       <Header title="DuoConvo" subtitle="Speak naturally, we'll handle the rest." />
 
       {showLanguagePickers ? (
-        <View className="flex-row items-center gap-2 px-6 pt-2">
+        <View className="flex-row items-center gap-2 px-6 pt-6">
           <LanguageChip label={getLanguageLabel(spokenLanguage)} onPress={() => setActivePicker("spoken")} />
           <Pressable
             accessibilityRole="button"
@@ -188,7 +188,7 @@ export default function Translate() {
         {screenState === "idle" || screenState === "recording" ? (
           <>
             <MicButton isListening={screenState === "recording"} onPress={handleMicPress} />
-            <Text className="mt-6 text-base font-medium text-foreground dark:text-zinc-50">
+            <Text className="text-base font-medium text-foreground dark:text-zinc-50">
               {screenState === "recording" ? "Listening..." : "Press the microphone to start speaking."}
             </Text>
             {screenState === "recording" ? (

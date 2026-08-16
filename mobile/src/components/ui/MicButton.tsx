@@ -1,7 +1,7 @@
 import { Ionicons } from "@expo/vector-icons";
 import { setAudioModeAsync, useAudioPlayer } from "expo-audio";
 import * as Haptics from "expo-haptics";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { Pressable, StyleSheet, View } from "react-native";
 import Animated, {
   cancelAnimation,
@@ -25,7 +25,7 @@ type MicButtonProps = {
   size?: number;
 };
 
-export function MicButton({ isListening, onPress, size = 150 }: MicButtonProps) {
+export function MicButton({ isListening, onPress, size = 150 }: Readonly<MicButtonProps>) {
   const { theme } = useTheme();
   const colors = getThemeColors(theme);
   const startSound = useAudioPlayer(require("@/assets/audio/record-sound.mp3"));
