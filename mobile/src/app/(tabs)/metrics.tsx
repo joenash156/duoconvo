@@ -1,10 +1,11 @@
 import { useFocusEffect } from "expo-router";
 import LottieView from "lottie-react-native";
-import React, { useCallback, useMemo } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 import { ActivityIndicator, FlatList, Pressable, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 // import { BottomFadeGradient } from "@/components/ui/BottomFadeGradient";
 import { EvidenceCard } from "@/components/ui/EvidenceCard";
+import { EvidenceDashboard } from "@/components/ui/EvidenceDashboard";
 import { Header } from "@/components/ui/Header";
 import { TAB_BAR_BOTTOM_MARGIN, TAB_BAR_HEIGHT } from "@/constants/layout";
 import { useTheme } from "@/contexts/ThemeContext";
@@ -12,10 +13,42 @@ import { useAiEvidence } from "@/hooks/useAiEvidence";
 import { getThemeColors } from "@/themes/colors";
 import { TranslationResult } from "@/types/conversation.types";
 
+type MetricsTab = "dashboard" | "history";
+
+function TabSwitcher({ active, onChange }: Readonly<{ active: MetricsTab; onChange: (tab: MetricsTab) => void }>) {
+  const { theme } = useTheme();
+  const colors = getThemeColors(theme);
+
+  return (
+    <View className="mx-6 mb-2 flex-row rounded-full bg-card p-1 dark:bg-zinc-900">
+      {(["dashboard", "history"] as const).map((tab) => {
+        const isActive = tab === active;
+        return (
+          <Pressable
+            key={tab}
+            accessibilityRole="button"
+            accessibilityLabel={tab === "dashboard" ? "Dashboard" : "History"}
+            onPress={() => onChange(tab)}
+            className="flex-1 items-center rounded-full py-2"
+            style={isActive ? { backgroundColor: colors.primary } : undefined}
+          >
+            <Text
+              className={`text-sm font-semibold ${isActive ? "text-white" : "text-zinc-500 dark:text-zinc-400"}`}
+            >
+              {tab === "dashboard" ? "Dashboard" : "History"}
+            </Text>
+          </Pressable>
+        );
+      })}
+    </View>
+  );
+}
+
 export default function Metrics() {
   const insets = useSafeAreaInsets();
   const { theme } = useTheme();
   const colors = getThemeColors(theme);
+  const [activeTab, setActiveTab] = useState<MetricsTab>("dashboard");
 
   const { data, isLoading, isError, isFetchingNextPage, hasNextPage, fetchNextPage, refetch, isRefetching } =
     useAiEvidence();
@@ -39,8 +72,11 @@ export default function Metrics() {
   return (
     <View className="flex-1 bg-white dark:bg-zinc-950">
       <Header title="Metrics" subtitle="See the AI at work" />
+      <TabSwitcher active={activeTab} onChange={setActiveTab} />
 
-      {isLoading ? (
+      {activeTab === "dashboard" ? (
+        <EvidenceDashboard bottomPadding={bottomPadding} />
+      ) : isLoading ? (
         <View className="flex-1 items-center justify-center" style={{ paddingBottom: bottomPadding }}>
           <ActivityIndicator size="large" color={colors.primary} />
         </View>

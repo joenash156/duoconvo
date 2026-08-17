@@ -1,19 +1,5 @@
 """
 build_multilingual_unseen_test.py
-
-The existing unseen_test.csv only tests English generalization - it has
-never actually verified cross-lingual retrieval (a Twi/Ewe/French query
-correctly matching the right English-anchored concept) at all, which is the
-actual point of the app. Translates the same held-out English paraphrases
-into Twi, Ewe and French (Google Translate, same tool/verification approach
-as translate_curated_dataset.py) to build a real cross-lingual test set.
-
-Ga is intentionally excluded - no reliable machine translation exists for
-it (see translate_curated_dataset.py), so a synthetic Ga "unseen" test would
-just be testing translation-tool noise, not genuine generalization.
-
-Run:
-    <path-to-venv>/python.exe ai-engine/evaluation/build_multilingual_unseen_test.py
 """
 
 import csv

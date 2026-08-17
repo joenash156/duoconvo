@@ -24,7 +24,7 @@ export default function TabsLayout() {
         screenOptions={{
           headerShown: false,
           tabBarHideOnKeyboard: true,
-          animation: "shift",
+          animation: "none",
           tabBarShowLabel: true,
           tabBarLabelStyle: {
             fontSize: 12.5,

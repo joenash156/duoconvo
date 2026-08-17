@@ -76,6 +76,9 @@ def main():
 
     filled = 0
     for i, row in enumerate(rows):
+        if (row.get("ga") or "").strip():
+            continue
+
         english = row["english"]
         print(f"[{i + 1}/{len(rows)}] {row['concept_code']}: {english}")
 

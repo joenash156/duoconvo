@@ -15,3 +15,9 @@ export const getAiEvidence: RequestHandler = asyncHandler(async (req, res) => {
   const result = await conversationLogService.list(page, limit);
   res.status(200).json(result);
 });
+
+/** Backs the Metrics -> Dashboard tab's stat cards, bar chart, and pie chart. */
+export const getEvidenceSummary: RequestHandler = asyncHandler(async (_req, res) => {
+  const result = await conversationLogService.summary();
+  res.status(200).json(result);
+});

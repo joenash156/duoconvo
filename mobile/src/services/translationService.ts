@@ -6,6 +6,7 @@ import {
   TranslateTextInput,
   TranslationResult,
 } from "@/types/conversation.types";
+import { EvidenceSummary } from "@/types/evidence.types";
 
 export const translationService = {
   translateText: (input: TranslateTextInput) =>
@@ -33,4 +34,6 @@ export const translationService = {
     apiClient.get<PaginatedResponse<ConversationEntry>>(
       `/evidence?page=${page}&limit=${limit}`,
     ),
+
+  getEvidenceSummary: () => apiClient.get<EvidenceSummary>("/evidence/summary"),
 };

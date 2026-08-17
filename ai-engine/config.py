@@ -16,17 +16,16 @@ CURATED_DATASET = DATASETS_DIR / "curated" / "multilingual_phrases.csv"
 PARAPHRASES_DATASET = DATASETS_DIR / "generated" / "paraphrases.csv"
 SENTENCE_PAIRS_DATASET = DATASETS_DIR / "generated" / "sentence_pairs.csv"
 
-# Cross-lingual pairs mined from real parallel corpora
-# (dataset-tools/build_{twi,ga,ewe}_pairs.py), then filtered down to
-# market-relevant rows only (dataset-tools/filter_general_pairs.py, reusing
-# filter_market_phrases.py's keyword list) - the raw corpora are generic
-# news/research/literary content, and training on them unfiltered would
-# genericize the model instead of sharpening market-phrase discrimination,
-# same reasoning as why the English pipeline never used unfiltered generic
-# English text either.
+SENTENCE_PAIRS_MNRL_DATASET = DATASETS_DIR / "generated" / "sentence_pairs_mnrl.csv"
+
 TWI_GENERAL_PAIRS = DATASETS_DIR / "generated" / "twi_market_pairs.csv"
 GA_GENERAL_PAIRS = DATASETS_DIR / "generated" / "ga_market_pairs.csv"
 EWE_GENERAL_PAIRS = DATASETS_DIR / "generated" / "ewe_market_pairs.csv"
+
+TWI_CONVERSATIONAL_PAIRS = DATASETS_DIR / "generated" / "twi_conversational_pairs.csv"
+GA_CONVERSATIONAL_PAIRS = DATASETS_DIR / "generated" / "ga_conversational_pairs.csv"
+EWE_CONVERSATIONAL_PAIRS = DATASETS_DIR / "generated" / "ewe_conversational_pairs.csv"
+
 MODEL_DIR = PROJECT_ROOT / "ai-engine" / "models"
 VECTOR_DB_DIR = PROJECT_ROOT / "ai-engine" / "vector-db"
 

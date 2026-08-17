@@ -4,25 +4,6 @@ build_pairs.py
 Generate positive and negative sentence pairs
 for Sentence Transformer fine-tuning.
 
-Originally English-only (paraphrases of the same concept = positive,
-random/same-intent-different-concept English sentences = negative). The
-model was never actually taught cross-lingual alignment this way - it only
-learned to compare English sentences to each other, so retrieval quality
-for Twi/Ga/Ewe/French queries depended entirely on the base multilingual
-model's unadjusted cross-lingual alignment, unverified and untested.
-
-Now also builds genuine cross-lingual pairs:
-  - curated: the 40 concepts' real English<->Twi/Ewe/French translations
-    (Google Translate, see translate_curated_dataset.py) - oversampled since
-    these are exactly the concepts the app needs to get right. Ga is skipped
-    here (no translation exists yet - see dataset-tools/build_ga_pairs.py
-    for how Ga training signal is still contributed, just not via the
-    curated set).
-  - general: broader English<->Twi/Ga/Ewe sentence pairs from real parallel
-    corpora (dataset-tools/build_{twi,ga,ewe}_pairs.py), sampled down from
-    much larger sources. Teaches general language alignment rather than
-    domain-specific concepts - see idea.md's GENERAL DATA vs CURATED MARKET
-    DATA distinction.
 """
 
 import random
@@ -37,11 +18,15 @@ if str(AI_ENGINE_DIR) not in sys.path:
 import pandas as pd
 from config import (
   CURATED_DATASET,
+  EWE_CONVERSATIONAL_PAIRS,
   EWE_GENERAL_PAIRS,
+  GA_CONVERSATIONAL_PAIRS,
   GA_GENERAL_PAIRS,
   PARAPHRASES_DATASET,
   RANDOM_STATE,
   SENTENCE_PAIRS_DATASET,
+  SENTENCE_PAIRS_MNRL_DATASET,
+  TWI_CONVERSATIONAL_PAIRS,
   TWI_GENERAL_PAIRS,
 )
 
@@ -55,15 +40,21 @@ NEGATIVE_SAMPLES_PER_SENTENCE = 5
 # (see ai-engine/models/duoconvo-model-backup-hardneg-v1-57pct).
 HARD_NEGATIVE_SAMPLES_PER_SENTENCE = 1
 
-# The curated set is tiny (40 concepts) compared to the general corpora
+# The curated set is tiny (82 concepts) compared to the general corpora
 # (thousands of rows) - without oversampling, cross-lingual signal for our
 # actual domain concepts would be drowned out.
 CURATED_CROSS_LINGUAL_OVERSAMPLE = 4
 
-# Caps per general-corpus language, so no single source dominates training
-# time or signal. Twi/Ga naturally have more available; Ewe is capped by how
-# many rows build_ewe_pairs.py successfully translated (~3000 max).
-GENERAL_PAIRS_CAP = 1500
+# Cap per general MARKET-corpus language - no single source dominates
+# training time/signal. Twi/Ga naturally have more available; Ewe is capped
+# by how many rows build_ewe_pairs.py successfully translated (~3000 max).
+GENERAL_MARKET_PAIRS_CAP = 1500
+
+# The conversational slices are much smaller after keyword-filtering
+# (144-187 rows/language, see filter_general_conversational_pairs.py) - this
+# cap is just a ceiling in case a future corpus swap makes them much larger,
+# it doesn't actually truncate anything today.
+GENERAL_CONVERSATIONAL_PAIRS_CAP = 200
 
 # Separate (smaller) from NEGATIVE_SAMPLES_PER_SENTENCE above - at 5x, three
 # languages x 2500 general positives produced 37,484 negative pairs alone
@@ -73,7 +64,11 @@ GENERAL_PAIRS_CAP = 1500
 # automatically better).
 CROSS_LINGUAL_NEGATIVE_SAMPLES_PER_SENTENCE = 2
 
-CROSS_LINGUAL_LANGUAGE_COLUMNS = ["twi", "ewe", "french"]
+# "ga" is now included - GhanaNLP's translation API filled it in for the
+# original 40 concepts (and most of the new 42), so there's real Ga
+# translation signal available that earlier training runs never used at
+# all. Previously skipped here entirely ("no translation exists yet").
+CROSS_LINGUAL_LANGUAGE_COLUMNS = ["twi", "ga", "ewe", "french"]
 
 
 def load_datasets():
@@ -172,7 +167,7 @@ def generate_hard_negative_pairs(canonical_df, paraphrase_df):
 
 def generate_curated_cross_lingual_pairs(canonical_df):
   """
-  Direct English <-> translation pairs for the 40 curated concepts - the
+  Direct English <-> translation pairs for the curated concepts - the
   exact concepts the app needs to retrieve correctly, so oversampled
   relative to the much larger general corpora below.
   """
@@ -198,32 +193,28 @@ def generate_curated_cross_lingual_pairs(canonical_df):
 
 def load_general_pairs(path, language_column):
   if not path.exists():
-    print(f"WARNING: {path} not found - run dataset-tools/build_{language_column}_pairs.py first. Skipping.")
+    print(f"WARNING: {path} not found. Skipping.")
     return pd.DataFrame(columns=["english", language_column])
 
   return pd.read_csv(path)
 
 
-def generate_general_cross_lingual_pairs():
+def generate_general_cross_lingual_pairs(sources, cap):
   """
   Broader English<->language pairs from real parallel corpora, sampled down
-  to GENERAL_PAIRS_CAP per language. General semantic/language coverage,
-  not domain-specific - see idea.md's GENERAL DATA vs CURATED MARKET DATA
-  distinction.
+  to `cap` per language. `sources` is a list of (path, language_column)
+  tuples - used for both the market slice and the conversational slice, so
+  each can be capped/labeled independently by the caller.
   """
   positive_pairs = []
   all_translations_by_language = {}
 
-  for path, language_column in [
-    (TWI_GENERAL_PAIRS, "twi"),
-    (GA_GENERAL_PAIRS, "ga"),
-    (EWE_GENERAL_PAIRS, "ewe"),
-  ]:
+  for path, language_column in sources:
     df = load_general_pairs(path, language_column)
     if df.empty:
       continue
 
-    sample = df.sample(n=min(GENERAL_PAIRS_CAP, len(df)), random_state=RANDOM_STATE)
+    sample = df.sample(n=min(cap, len(df)), random_state=RANDOM_STATE)
     all_translations_by_language[language_column] = sample
 
     for _, row in sample.iterrows():
@@ -242,7 +233,9 @@ def generate_cross_lingual_negative_pairs(translations_by_language):
   """
   Mismatched English sentence + unrelated translation from the general
   corpora, so the model also learns cross-lingual sentences DON'T always
-  mean the same thing, not just that some do.
+  mean the same thing, not just that some do. Only used for the
+  CosineSimilarityLoss dataset - MultipleNegativesRankingLoss relies on
+  in-batch negatives instead and never sees this.
   """
   pairs = []
 
@@ -274,17 +267,18 @@ def remove_duplicates(df):
 
 
 
-def save_pairs(all_pairs):
+def save_pairs(all_pairs, output_path, columns):
   df = pd.DataFrame(all_pairs)
+  df = df[columns]
   df = remove_duplicates(df)
   df = df.sample(frac=1, random_state=RANDOM_STATE)
 
   df.to_csv(
-    SENTENCE_PAIRS_DATASET,
+    output_path,
     index=False
   )
 
-  print(f"Saved {len(df)} sentence pairs.")
+  print(f"Saved {len(df)} pairs to {output_path}.")
 
 
 def main():
@@ -296,30 +290,56 @@ def main():
   # generate_hard_negative_pairs() exists and works, but two tuning attempts
   # (3 and 1 samples/sentence) both regressed unseen-paraphrase accuracy from
   # 63.16% to 57.89% - see ai-engine/models/duoconvo-model-backup-hardneg-v1-57pct.
-  # With only 40 concepts, forcing separation between genuinely near-synonymous
-  # same-intent concepts (e.g. PRICE_001 vs PRICE_003) seems to do more harm
-  # than good. Left unused rather than deleted - may be worth revisiting once
-  # the curated dataset has more concepts/paraphrases per concept.
+  # With a small curated concept set, forcing separation between genuinely
+  # near-synonymous same-intent concepts (e.g. PRICE_001 vs PRICE_003) seems
+  # to do more harm than good. Left unused rather than deleted.
 
   curated_cross_lingual_pairs = generate_curated_cross_lingual_pairs(canonical_df)
 
-  print("Sampling general cross-lingual pairs...")
-  general_cross_lingual_pairs, translations_by_language = generate_general_cross_lingual_pairs()
-  general_cross_lingual_negative_pairs = generate_cross_lingual_negative_pairs(translations_by_language)
+  print("Sampling general market cross-lingual pairs...")
+  general_market_pairs, market_translations_by_language = generate_general_cross_lingual_pairs(
+    [(TWI_GENERAL_PAIRS, "twi"), (GA_GENERAL_PAIRS, "ga"), (EWE_GENERAL_PAIRS, "ewe")],
+    GENERAL_MARKET_PAIRS_CAP,
+  )
+  general_market_negative_pairs = generate_cross_lingual_negative_pairs(market_translations_by_language)
+
+  print("Sampling general conversational cross-lingual pairs...")
+  general_conversational_pairs, conversational_translations_by_language = generate_general_cross_lingual_pairs(
+    [(TWI_CONVERSATIONAL_PAIRS, "twi"), (GA_CONVERSATIONAL_PAIRS, "ga"), (EWE_CONVERSATIONAL_PAIRS, "ewe")],
+    GENERAL_CONVERSATIONAL_PAIRS_CAP,
+  )
+  general_conversational_negative_pairs = generate_cross_lingual_negative_pairs(conversational_translations_by_language)
 
   print(f"English positive pairs: {len(positive_pairs)}")
   print(f"English random negative pairs: {len(negative_pairs)}")
   print(f"Curated cross-lingual positive pairs (oversampled x{CURATED_CROSS_LINGUAL_OVERSAMPLE}): {len(curated_cross_lingual_pairs)}")
-  print(f"General cross-lingual positive pairs: {len(general_cross_lingual_pairs)}")
-  print(f"General cross-lingual negative pairs: {len(general_cross_lingual_negative_pairs)}")
+  print(f"General market cross-lingual positive pairs: {len(general_market_pairs)}")
+  print(f"General market cross-lingual negative pairs: {len(general_market_negative_pairs)}")
+  print(f"General conversational cross-lingual positive pairs: {len(general_conversational_pairs)}")
+  print(f"General conversational cross-lingual negative pairs: {len(general_conversational_negative_pairs)}")
 
-  save_pairs(
+  all_positive_pairs = (
     positive_pairs
-    + negative_pairs
     + curated_cross_lingual_pairs
-    + general_cross_lingual_pairs
-    + general_cross_lingual_negative_pairs
+    + general_market_pairs
+    + general_conversational_pairs
   )
+
+  # Labeled dataset, for CosineSimilarityLoss - kept for reproducibility of
+  # the previous recipe even though MNRL (below) is now the default.
+  save_pairs(
+    all_positive_pairs
+    + negative_pairs
+    + general_market_negative_pairs
+    + general_conversational_negative_pairs,
+    SENTENCE_PAIRS_DATASET,
+    columns=["sentence_a", "sentence_b", "label"],
+  )
+
+  # Anchor/positive-only dataset, for MultipleNegativesRankingLoss - no
+  # labels, no explicit negatives (in-batch negatives handle that).
+  mnrl_pairs = [{"anchor": p["sentence_a"], "positive": p["sentence_b"]} for p in all_positive_pairs]
+  save_pairs(mnrl_pairs, SENTENCE_PAIRS_MNRL_DATASET, columns=["anchor", "positive"])
 
 
 if __name__ == "__main__":

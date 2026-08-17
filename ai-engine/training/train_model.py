@@ -1,8 +1,24 @@
 """
 train_model.py
 
-Fine-tune DuoConvo Sentence Transformer
-using sentence-transformers v5.
+Fine-tune DuoConvo Sentence Transformer using sentence-transformers v5.
+
+Uses MultipleNegativesRankingLoss (MNRL) on anchor/positive pairs, not
+CosineSimilarityLoss on labeled pairs (the original recipe, still built by
+build_pairs.py as sentence_pairs.csv for comparison). Two prior experiments
+both regressed accuracy with CosineSimilarityLoss (hard-negative mining;
+then a full multilingual retrain that dropped English 68.42%->57.89% and
+left Twi/Ewe at ~10%) - MNRL is the standard loss for retrieval-style
+sentence embeddings and was never actually tried before.
+
+Uses the *symmetric* variant (query_to_doc + doc_to_query, computed per
+direction) rather than the default query-only direction. The curated
+cross-lingual pairs are always built as (english, translation) - under the
+default asymmetric MNRL, only the "given an English query, find the right
+translation" direction gets trained; "given a Twi/Ga/Ewe query, find the
+right English concept" (i.e. local-language-to-English retrieval, reported
+as noticeably weaker in practice) is exactly the direction the asymmetric
+loss does NOT explicitly train. The symmetric variant trains both.
 """
 
 # Allow this script to be run directly from the project root.
@@ -20,14 +36,15 @@ from config import (
   BATCH_SIZE,
   EPOCHS,
   MODEL_OUTPUT_DIR,
-  SENTENCE_PAIRS_DATASET,
+  SENTENCE_PAIRS_MNRL_DATASET,
 )
 from sentence_transformers import SentenceTransformer
-from sentence_transformers.sentence_transformer.losses import CosineSimilarityLoss
+from sentence_transformers.sentence_transformer.losses import MultipleNegativesRankingLoss
 from sentence_transformers.sentence_transformer.trainer import (
   SentenceTransformerTrainer,
 )
 from sentence_transformers.sentence_transformer.training_args import (
+  BatchSamplers,
   SentenceTransformerTrainingArguments,
 )
 
@@ -35,20 +52,9 @@ from datasets import Dataset
 
 
 def load_dataset():
-  # load dataset from CSV
-  df = pd.read_csv(SENTENCE_PAIRS_DATASET)
-  
-  # rename columns to match expected input for SentenceTransformerTrainer
-  df = df.rename(
-    columns={
-      "sentence_a": "sentence1",
-      "sentence_b": "sentence2",
-      "label": "score",
-    }
-  )
-  # make labels float type
-  df["score"] = df["score"].astype(float)
-
+  # load the anchor/positive-only dataset (no labels - MNRL uses in-batch
+  # negatives instead of explicit negative pairs)
+  df = pd.read_csv(SENTENCE_PAIRS_MNRL_DATASET)
 
   # convert to HuggingFace Dataset and return
   return Dataset.from_pandas(df)
@@ -63,10 +69,16 @@ def main():
 
   # load dataset
   train_dataset = load_dataset()
-  
-  # define loss function
-  loss = CosineSimilarityLoss(model)
-  
+
+  # symmetric: train both english->translation and translation->english
+  # retrieval directions (see module docstring) - the asymmetric default
+  # only trains the former.
+  loss = MultipleNegativesRankingLoss(
+    model,
+    directions=("query_to_doc", "doc_to_query"),
+    partition_mode="per_direction",
+  )
+
   # define training arguments
   args = SentenceTransformerTrainingArguments(
     output_dir=str(MODEL_OUTPUT_DIR),
@@ -77,6 +89,10 @@ def main():
     fp16=False,
     bf16=False,
     logging_steps=10,
+    # Recommended for MultipleNegativesRankingLoss - ensures no in-batch
+    # negative is accidentally a duplicate of the anchor/positive, which
+    # would give the model a false "negative" that's actually correct.
+    batch_sampler=BatchSamplers.NO_DUPLICATES,
     # "no", not "epoch" - main() already calls model.save() with the final
     # weights below. Per-epoch checkpoints aren't used for anything in this
     # workflow (no training resumption, no mid-training eval) and previously

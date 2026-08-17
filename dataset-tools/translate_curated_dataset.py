@@ -66,9 +66,19 @@ def main():
 
     for i, row in enumerate(rows):
         english = row["english"]
+
+        # Skip rows already translated in a prior run (e.g. the original 40
+        # market concepts) - re-translating them would waste API calls and
+        # risks producing slightly different wording than what's already
+        # baked into the DB seed / trained embeddings.
+        if all((row.get(column) or "").strip() for column in TARGET_LANGUAGES):
+            continue
+
         print(f"[{i + 1}/{len(rows)}] {row['concept_code']}: {english}")
 
         for column, translator in translators.items():
+            if (row.get(column) or "").strip():
+                continue
             translated = translate_with_retry(translator, english)
             row[column] = translated
             print(f"  {column}: {translated}")

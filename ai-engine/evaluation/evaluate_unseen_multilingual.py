@@ -1,13 +1,5 @@
 """
 evaluate_unseen_multilingual.py
-
-Same idea as evaluate_unseen.py, but per-language - the real test of
-whether the model learned genuine cross-lingual alignment (a Twi/Ewe/French
-query correctly retrieving the right English-anchored concept), not just
-English paraphrase generalization.
-
-Run:
-    <path-to-venv>/python.exe ai-engine/evaluation/evaluate_unseen_multilingual.py
 """
 
 import sys

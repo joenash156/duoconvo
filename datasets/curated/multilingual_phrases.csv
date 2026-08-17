@@ -39,3 +39,45 @@ id,concept_code,domain,intent,english,twi,ga,ewe,french,notes,verification_statu
 38,GREETING_018,Social,GREETING,You're welcome here.,Woama wo akwaaba wɔ ha.,Ahere bo atuu yɛ biɛ.,Woxɔ wò nyuie le afisia.,Vous êtes le bienvenu ici.,,MACHINE_TRANSLATED
 39,GREETING_019,Social,GREETING,How can I assist you today?,Mɛyɛ dɛn aboa wo nnɛ?,Te mafee tɛɛ maye mabua bo ŋmɛnɛ?,Aleke mate ŋu akpe ɖe ŋuwò egbea?,Comment puis-je vous aider aujourd'hui ?,,MACHINE_TRANSLATED
 40,GREETING_020,Social,GREETING,What would you like to buy?,Dɛn na wobɛpɛ sɛ wotɔ?,Te obaasumɔ ni ohe?,Nukae nàdi be yeaƒle?,Que souhaiteriez-vous acheter ?,,MACHINE_TRANSLATED
+41,INTRO_001,Social,SELF_INTRODUCTION,What is your name?,Wo din de sɛn?,Te atsɛɔ bo tɛŋŋ?,Ŋkɔwò ɖɛ?,Quel est ton nom?,,MACHINE_TRANSLATED
+42,INTRO_002,Social,SELF_INTRODUCTION,My name is Kofi.,Me din de Kofi.,Atsɛɔ mi Kofi.,Nye ŋkɔe nye Kofi.,Je m'appelle Kofi.,,MACHINE_TRANSLATED
+43,INTRO_003,Social,SELF_INTRODUCTION,Nice to meet you.,Ɛyɛ sɛ mahyia wo.,Nijaa ni okɛ bo akpee.,Enyo be míedo go.,Ravi de vous rencontrer.,,MACHINE_TRANSLATED
+44,INTRO_004,Social,SELF_INTRODUCTION,Where are you from?,Wofiri he?,Nɛgbɛ ojɛ?,Afi kae nètso?,D'où venez-vous?,,MACHINE_TRANSLATED
+45,INTRO_005,Social,SELF_INTRODUCTION,I am from Accra.,Meyɛ obi a ofi Accra.,Ejɛ Ga,Accra ye metso.,Je viens d'Accra.,,MACHINE_TRANSLATED
+46,INTRO_006,Social,SELF_INTRODUCTION,What do you do for work?,Dɛn na woyɛ ma adwuma?,Mɛni ofeɔ kɛhaa nitsumɔ?,Nukae nèwɔna hena dɔwɔwɔ?,Que fais-tu comme travail ?,,MACHINE_TRANSLATED
+47,INTRO_007,Social,SELF_INTRODUCTION,I am a trader.,Meyɛ aguadifo.,Miyɛ jarayelɔ.,Asitsalae menye.,Je suis commerçant.,,MACHINE_TRANSLATED
+48,INTRO_008,Social,SELF_INTRODUCTION,How old are you?,Woadi mfeɛ sɛn?,Afii enyiɛ oye?,Ƒe nenie nèxɔ?,Quel âge as-tu?,,MACHINE_TRANSLATED
+49,WELLBEING_001,Social,WELLBEING_CHECK,How are you?,Wo ho te sɛn?,Te oyɔɔ tɛŋŋ?,Efɔ̃a?,Comment vas-tu?,,MACHINE_TRANSLATED
+50,WELLBEING_002,Social,WELLBEING_CHECK,"I am fine, thank you.","Me ho ye, meda wo ase.",Miida bo shi,"Mele nyuie, akpe na wò.",Je vais bien merci.,,MACHINE_TRANSLATED
+51,WELLBEING_003,Social,WELLBEING_CHECK,And you?,Ne wo?,Ni bo hu?,Kple wò?,Et toi?,,MACHINE_TRANSLATED
+52,WELLBEING_004,Social,WELLBEING_CHECK,I am doing well.,Mereyɛ yiye.,miifee ojogbaŋŋ,Mele edzi dzem nyuie.,Je vais bien.,,MACHINE_TRANSLATED
+53,WELLBEING_005,Social,WELLBEING_CHECK,How is your family?,W’abusua te dɛn?,Te oyɔɔ tɛɛ?,Aleke wò ƒomea le?,Comment va ta famille?,,MACHINE_TRANSLATED
+54,WELLBEING_006,Social,WELLBEING_CHECK,I am a little tired today.,Mebrɛ kakra nnɛ.,Etɔ mi fioo ŋmɛnɛ.,Ðeɖi te ŋunye vie egbea.,Je suis un peu fatigué aujourd'hui.,,MACHINE_TRANSLATED
+55,WELLBEING_007,Social,WELLBEING_CHECK,I am very happy today.,M’ani agye yiye nnɛ.,"ŋmɛnɛ lɛ, miyɛ miishɛɛ waa.",Dzi le dzɔyem ŋutɔ egbea.,Je suis très heureux aujourd'hui.,,MACHINE_TRANSLATED
+56,WELLBEING_008,Social,WELLBEING_CHECK,Not too bad.,Ɛnyɛ bɔne dodo.,Ejeee nɔ ni ehiii tsɔ.,Menye nu gbegblẽ akpa o.,Pas trop mal.,,MACHINE_TRANSLATED
+57,THANKS_001,Social,GRATITUDE,Thank you.,Meda wo ase.,Shidaa aha bo.,Akpe na wò.,Merci.,,MACHINE_TRANSLATED
+58,THANKS_002,Social,GRATITUDE,Thank you very much.,Meda wo ase pa ara.,Shidaa aha bo waa diɛŋtsɛ.,Akpe na wò kakaaka.,Merci beaucoup.,,MACHINE_TRANSLATED
+59,THANKS_003,Social,GRATITUDE,You're welcome.,Akwaaba.,Ahere bo atuu,Wòe zɔ.,Vous êtes les bienvenus.,,MACHINE_TRANSLATED
+60,THANKS_004,Social,GRATITUDE,I really appreciate it.,M’ani sɔ no ankasa.,mihiɛ sɔɔɔ waa diɛŋtsɛ.,Mekpɔ ŋudzedze ɖe eŋu ŋutɔ.,Je l'apprécie vraiment.,,MACHINE_TRANSLATED
+61,THANKS_005,Social,GRATITUDE,Thanks for your help.,Yɛda mo ase wɔ mo mmoa no ho.,Shidaa aha oyelikɛbuamɔ lɛ.,Akpe na wò ɖe wò kpekpeɖeŋu ta.,Merci pour votre aide.,,MACHINE_TRANSLATED
+62,THANKS_006,Social,GRATITUDE,No problem.,Ɔhaw nni hɔ.,Naagba ko bɛ.,Megblẽ naneke o.,Aucun problème.,,MACHINE_TRANSLATED
+63,FAREWELL_001,Social,FAREWELL,Goodbye.,Akyire.,Gbekɛ nuu kpakpa.,De nyuie.,Au revoir.,,MACHINE_TRANSLATED
+64,FAREWELL_002,Social,FAREWELL,See you later.,Akyire yɛbɛhyia.,Naa bo yɛ sɛɛ mli.,Miado go emegbe.,À plus tard.,,MACHINE_TRANSLATED
+65,FAREWELL_003,Social,FAREWELL,Take care.,Hwɛ yie.,Kwɛmɔ.,Lebenɛ.,Prends soin de toi.,,MACHINE_TRANSLATED
+66,FAREWELL_004,Social,FAREWELL,See you tomorrow.,Ɔkyena yɛbɛhyia.,Naa bo wɔ.,Tsɔ míado go.,À demain.,,MACHINE_TRANSLATED
+67,FAREWELL_005,Social,FAREWELL,Have a good day.,Ɛda no nkɔ yie mma wo.,Na gbi kpakpa.,Ŋkekea me nenyo.,Passe une bonne journée.,,MACHINE_TRANSLATED
+68,FAREWELL_006,Social,FAREWELL,Safe travels.,Akwantu a ahobammɔ wom.,Gbɛfaa ni yɔɔ shweshweeshwe.,Mɔzɔzɔ siwo le dedie.,Voyages en toute sécurité.,,MACHINE_TRANSLATED
+69,POLITE_001,Social,POLITENESS,I'm sorry.,Kafra.,,Medze agᴐ.,Je suis désolé.,,MACHINE_TRANSLATED
+70,POLITE_002,Social,POLITENESS,Excuse me.,Ma me kwan.,,Ago nam.,Excusez-moi.,,MACHINE_TRANSLATED
+71,POLITE_003,Social,POLITENESS,Please.,Mesrɛ wo.,,Taflatsɛ.,S'il te plaît.,,MACHINE_TRANSLATED
+72,POLITE_004,Social,POLITENESS,Please help me.,"Mesrɛ mo, mommoa me.",,Taflatse kpe ɖe ŋunye.,S'il vous plaît aidez-moi.,,MACHINE_TRANSLATED
+73,POLITE_005,Social,POLITENESS,Sorry to bother you.,Yɛpa wo kyɛw sɛ mahaw wo.,,Kpeɖeŋutɔ be meɖe fu na wò.,Désolé de vous déranger.,,MACHINE_TRANSLATED
+74,POLITE_006,Social,POLITENESS,"It's okay, no worries.","Ɛnyɛ hwee, dadwen biara nni ho.",,"Menyo o, dzimaɖitsitsi aɖeke meganɔ eme o.","C'est bon, pas de soucis.",,MACHINE_TRANSLATED
+75,AFFIRM_001,Social,AFFIRMATION,Yes.,Aane.,,Ɛ̃.,Oui.,,MACHINE_TRANSLATED
+76,AFFIRM_002,Social,AFFIRMATION,No.,Daabi.,,Ao.,Non.,,MACHINE_TRANSLATED
+77,AFFIRM_003,Social,AFFIRMATION,Maybe.,Ebia.,,Ɖewohĩ.,Peut être.,,MACHINE_TRANSLATED
+78,CLARIFY_001,Social,CLARIFICATION,I understand.,Mete aseɛ.,,Mese egᴐme.,Je comprends.,,MACHINE_TRANSLATED
+79,CLARIFY_002,Social,CLARIFICATION,I don't understand.,Mente aseɛ.,,Nye mese egɔme o.,Je ne comprends pas.,,MACHINE_TRANSLATED
+80,CLARIFY_003,Social,CLARIFICATION,"Could you repeat that, please?","Mesrɛ wo, so wubetumi atĩ saa asɛm no mu?",,Taflatse àte ŋu agbugbɔ nya ma agblɔ?,"Pourriez-vous répéter, s'il vous plaît?",,MACHINE_TRANSLATED
+81,CLARIFY_004,Social,CLARIFICATION,"Can you speak slowly, please?","Mesrɛ wo, wubetumi akasa brɛoo?",,"Meɖe kuku, àte ŋu aƒo nu blewua?","Pouvez-vous parler lentement, s'il vous plaît ?",,MACHINE_TRANSLATED
+82,CLARIFY_005,Social,CLARIFICATION,I don't speak the language well.,Menka kasa no yiye.,,Nyemedoa gbea nyuie o.,Je ne parle pas bien la langue.,,MACHINE_TRANSLATED
