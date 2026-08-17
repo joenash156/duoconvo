@@ -15,9 +15,44 @@ Speech (mobile)
 ```
 
 The Express API (`api/`) is the orchestration layer. AI inference (Sentence Transformer,
-FAISS, confidence scoring) is expected to run as its own service and is currently
-simulated by `api/src/services/ai.service.ts`'s mock provider - see that file and
-`api/.env.example` for how to point it at a real engine once one exists.
+FAISS, confidence scoring) runs as its own service, `ai-engine/app/ai_server.py` - a
+FastAPI wrapper around the exact retrieval logic in `ai-engine/inference/search.py` and
+`confidence.py` (imports `calculate_confidence` directly rather than reimplementing it).
+There is no mock fallback for this one - `api/src/services/ai.service.ts` always calls
+the real engine, since fake semantic matching defeats the point of the app.
+
+Run both `ai_server.py` (port 8001) and `stt_server.py` (port 8002, see Hybrid
+Speech-to-Text below) together with one command:
+```
+ai-engine/app/start_services.bat
+```
+This opens each in its own window so you can see their logs independently. Or run them
+manually if you'd rather (loads the fine-tuned model + FAISS index into memory once at
+startup, so keep it running rather than restarting per request):
+```
+cd ai-engine/app
+<path-to-venv>/python.exe -m uvicorn ai_server:app --host 0.0.0.0 --port 8001
+```
+No Node-side code changes are needed to point at it - the JSON contract `ai.service.ts`
+expects was designed before the real engine existed, and `ai_server.py` matches it
+exactly.
+
+**Model training status (current, honest numbers)**: the model was retrained on a genuinely
+multilingual pair set (curated English<->Twi/Ewe/French concept pairs + market-filtered
+general corpora - see `training/build_pairs.py` and `dataset-tools/build_{twi,ga,ewe}_pairs.py`),
+replacing the earlier English-only training that had never actually verified cross-lingual
+retrieval at all. Measured on `evaluate_unseen.py` (English) and
+`evaluate_unseen_multilingual.py` (per-language): English 57.89%, French 52.63%, Twi
+10.53%, Ewe 10.53% - a real regression from the prior English-only 68.42%, and Twi/Ewe are
+not yet reliable. Working theory: `CosineSimilarityLoss` (binary-labeled positive/negative
+pairs) is likely the wrong loss for this retrieval-style task -
+`MultipleNegativesRankingLoss` is the field-standard choice for aligning pairs like these
+and hasn't been tried yet. A separate hard-negative-mining experiment
+(`generate_hard_negative_pairs()` in `training/build_pairs.py`, unused by default) also
+regressed accuracy earlier (63.16% -> 57.89%) for the same small-dataset reason. Per current
+direction from the user, the app is wired to show the model's real output regardless of
+confidence (see `api/src/services/translation.service.ts`) rather than mask a weak model
+behind fallback text - the numbers above are what to expect until training is revisited.
 
 ## Hybrid Text-to-Speech
 
@@ -71,7 +106,8 @@ Twi/Ga/Ewe      -> KhayaAI DONDO model (self-hosted, CPU) -> real transcription
   (no compatible torchaudio build for this project's Python version) or a system ffmpeg
   binary (not installed on this machine).
 
-  Run it (first run downloads ~0.6B params from Hugging Face):
+  Run it (first run downloads ~0.6B params from Hugging Face) - or use
+  `ai-engine/app/start_services.bat` to start this and `ai_server.py` together:
   ```
   cd ai-engine/app
   <path-to-venv>/python.exe -m uvicorn stt_server:app --host 0.0.0.0 --port 8002

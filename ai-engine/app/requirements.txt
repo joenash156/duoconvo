@@ -5,3 +5,7 @@ av
 torch
 transformers
 numpy
+sentence-transformers
+faiss-cpu
+pandas
+pydantic

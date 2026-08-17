@@ -5,60 +5,68 @@ Filters general multilingual datasets into
 market-related candidate phrases.
 """
 
+import re
+
 import pandas as pd
 
 MARKET_KEYWORDS = [
-  "buy",
-  "sell",
-  "price",
-  "cost",
-  "pay",
-  "payment",
+  "buy", "buying", "buys", "bought",
+  "sell", "selling", "sells", "sold",
+  "price", "prices", "priced",
+  "cost", "costs", "costing",
+  "pay", "paying", "pays", "paid",
+  "payment", "payments",
   "cash",
   "money",
-  "market",
-  "shop",
-  "store",
-  "food",
+  "market", "markets",
+  "shop", "shops", "shopping",
+  "store", "stores",
+  "food", "foods",
   "rice",
-  "tomato",
-  "pepper",
+  "tomato", "tomatoes",
+  "pepper", "peppers",
   "fish",
   "meat",
-  "fruit",
-  "vegetable",
-  "bag",
-  "basket",
-  "bottle",
+  "fruit", "fruits",
+  "vegetable", "vegetables",
+  "bag", "bags",
+  "basket", "baskets",
+  "bottle", "bottles",
   "water",
-  "drink",
+  "drink", "drinks",
   "bread",
-  "discount",
-  "cheap",
+  "discount", "discounts",
+  "cheap", "cheaper", "cheapest",
   "expensive",
-  "kilogram",
+  "kilogram", "kilograms",
   "kg",
-  "gram",
-  "quantity",
-  "piece",
-  "customer",
-  "seller",
-  "taxi",
-  "restaurant",
-  "hotel",
-  "receipt",
+  "gram", "grams",
+  "quantity", "quantities",
+  "piece", "pieces",
+  "customer", "customers",
+  "seller", "sellers",
+  "taxi", "taxis",
+  "restaurant", "restaurants",
+  "hotel", "hotels",
+  "receipt", "receipts",
   "mobile money",
   "momo"
 ]
 
 
-def is_market_sentence(sentence):
-  sentence = str(sentence).lower()
+# Word-boundary matching, not plain substring - "price" as a bare substring
+# also matches inside "prices" (fine) but "rice"/"kg"/"gram"/"store" as bare
+# substrings false-positive inside completely unrelated words like
+# "p-RICE-s", "bac-KG-round", "-GRAM-shana", "-STORE-d". \b handles the
+# "mobile money" two-word keyword correctly too (boundary at each end).
+MARKET_KEYWORD_PATTERN = re.compile(
+  r"\b(" + "|".join(re.escape(keyword) for keyword in MARKET_KEYWORDS) + r")\b",
+  re.IGNORECASE,
+)
 
-  return any(
-    keyword in sentence
-    for keyword in MARKET_KEYWORDS
-  )
+
+def is_market_sentence(sentence):
+  return bool(MARKET_KEYWORD_PATTERN.search(str(sentence)))
 
 
 def filter_dataset(df, text_column="English"):

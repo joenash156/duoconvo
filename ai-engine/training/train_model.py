@@ -77,7 +77,11 @@ def main():
     fp16=False,
     bf16=False,
     logging_steps=10,
-    save_strategy="epoch",
+    # "no", not "epoch" - main() already calls model.save() with the final
+    # weights below. Per-epoch checkpoints aren't used for anything in this
+    # workflow (no training resumption, no mid-training eval) and previously
+    # accumulated to 20+GB of unused ~1.4GB checkpoints per training run.
+    save_strategy="no",
     eval_strategy="no",
   )
 

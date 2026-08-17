@@ -19,12 +19,16 @@ type ResolveParams = {
 
 /**
  * Core pipeline shared by both translate endpoints:
- * text -> AI retrieval -> confidence decision -> knowledge base lookup
- * -> (LLM fallback if needed) -> TTS -> conversation log.
+ * text -> AI retrieval -> knowledge base lookup -> (LLM fallback only if no
+ * DB translation exists) -> TTS -> conversation log.
  *
- * Mirrors idea.md's runtime pipeline: the AI model does the semantic
- * matching first, and the LLM is only used when confidence is genuinely
- * low or the matched concept has no verified translation yet.
+ * Deliberately does NOT gate the DB lookup on confidence level - always
+ * shows the real model's top match + real database translation when one
+ * exists for the target language, even if the match itself turns out
+ * wrong. LLM fallback is reserved for when there's genuinely nothing to
+ * show (no match at all, or - currently - Ga, which has no verified
+ * translations yet for any concept). Low-confidence matches are still
+ * logged to unknown_phrases either way, for future retraining.
  */
 async function resolveTranslation(params: ResolveParams): Promise<TranslationResult> {
   const { originalText, sttText, spokenLanguage, targetLanguage, startedAt } = params;
@@ -37,7 +41,7 @@ async function resolveTranslation(params: ResolveParams): Promise<TranslationRes
   let detectedIntent: string | null = null;
   let predictedPhraseId: string | null = null;
 
-  if (aiResult.decision !== "LOW_CONFIDENCE" && best) {
+  if (best) {
     const phrase = await marketPhraseRepository.findByConceptCode(best.conceptCode);
     const candidate = phrase ? getTranslatedField(phrase, targetLanguage) : null;
 
@@ -51,18 +55,19 @@ async function resolveTranslation(params: ResolveParams): Promise<TranslationRes
   }
 
   if (translatedText === null) {
-    // Either the AI wasn't confident, or the matched concept has no
-    // verified translation stored yet for the requested target language.
+    // Either nothing matched at all, or the matched concept has no
+    // verified translation stored yet for the requested target language
+    // (currently: any concept targeting Ga).
     translatedText = await llmFallbackService.translate(sttText, spokenLanguage, targetLanguage);
     source = "llm_fallback";
+  }
 
-    if (aiResult.decision === "LOW_CONFIDENCE") {
-      await unknownPhraseService.record({
-        inputText: sttText,
-        language: spokenLanguage,
-        similarityScore: best?.score ?? 0,
-      });
-    }
+  if (aiResult.decision === "LOW_CONFIDENCE") {
+    await unknownPhraseService.record({
+      inputText: sttText,
+      language: spokenLanguage,
+      similarityScore: best?.score ?? 0,
+    });
   }
 
   const audioUrl = await ttsService.synthesize(translatedText, targetLanguage);

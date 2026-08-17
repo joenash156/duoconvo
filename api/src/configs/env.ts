@@ -14,7 +14,9 @@ const envSchema = z.object({
 
   UPLOAD_MAX_FILE_SIZE_MB: z.coerce.number().int().positive().default(10),
 
-  AI_PROVIDER: z.enum(["mock", "http"]).default("mock"),
+  // AI retrieval (fine-tuned Sentence Transformer + FAISS + confidence
+  // engine, ai-engine/app/ai_server.py). No mock fallback - real semantic
+  // matching is required for the app to mean anything.
   AI_ENGINE_URL: z.string().default("http://localhost:8001"),
   AI_ENGINE_TIMEOUT_MS: z.coerce.number().int().positive().default(5000),
 

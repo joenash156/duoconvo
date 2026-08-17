@@ -26,19 +26,19 @@ export function TranslationResultCard({
 }: Readonly<TranslationResultCardProps>) {
   const { theme } = useTheme();
   const colors = getThemeColors(theme);
-  // const isModelSourced = result.source === "model";
+  const isModelSourced = result.source === "model";
 
   return (
     <View className="w-full gap-4">
       <View className="rounded-2xl bg-card p-5 dark:bg-zinc-900">
-        <View className="flex-row items-center justify-center">
+        <View className="items-center">
           <Text className="text-center text-md font-medium uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
-            {getLanguageLabel(result.spokenLanguage as LanguageCode)} {" "} 
+            {getLanguageLabel(result.spokenLanguage as LanguageCode)} {" "}
             <FontAwesome6 name="arrow-right-long" size={15} color={colors.primary} />
             {" "} {getLanguageLabel(result.targetLanguage as LanguageCode)}
           </Text>
-          {/* <View
-            className={`flex-row items-center gap-1 rounded-full px-2.5 py-1 ${
+          <View
+            className={`mt-2 flex-row items-center gap-1 rounded-full px-2.5 py-1 ${
               isModelSourced ? "bg-primary/10" : "bg-accent/10"
             }`}
           >
@@ -50,7 +50,7 @@ export function TranslationResultCard({
             <Text className="text-xs font-semibold" style={{ color: isModelSourced ? colors.primary : colors.accent }}>
               {isModelSourced ? "DuoConvo AI" : "LLM Fallback"}
             </Text>
-          </View> */}
+          </View>
         </View>
 
         {result.sttText ? (
@@ -59,11 +59,11 @@ export function TranslationResultCard({
 
         <Text className="mt-2 text-2xl font-bold text-foreground dark:text-zinc-50">{result.translatedText}</Text>
 
-        {/* {result.detectedIntent ? (
+        {result.detectedIntent ? (
           <Text className="mt-3 text-xs text-zinc-400 dark:text-zinc-500">
             Intent: {result.detectedIntent} · Confidence: {Math.round(result.similarityScore * 100)}%
           </Text>
-        ) : null} */}
+        ) : null}
 
         <View className="mt-5 flex-row items-center gap-3">
           <PlayButton isSpeaking={isSpeaking} onPress={onPlayAudio} color={colors.secondary} />

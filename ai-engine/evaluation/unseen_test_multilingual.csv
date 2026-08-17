@@ -1,0 +1,77 @@
+concept_code,language,text
+PRICE_001,english,Could you tell me what this costs?
+PRICE_001,english,How much would I have to pay for this?
+PRICE_001,english,What are you charging for this?
+PRICE_002,english,What is the price of that item?
+PRICE_002,english,How much are you asking for this product?
+PRICE_003,english,What do I need to pay for it?
+PRICE_003,english,How much money does it cost?
+PRICE_004,english,Could you give me the price?
+PRICE_005,english,How much are you asking for it?
+PRICE_006,english,Can you reduce the price?
+PRICE_006,english,Is there any discount?
+PRICE_007,english,Does this cost a lot?
+PRICE_008,english,Is that your final offer?
+PRICE_017,english,Which option is more affordable?
+GREETING_001,english,Morning.
+GREETING_004,english,Hey there.
+GREETING_005,english,Hello there.
+GREETING_007,english,How are things?
+GREETING_011,english,Can you assist me?
+PRICE_001,twi,So wubetumi aka nea eyi bɔ ho ka akyerɛ me?
+PRICE_001,twi,Sika ahe na anka ɛsɛ sɛ mitua wɔ eyi ho?
+PRICE_001,twi,Dɛn na woregye wɔ eyi ho?
+PRICE_002,twi,Saa ade no bo yɛ dɛn?
+PRICE_002,twi,Dodow ahe na worebisa wɔ saa ade yi ho?
+PRICE_003,twi,Dɛn na ɛsɛ sɛ mitua ho ka?
+PRICE_003,twi,Sika ahe na wɔbɔ?
+PRICE_004,twi,So wubetumi ama me bo no?
+PRICE_005,twi,Worebisa no sika ahe?
+PRICE_006,twi,So wubetumi atew ne bo so?
+PRICE_006,twi,So sika a wɔatew so bi wɔ hɔ?
+PRICE_007,twi,So eyi gye sika pii?
+PRICE_008,twi,So ɛno ne nea etwa to a wode bɛma?
+PRICE_017,twi,Ɔkwan bɛn so na ne bo yɛ den?
+GREETING_001,twi,Anɔpa.
+GREETING_004,twi,Hey wɔ hɔ.
+GREETING_005,twi,Hello wɔ hɔ.
+GREETING_007,twi,Nneɛma te dɛn?
+GREETING_011,twi,So wubetumi aboa me?
+PRICE_001,ewe,Àte ŋu agblɔ ga si esia xɔna nam?
+PRICE_001,ewe,Ga home nenie wòle be maxe ɖe esia ta?
+PRICE_001,ewe,Nukae nèle xɔm le esia ta?
+PRICE_002,ewe,Nukae nye nu ma ƒe asi?
+PRICE_002,ewe,Ga home nenie nèle biabiam ɖe atike sia ta?
+PRICE_003,ewe,Nukae wòle be maxe ɖe eta?
+PRICE_003,ewe,Ga nenie wòxɔna?
+PRICE_004,ewe,Àte ŋu ana ga si woaxe nam?
+PRICE_005,ewe,Ga home nenie nèle biabiam tso eta?
+PRICE_006,ewe,Ðe nàte ŋu aɖe ga si woxena ɖe eta dzi akpɔtɔa?
+PRICE_006,ewe,Ðe woɖe asi le nu ŋua?
+PRICE_007,ewe,Ðe esia xɔa ga geɖea?
+PRICE_008,ewe,Ðe ema nye wò nu mamlɛtɔ si nàtsɔ ana?
+PRICE_017,ewe,Tiatia kae ƒe asi bɔbɔ wu?
+GREETING_001,ewe,Ŋdi.
+GREETING_004,ewe,Hey afima.
+GREETING_005,ewe,Mido gbe na mi le afima.
+GREETING_007,ewe,Aleke nuwo le?
+GREETING_011,ewe,Àte ŋu akpe ɖe ŋunyea?
+PRICE_001,french,Pourriez-vous me dire combien cela coûte ?
+PRICE_001,french,Combien devrais-je payer pour cela ?
+PRICE_001,french,Que facturez-vous pour cela ?
+PRICE_002,french,Quel est le prix de cet article ?
+PRICE_002,french,Combien demandez-vous pour ce produit ?
+PRICE_003,french,Que dois-je payer pour cela ?
+PRICE_003,french,Combien d’argent ça coûte ?
+PRICE_004,french,Pourriez-vous me donner le prix ?
+PRICE_005,french,Combien en demandez-vous ?
+PRICE_006,french,Pouvez-vous réduire le prix ?
+PRICE_006,french,Y a-t-il une réduction ?
+PRICE_007,french,Est-ce que cela coûte cher ?
+PRICE_008,french,Est-ce votre offre finale ?
+PRICE_017,french,Quelle option est la plus abordable ?
+GREETING_001,french,Matin.
+GREETING_004,french,Salut.
+GREETING_005,french,Bonjour.
+GREETING_007,french,Comment ça va?
+GREETING_011,french,Pouvez-vous m'aider ?

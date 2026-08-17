@@ -4,5 +4,6 @@ __pycache__/
 .ipynb_checkpoints/
 
 .env
+datasets/cred.env
 
 ai-engine/models/
