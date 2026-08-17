@@ -1,3 +1,4 @@
+import { saveAudioFile } from "../configs/audioStorage";
 import { env } from "../configs/env";
 
 /**
@@ -9,7 +10,7 @@ export const DEVICE_TTS_LANGUAGES = ["en", "fr"] as const;
 
 /**
  * Languages with no on-device TTS support, so the backend is responsible
- * for generating audio once a real engine is wired up.
+ * for generating audio.
  */
 export const BACKEND_TTS_LANGUAGES = ["tw", "ga", "ee"] as const;
 
@@ -18,16 +19,59 @@ function isBackendLanguage(language: string): boolean {
 }
 
 /**
+ * DuoConvo's internal language codes -> GhanaNLP's. Twi/Ewe match; Ga is
+ * "gaa" on their side, confirmed via direct API testing (their /tts/v1/tts
+ * accepts "gaa" and returns real audio/wav bytes - "ga" alone 404s).
+ */
+const GHANANLP_LANGUAGE_CODES: Record<string, string> = {
+  tw: "tw",
+  ga: "gaa",
+  ee: "ee",
+};
+
+/**
  * Mock TTS - returns null so the frontend simply disables audio playback;
- * TranslationResult.audioUrl is nullable for exactly this case. No real
- * Twi/Ga/Ewe TTS engine exists yet, so this deliberately does not fake one.
+ * TranslationResult.audioUrl is nullable for exactly this case.
  */
 function synthesizeMock(): string | null {
   return null;
 }
 
 /**
- * Expected contract for a future TTS service:
+ * GhanaNLP's (Khaya AI) cloud TTS API - console.translation.ghananlp.org.
+ * Verified directly (not just from docs) against the real endpoint: returns
+ * genuine audio/wav bytes for Twi, Ga ("gaa"), and Ewe.
+ */
+async function synthesizeWithGhanaNlp(text: string, language: string): Promise<string | null> {
+  if (!env.GHANANLP_API_KEY) {
+    throw new Error("TTS_PROVIDER=ghananlp requires GHANANLP_API_KEY to be set in the environment.");
+  }
+
+  const ghananlpLanguage = GHANANLP_LANGUAGE_CODES[language];
+  if (!ghananlpLanguage) {
+    return null;
+  }
+
+  const response = await fetch("https://translation-api.ghananlp.org/tts/v1/tts", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Ocp-Apim-Subscription-Key": env.GHANANLP_API_KEY,
+    },
+    body: JSON.stringify({ text, language: ghananlpLanguage }),
+  });
+
+  if (!response.ok) {
+    const errorBody = await response.text();
+    throw new Error(`GhanaNLP TTS responded with status ${response.status}: ${errorBody}`);
+  }
+
+  const audioBuffer = Buffer.from(await response.arrayBuffer());
+  return saveAudioFile(audioBuffer, "wav");
+}
+
+/**
+ * Expected contract for a generic self-hosted TTS service:
  *
  *   POST {TTS_ENGINE_URL}/synthesize
  *   body: { "text": string, "language": string }
@@ -62,10 +106,10 @@ export function describeTtsAvailability(language: string): { supported: boolean;
     };
   }
 
-  if (env.TTS_PROVIDER !== "http") {
+  if (env.TTS_PROVIDER === "mock") {
     return {
       supported: false,
-      message: `No backend TTS engine is configured yet for "${language}". Set TTS_PROVIDER=http once one is available.`,
+      message: `No backend TTS engine is configured yet for "${language}". Set TTS_PROVIDER=ghananlp once GHANANLP_API_KEY is set.`,
     };
   }
 
@@ -84,8 +128,14 @@ export const ttsService = {
       return Promise.resolve(null);
     }
 
-    return env.TTS_PROVIDER === "http"
-      ? synthesizeFromHttpEngine(text, language)
-      : Promise.resolve(synthesizeMock());
+    if (env.TTS_PROVIDER === "ghananlp") {
+      return synthesizeWithGhanaNlp(text, language);
+    }
+
+    if (env.TTS_PROVIDER === "http") {
+      return synthesizeFromHttpEngine(text, language);
+    }
+
+    return Promise.resolve(synthesizeMock());
   },
 };

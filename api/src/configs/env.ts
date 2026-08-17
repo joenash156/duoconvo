@@ -34,8 +34,19 @@ const envSchema = z.object({
   STT_LOCAL_PROVIDER: z.enum(["mock", "http"]).default("mock"),
   STT_ENGINE_URL: z.string().default("http://localhost:8002"),
 
-  TTS_PROVIDER: z.enum(["mock", "http"]).default("mock"),
+  // Twi/Ga/Ewe text-to-speech via GhanaNLP's cloud API (Khaya AI) -
+  // console.translation.ghananlp.org. Verified working for all three
+  // languages (returns real audio/wav bytes), unlike the earlier "no engine
+  // exists" mock state.
+  TTS_PROVIDER: z.enum(["mock", "http", "ghananlp"]).default("mock"),
   TTS_ENGINE_URL: z.string().default("http://localhost:8003"),
+  GHANANLP_API_KEY: z.string().optional(),
+
+  // Used to build absolute audio URLs (e.g. http://192.168.x.x:8000/audio/xyz.wav)
+  // for generated TTS files served from PUBLIC_BASE_URL/audio - mobile devices
+  // can't resolve "localhost" as the server's own address, so this needs to
+  // match whatever host the mobile app actually reaches the API on.
+  PUBLIC_BASE_URL: z.string().default("http://localhost:8000"),
 
   LLM_FALLBACK_PROVIDER: z.enum(["mock", "openai", "anthropic"]).default("mock"),
   OPENAI_API_KEY: z.string().optional(),

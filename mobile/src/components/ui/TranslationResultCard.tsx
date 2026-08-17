@@ -31,6 +31,16 @@ export function TranslationResultCard({
   return (
     <View className="w-full gap-4">
       <View className="rounded-2xl bg-card p-5 dark:bg-zinc-900">
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel="Close"
+          onPress={onRecordAgain}
+          hitSlop={10}
+          className="absolute right-3 top-3 z-10 h-8 w-8 items-center justify-center rounded-full active:opacity-60"
+        >
+          <Ionicons name="close" size={20} color="#71717A" />
+        </Pressable>
+
         <View className="items-center">
           <Text className="text-center text-md font-medium uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
             {getLanguageLabel(result.spokenLanguage as LanguageCode)} {" "}

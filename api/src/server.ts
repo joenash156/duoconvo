@@ -2,6 +2,7 @@ import compression from "compression";
 import express from "express";
 import helmet from "helmet";
 import morgan from "morgan";
+import { AUDIO_DIR, ensureAudioDir } from "./configs/audioStorage";
 import { corsMiddleware } from "./configs/cors";
 import { closeDb } from "./configs/db";
 import { env } from "./configs/env";
@@ -10,6 +11,8 @@ import { errorHandler } from "./middlewares/errorHandler";
 import { notFound } from "./middlewares/notFound";
 import routes from "./routes/routes";
 import { logger } from "./utils/logger";
+
+ensureAudioDir();
 
 const app = express();
 
@@ -20,6 +23,9 @@ app.use(morgan(env.NODE_ENV === "production" ? "combined" : "dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(apiLimiter);
+
+// Generated TTS audio (see configs/audioStorage.ts)
+app.use("/audio", express.static(AUDIO_DIR));
 
 // testing route
 app.use("/", routes);

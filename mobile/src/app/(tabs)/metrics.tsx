@@ -1,7 +1,9 @@
+import { useFocusEffect } from "expo-router";
 import LottieView from "lottie-react-native";
-import React, { useMemo } from "react";
+import React, { useCallback, useMemo } from "react";
 import { ActivityIndicator, FlatList, Pressable, Text, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+// import { BottomFadeGradient } from "@/components/ui/BottomFadeGradient";
 import { EvidenceCard } from "@/components/ui/EvidenceCard";
 import { Header } from "@/components/ui/Header";
 import { TAB_BAR_BOTTOM_MARGIN, TAB_BAR_HEIGHT } from "@/constants/layout";
@@ -21,6 +23,18 @@ export default function Metrics() {
   const entries = useMemo<TranslationResult[]>(() => data?.pages.flatMap((page) => page.items) ?? [], [data]);
 
   const bottomPadding = TAB_BAR_HEIGHT + TAB_BAR_BOTTOM_MARGIN + insets.bottom;
+
+  // This is a live evidence feed - it should always show current data when
+  // you actually look at it, not whatever was cached (possibly empty) the
+  // last time this tab happened to be visited. staleTime/refetchOnWindowFocus
+  // in queryClient.ts don't cover tab-focus in Expo Router's tab navigator
+  // (screens stay mounted, they don't remount on tab switch), so refetch
+  // explicitly on focus instead.
+  useFocusEffect(
+    useCallback(() => {
+      refetch();
+    }, [refetch]),
+  );
 
   return (
     <View className="flex-1 bg-white dark:bg-zinc-950">
@@ -87,6 +101,8 @@ export default function Metrics() {
           }
         />
       )}
+
+      {/* <BottomFadeGradient /> */}
     </View>
   );
 }
