@@ -1,11 +1,11 @@
 concept_code,language,text
-PRICE_001,english,Could you tell me what this costs?
-PRICE_001,english,How much would I have to pay for this?
-PRICE_001,english,What are you charging for this?
+PRICE_003,english,Could you tell me what this costs?
+PRICE_003,english,How much would I have to pay for this?
+PRICE_005,english,What are you charging for this?
 PRICE_002,english,What is the price of that item?
 PRICE_002,english,How much are you asking for this product?
-PRICE_003,english,What do I need to pay for it?
-PRICE_003,english,How much money does it cost?
+PRICE_004,english,What do I need to pay for it?
+PRICE_004,english,How much money does it cost?
 PRICE_004,english,Could you give me the price?
 PRICE_005,english,How much are you asking for it?
 PRICE_006,english,Can you reduce the price?
@@ -18,6 +18,21 @@ GREETING_004,english,Hey there.
 GREETING_005,english,Hello there.
 GREETING_007,english,How are things?
 GREETING_011,english,Can you assist me?
+INTRO_001,english,Might I ask what your name is?
+INTRO_003,english,It was great meeting you.
+INTRO_004,english,What part of the country are you from?
+WELLBEING_001,english,How's everything with you?
+WELLBEING_002,english,"I'm doing okay, thanks for asking."
+THANKS_001,english,"I appreciate that, thank you."
+THANKS_003,english,Don't mention it.
+FAREWELL_001,english,I'll be heading off now.
+FAREWELL_002,english,Talk to you soon.
+POLITE_001,english,I apologize for that.
+POLITE_003,english,"Would you mind, please?"
+AFFIRM_001,english,That's correct.
+AFFIRM_002,english,Not at all.
+CLARIFY_002,english,"I'm lost, sorry."
+CLARIFY_003,english,"Sorry, what was that again?"
 PRICE_001,twi,So wubetumi aka nea eyi bɔ ho ka akyerɛ me?
 PRICE_001,twi,Sika ahe na anka ɛsɛ sɛ mitua wɔ eyi ho?
 PRICE_001,twi,Dɛn na woregye wɔ eyi ho?
@@ -37,6 +52,21 @@ GREETING_004,twi,Hey wɔ hɔ.
 GREETING_005,twi,Hello wɔ hɔ.
 GREETING_007,twi,Nneɛma te dɛn?
 GREETING_011,twi,So wubetumi aboa me?
+INTRO_001,twi,So metumi abisa wo din sɛn?
+INTRO_003,twi,Na ɛyɛ anigye kɛse sɛ yebehyia wo.
+INTRO_004,twi,Ɔman no fã bɛn na wufi?
+WELLBEING_001,twi,Biribiara te dɛn wɔ wo ho?
+WELLBEING_002,twi,"Me reyɛ okay, aseda sɛ wobisae."
+THANKS_001,twi,"M’ani sɔ saa, meda mo ase."
+THANKS_003,twi,Mma nnka ho asɛm.
+FAREWELL_001,twi,Mede m’ani bɛkyerɛ mprempren.
+FAREWELL_002,twi,Wo ne wo nkasa nnansa yi ara.
+POLITE_001,twi,Mepa kyɛw wɔ saa asɛm no ho.
+POLITE_003,twi,"Mesrɛ wo, so ɛbɛyɛ wo yaw?"
+AFFIRM_001,twi,Ɛno teɛ.
+AFFIRM_002,twi,Nte saa koraa.
+CLARIFY_002,twi,"Me ayera, kyɛw."
+CLARIFY_003,twi,"Yɛpa wo kyɛw, na ɛno yɛ dɛn bio?"
 PRICE_001,ewe,Àte ŋu agblɔ ga si esia xɔna nam?
 PRICE_001,ewe,Ga home nenie wòle be maxe ɖe esia ta?
 PRICE_001,ewe,Nukae nèle xɔm le esia ta?
@@ -56,6 +86,21 @@ GREETING_004,ewe,Hey afima.
 GREETING_005,ewe,Mido gbe na mi le afima.
 GREETING_007,ewe,Aleke nuwo le?
 GREETING_011,ewe,Àte ŋu akpe ɖe ŋunyea?
+INTRO_001,ewe,Ðe mate ŋu abia be ŋkɔ kae nènyea?
+INTRO_003,ewe,Enyo ŋutɔ be medo go wò.
+INTRO_004,ewe,Dukɔa ƒe akpa kae nètso?
+WELLBEING_001,ewe,Aleke nusianu le kpli wò?
+WELLBEING_002,ewe,"Mele edzi dzem nyuie, akpe na wò be nèbia."
+THANKS_001,ewe,"Mekpɔ ŋudzedze ɖe ema ŋu, akpe na wò."
+THANKS_003,ewe,Mègaƒo nu tso eŋu o.
+FAREWELL_001,ewe,Maɖo ta mɔ dzi fifia.
+FAREWELL_002,ewe,Ƒo nu kpli wò kpuie.
+POLITE_001,ewe,Meɖe kuku ɖe ema ta.
+POLITE_003,ewe,Taflatse ɖe wòaɖe fu na wòa?
+AFFIRM_001,ewe,Nya ma sɔ.
+AFFIRM_002,ewe,Gbɛɖɛ.
+CLARIFY_002,ewe,"Mebu, taflatse."
+CLARIFY_003,ewe,"Kpeɖeŋutɔ, nukae nye ema ake?"
 PRICE_001,french,Pourriez-vous me dire combien cela coûte ?
 PRICE_001,french,Combien devrais-je payer pour cela ?
 PRICE_001,french,Que facturez-vous pour cela ?
@@ -75,3 +120,18 @@ GREETING_004,french,Salut.
 GREETING_005,french,Bonjour.
 GREETING_007,french,Comment ça va?
 GREETING_011,french,Pouvez-vous m'aider ?
+INTRO_001,french,Puis-je vous demander quel est votre nom ?
+INTRO_003,french,C'était super de vous rencontrer.
+INTRO_004,french,De quelle partie du pays êtes-vous ?
+WELLBEING_001,french,Comment ça va avec toi ?
+WELLBEING_002,french,"Je vais bien, merci d'avoir demandé."
+THANKS_001,french,"J'apprécie cela, merci."
+THANKS_003,french,N'en parlez pas.
+FAREWELL_001,french,Je vais partir maintenant.
+FAREWELL_002,french,A bientôt.
+POLITE_001,french,Je m'en excuse.
+POLITE_003,french,"Cela vous dérangerait, s'il vous plaît ?"
+AFFIRM_001,french,C'est exact.
+AFFIRM_002,french,Pas du tout.
+CLARIFY_002,french,"Je suis perdu, désolé."
+CLARIFY_003,french,"Désolé, c'était quoi déjà ?"

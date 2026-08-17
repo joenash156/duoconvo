@@ -2,9 +2,6 @@
 FastAPI wrapper around the DuoConvo semantic retrieval pipeline (fine-tuned
 Sentence Transformer + FAISS + confidence engine).
 
-Matches the POST /predict contract api/src/services/ai.service.ts already
-expects for AI_PROVIDER=http:
-
     POST /predict
     body: {"text": string, "language": string}
     response: {
@@ -13,15 +10,6 @@ expects for AI_PROVIDER=http:
       "decision": "HIGH_CONFIDENCE" | "MEDIUM_CONFIDENCE" | "LOW_CONFIDENCE"
     }
 
-Reuses ai-engine/inference/confidence.py's calculate_confidence() directly -
-same formula and thresholds the project has been evaluating against, not a
-reimplementation.
-
-Run from this directory (ai-engine/app), not the project root - "ai-engine"
-has a hyphen, which breaks Python's dotted module-import syntax:
-
-    cd ai-engine/app
-    <path-to-venv>/python.exe -m uvicorn ai_server:app --host 0.0.0.0 --port 8001
 """
 
 import logging

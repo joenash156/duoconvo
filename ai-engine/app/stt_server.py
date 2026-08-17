@@ -1,31 +1,5 @@
 """
 Local speech-to-text service for Twi, Ga and Ewe.
-
-Wraps KhayaAI's Southern Ghana multilingual ASR model
-(w2v-bert-ada_ewe_fat_fra_gaa_nzi_twi_en) in a small HTTP API matching the
-contract api/src/services/stt.service.ts's transcribeFromHttpEngine()
-already expects.
-
-English/French speech-to-text is handled separately by Groq's Whisper API
-(see api/src/services/stt.service.ts) - Whisper doesn't support these three
-languages at all, which is why this service exists.
-
-The inference logic (add_language_prefix, the language -> id map, the
-forward pass) is copied verbatim from the actual working implementation at
-https://huggingface.co/spaces/Ghana-NLP/Southern-Ghana-ASR (app.py), not
-reconstructed from the model card - the two differ in nontrivial ways
-(tensor shapes, prefix_len, missing AutoFeatureExtractor) and only the
-Space's own source is confirmed to actually work.
-
-Run from this directory (ai-engine/app), not the project root - "ai-engine"
-has a hyphen, which breaks Python's dotted module-import syntax:
-
-    cd ai-engine/app
-    <path-to-venv>/python.exe -m uvicorn stt_server:app --host 0.0.0.0 --port 8002
-
-First run downloads the model (~0.6B params) from Hugging Face and will take
-a while; keep the process running afterward so the model stays loaded in
-memory instead of reloading per request.
 """
 
 import io

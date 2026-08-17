@@ -1,41 +1,83 @@
 id,concept_code,domain,intent,english,twi,ga,ewe,french,notes,verification_status
-1,PRICE_001,Commerce,PRICE_INQUIRY,How much is this?,Eyi yɛ dodow ahe?,,Ga home nenie nye esia?,Combien ça coûte?,,MACHINE_TRANSLATED
-2,PRICE_002,Commerce,PRICE_INQUIRY,What's the price of this item?,Dɛn ne ade yi bo?,,Nukae nye nu sia ƒe asi?,Quel est le prix de cet article ?,,MACHINE_TRANSLATED
-3,PRICE_003,Commerce,PRICE_INQUIRY,How much does this cost?,Eyi bo yɛ ahe?,,Ga home nenie esia xɔna?,Combien cela coûte-t-il ?,,MACHINE_TRANSLATED
-4,PRICE_004,Commerce,PRICE_INQUIRY,Can you tell me the price?,Wubetumi aka ne bo akyerɛ me?,,Àte ŋu agblɔ ga si woaxe nam?,Pouvez-vous me dire le prix ?,,MACHINE_TRANSLATED
-5,PRICE_005,Commerce,PRICE_INQUIRY,How much are you selling this for?,Woretɔn eyi agye sika ahe?,,Ga home nenie nèle esia dzram ɖo?,Tu vends ça à combien ?,,MACHINE_TRANSLATED
-6,PRICE_006,Commerce,PRICE_INQUIRY,What's your best price?,Dɛn ne wo bo a eye sen biara?,,Nukae nye wò asi nyuitɔ kekeake?,Quel est votre meilleur prix ?,,MACHINE_TRANSLATED
-7,PRICE_007,Commerce,PRICE_INQUIRY,Is this expensive?,So eyi bo yɛ den?,,Ðe esia xɔ asia?,Est-ce cher?,,MACHINE_TRANSLATED
-8,PRICE_008,Commerce,PRICE_INQUIRY,Is this the final price?,So eyi ne bo a etwa to?,,Ðe esia nye asi mamlɛtɔa?,Est-ce le prix final ?,,MACHINE_TRANSLATED
-9,PRICE_009,Commerce,PRICE_INQUIRY,Can I know the price first?,So metumi adi kan ahu ne bo?,,Ðe mate ŋu anya ga si woaxe gbãa?,Puis-je connaître le prix d'abord ?,,MACHINE_TRANSLATED
-10,PRICE_010,Commerce,PRICE_INQUIRY,How much for one?,Ɛka ahe ma obiako?,,Ga home nenie na ame ɖeka?,Combien pour un ?,,MACHINE_TRANSLATED
-11,PRICE_011,Commerce,PRICE_INQUIRY,How much for two?,Ɛka ahe ma nnipa baanu?,,Ga home nenie na ame eve?,Combien pour deux ?,,MACHINE_TRANSLATED
-12,PRICE_012,Commerce,PRICE_INQUIRY,How much per kilogram?,Ɛka ahe wɔ kilogram biara mu?,,Ga home nenie le kilogram ɖeka me?,Combien par kilo ?,,MACHINE_TRANSLATED
-13,PRICE_013,Commerce,PRICE_INQUIRY,How much per basket?,Dodow ahe wɔ kɛntɛn biara mu?,,Ga home nenie le kusi ɖeka me?,Combien par panier ?,,MACHINE_TRANSLATED
-14,PRICE_014,Commerce,PRICE_INQUIRY,What's the cost of all these?,Dɛn na wɔbɔ wɔ eyinom nyinaa ho?,,Nukae nye nusiawo katã ƒe asi?,Quel est le coût de tout cela ?,,MACHINE_TRANSLATED
-15,PRICE_015,Commerce,PRICE_INQUIRY,Do you have a price list?,So wowɔ bo a wɔakyerɛw?,,Ðe asixɔxɔ ƒe xexlẽdzesi aɖe le asiwòa?,Avez-vous une liste de prix?,,MACHINE_TRANSLATED
-16,PRICE_016,Commerce,PRICE_INQUIRY,How much would everything cost?,Ná biribiara bɛbɔ ka ahe?,,Ga home nenie nusianu axɔ?,Combien coûterait tout cela ?,,MACHINE_TRANSLATED
-17,PRICE_017,Commerce,PRICE_INQUIRY,What's the cheapest one?,Dɛn ne nea ne bo yɛ mmerɛw sen biara?,,Nukae nye esi ƒe asi bɔbɔ wu?,Quel est le moins cher ?,,MACHINE_TRANSLATED
-18,PRICE_018,Commerce,PRICE_INQUIRY,Which one costs less?,Emu nea ɛwɔ he na ne bo sua?,,Wo dometɔ kae ƒe asi bɔbɔ wu?,Lequel coûte le moins cher ?,,MACHINE_TRANSLATED
-19,PRICE_019,Commerce,PRICE_INQUIRY,Can you give me today's price?,So wubetumi ama me nnɛ bo no?,,Àte ŋu ana egbe ƒe asi nam?,Pouvez-vous me donner le prix d'aujourd'hui ?,,MACHINE_TRANSLATED
-20,PRICE_020,Commerce,PRICE_INQUIRY,What is the current price?,Dɛn ne bo a wɔbɔ mprempren?,,Nukae nye asi si woxena fifia?,Quel est le prix actuel ?,,MACHINE_TRANSLATED
-21,GREETING_001,Social,GREETING,Good morning,Mema wo akye,,Ŋdi,Bonjour,,MACHINE_TRANSLATED
-22,GREETING_002,Social,GREETING,Good afternoon,Mema wo aha,,Ŋdᴐ,Bon après-midi,,MACHINE_TRANSLATED
-23,GREETING_003,Social,GREETING,Good evening,Mema wo adwo,,Fiɛ̃,Bonne soirée,,MACHINE_TRANSLATED
-24,GREETING_004,Social,GREETING,Hello,Hɛlo,,Hello,Bonjour,,MACHINE_TRANSLATED
-25,GREETING_005,Social,GREETING,Hi,Hi,,Alekee,Salut,,MACHINE_TRANSLATED
-26,GREETING_006,Social,GREETING,Welcome,Akwaaba,,Woezɔ̃,Accueillir,,MACHINE_TRANSLATED
-27,GREETING_007,Social,GREETING,How are you?,Wo ho te sɛn?,,Efɔ̃a?,Comment vas-tu?,,MACHINE_TRANSLATED
-28,GREETING_008,Social,GREETING,"I am fine, thank you.","Me ho ye, meda wo ase.",,"Mele nyuie, akpe na wò.",Je vais bien merci.,,MACHINE_TRANSLATED
-29,GREETING_009,Social,GREETING,Nice to meet you.,Ɛyɛ sɛ mahyia wo.,,Enyo be míedo go.,Ravi de vous rencontrer.,,MACHINE_TRANSLATED
-30,GREETING_010,Social,GREETING,Please come in.,"Mesrɛ mo, mommra mu.",,Taflatse va ge ɖe eme.,Veuillez entrer.,,MACHINE_TRANSLATED
-31,GREETING_011,Social,GREETING,How may I help you?,Mɛyɛ dɛn aboa wo?,,Aleke mate ŋu akpe ɖe ŋuwòe?,Comment puis-je vous aider ?,,MACHINE_TRANSLATED
-32,GREETING_012,Social,GREETING,What are you looking for?,Dɛn na worehwehwɛ?,,Nuka dim nèle?,Qu'est-ce que tu cherches?,,MACHINE_TRANSLATED
-33,GREETING_013,Social,GREETING,Can I help you find something?,So metumi aboa wo ma woanya biribi?,,Ðe mate ŋu akpe ɖe ŋuwò nàke ɖe nane ŋua?,Puis-je vous aider à trouver quelque chose ?,,MACHINE_TRANSLATED
-34,GREETING_014,Social,GREETING,Feel free to look around.,Fa ahofadi hwɛ wo ho hyia.,,Mite ŋu lé ŋku ɖe nu ŋu faa.,N'hésitez pas à regarder autour de vous.,,MACHINE_TRANSLATED
-35,GREETING_015,Social,GREETING,Thank you for coming.,Yɛda mo ase sɛ moaba.,,Akpe na wò be nèva.,Merci d'être venu.,,MACHINE_TRANSLATED
-36,GREETING_016,Social,GREETING,Have a seat.,Nya akongua.,,Zikpui nanɔ asiwò.,Asseyez-vous.,,MACHINE_TRANSLATED
-37,GREETING_017,Social,GREETING,Good to see you again.,Eye sɛ yebehu wo bio.,,Enyo be míagakpɔ wò ake.,Content de vous revoir.,,MACHINE_TRANSLATED
-38,GREETING_018,Social,GREETING,You're welcome here.,Woama wo akwaaba wɔ ha.,,Woxɔ wò nyuie le afisia.,Vous êtes le bienvenu ici.,,MACHINE_TRANSLATED
-39,GREETING_019,Social,GREETING,How can I assist you today?,Mɛyɛ dɛn aboa wo nnɛ?,,Aleke mate ŋu akpe ɖe ŋuwò egbea?,Comment puis-je vous aider aujourd'hui ?,,MACHINE_TRANSLATED
-40,GREETING_020,Social,GREETING,What would you like to buy?,Dɛn na wobɛpɛ sɛ wotɔ?,,Nukae nàdi be yeaƒle?,Que souhaiteriez-vous acheter ?,,MACHINE_TRANSLATED
+1,PRICE_001,Commerce,PRICE_INQUIRY,How much is this?,Eyi yɛ dodow ahe?,Enyiɛ enɛ ji?,Ga home nenie nye esia?,Combien ça coûte?,,MACHINE_TRANSLATED
+2,PRICE_002,Commerce,PRICE_INQUIRY,What's the price of this item?,Dɛn ne ade yi bo?,Mɛɛ sɛɛnamɔ yɔɔ nibii nɛɛ ahe?,Nukae nye nu sia ƒe asi?,Quel est le prix de cet article ?,,MACHINE_TRANSLATED
+3,PRICE_003,Commerce,PRICE_INQUIRY,How much does this cost?,Eyi bo yɛ ahe?,Enyiɛ ahɔɔ shika nɛɛ?,Ga home nenie esia xɔna?,Combien cela coûte-t-il ?,,MACHINE_TRANSLATED
+4,PRICE_004,Commerce,PRICE_INQUIRY,Can you tell me the price?,Wubetumi aka ne bo akyerɛ me?,Ani obaanyɛ okɛɛ mi jara lɛ?,Àte ŋu agblɔ ga si woaxe nam?,Pouvez-vous me dire le prix ?,,MACHINE_TRANSLATED
+5,PRICE_005,Commerce,PRICE_INQUIRY,How much are you selling this for?,Woretɔn eyi agye sika ahe?,Enyiɛ ahɔɔ enɛ?,Ga home nenie nèle esia dzram ɖo?,Tu vends ça à combien ?,,MACHINE_TRANSLATED
+6,PRICE_006,Commerce,PRICE_INQUIRY,What's your best price?,Dɛn ne wo bo a eye sen biara?,Te ojara wa tɛɛ?,Nukae nye wò asi nyuitɔ kekeake?,Quel est votre meilleur prix ?,,MACHINE_TRANSLATED
+7,PRICE_007,Commerce,PRICE_INQUIRY,Is this expensive?,So eyi bo yɛ den?,Ani enɛ jara wa?,Ðe esia xɔ asia?,Est-ce cher?,,MACHINE_TRANSLATED
+8,PRICE_008,Commerce,PRICE_INQUIRY,Is this the final price?,So eyi ne bo a etwa to?,Ani enɛ ji naagbee jara lɛ?,Ðe esia nye asi mamlɛtɔa?,Est-ce le prix final ?,,MACHINE_TRANSLATED
+9,PRICE_009,Commerce,PRICE_INQUIRY,Can I know the price first?,So metumi adi kan ahu ne bo?,Ani manyɛ male jara lɛ klɛŋklɛŋ?,Ðe mate ŋu anya ga si woaxe gbãa?,Puis-je connaître le prix d'abord ?,,MACHINE_TRANSLATED
+10,PRICE_010,Commerce,PRICE_INQUIRY,How much for one?,Ɛka ahe ma obiako?,Enyiɛ?,Ga home nenie na ame ɖeka?,Combien pour un ?,,MACHINE_TRANSLATED
+11,PRICE_011,Commerce,PRICE_INQUIRY,How much for two?,Ɛka ahe ma nnipa baanu?,Enyiɛ ahɔɔ enyɔ?,Ga home nenie na ame eve?,Combien pour deux ?,,MACHINE_TRANSLATED
+12,PRICE_012,Commerce,PRICE_INQUIRY,How much per kilogram?,Ɛka ahe wɔ kilogram biara mu?,Enyiɛ ahɔɔ shwiili?,Ga home nenie le kilogram ɖeka me?,Combien par kilo ?,,MACHINE_TRANSLATED
+13,PRICE_013,Commerce,PRICE_INQUIRY,How much per basket?,Dodow ahe wɔ kɛntɛn biara mu?,Shii enyiɛ ni akɛwoɔ tsɛnsi mli?,Ga home nenie le kusi ɖeka me?,Combien par panier ?,,MACHINE_TRANSLATED
+14,PRICE_014,Commerce,PRICE_INQUIRY,What's the cost of all these?,Dɛn na wɔbɔ wɔ eyinom nyinaa ho?,Mɛni ji enɛɛmɛi fɛɛ ahe nyɔmɔwoo?,Nukae nye nusiawo katã ƒe asi?,Quel est le coût de tout cela ?,,MACHINE_TRANSLATED
+15,PRICE_015,Commerce,PRICE_INQUIRY,Do you have a price list?,So wowɔ bo a wɔakyerɛw?,Ani oyɛ jara he wolo?,Ðe asixɔxɔ ƒe xexlẽdzesi aɖe le asiwòa?,Avez-vous une liste de prix?,,MACHINE_TRANSLATED
+16,PRICE_016,Commerce,PRICE_INQUIRY,How much would everything cost?,Ná biribiara bɛbɔ ka ahe?,Enyiɛ nɔ fɛɛ nɔ baahe?,Ga home nenie nusianu axɔ?,Combien coûterait tout cela ?,,MACHINE_TRANSLATED
+17,PRICE_017,Commerce,PRICE_INQUIRY,What's the cheapest one?,Dɛn ne nea ne bo yɛ mmerɛw sen biara?,Mɛni ji nɔ ni jara waaa fe fɛɛ?,Nukae nye esi ƒe asi bɔbɔ wu?,Quel est le moins cher ?,,MACHINE_TRANSLATED
+18,PRICE_018,Commerce,PRICE_INQUIRY,Which one costs less?,Emu nea ɛwɔ he na ne bo sua?,Te nɔ ni jara waaa tɛɛ?,Wo dometɔ kae ƒe asi bɔbɔ wu?,Lequel coûte le moins cher ?,,MACHINE_TRANSLATED
+19,PRICE_019,Commerce,PRICE_INQUIRY,Can you give me today's price?,So wubetumi ama me nnɛ bo no?,Ani obaanyɛ oha mi ŋmɛnɛ jara?,Àte ŋu ana egbe ƒe asi nam?,Pouvez-vous me donner le prix d'aujourd'hui ?,,MACHINE_TRANSLATED
+20,PRICE_020,Commerce,PRICE_INQUIRY,What is the current price?,Dɛn ne bo a wɔbɔ mprempren?,Mɛni ji jara ni yɔɔ amrɔ nɛɛ?,Nukae nye asi si woxena fifia?,Quel est le prix actuel ?,,MACHINE_TRANSLATED
+21,GREETING_001,Social,GREETING,Good morning,Mema wo akye,Leebi kpakpa,Ŋdi,Bonjour,,MACHINE_TRANSLATED
+22,GREETING_002,Social,GREETING,Good afternoon,Mema wo aha,shwane kpakpa,Ŋdᴐ,Bon après-midi,,MACHINE_TRANSLATED
+23,GREETING_003,Social,GREETING,Good evening,Mema wo adwo,Gbɛkɛ kpakpa,Fiɛ̃,Bonne soirée,,MACHINE_TRANSLATED
+24,GREETING_004,Social,GREETING,Hello,Hɛlo,Miŋa bo,Hello,Bonjour,,MACHINE_TRANSLATED
+25,GREETING_005,Social,GREETING,Hi,Hi,Hi,Alekee,Salut,,MACHINE_TRANSLATED
+26,GREETING_006,Social,GREETING,Welcome,Akwaaba,Wɔhereɔ bo,Woezɔ̃,Accueillir,,MACHINE_TRANSLATED
+27,GREETING_007,Social,GREETING,How are you?,Wo ho te sɛn?,Te oyɔɔ tɛŋŋ?,Efɔ̃a?,Comment vas-tu?,,MACHINE_TRANSLATED
+28,GREETING_008,Social,GREETING,"I am fine, thank you.","Me ho ye, meda wo ase.",Miida bo shi,"Mele nyuie, akpe na wò.",Je vais bien merci.,,MACHINE_TRANSLATED
+29,GREETING_009,Social,GREETING,Nice to meet you.,Ɛyɛ sɛ mahyia wo.,Nijaa ni okɛ bo akpee.,Enyo be míedo go.,Ravi de vous rencontrer.,,MACHINE_TRANSLATED
+30,GREETING_010,Social,GREETING,Please come in.,"Mesrɛ mo, mommra mu.","Ofainɛ, ba mli.",Taflatse va ge ɖe eme.,Veuillez entrer.,,MACHINE_TRANSLATED
+31,GREETING_011,Social,GREETING,How may I help you?,Mɛyɛ dɛn aboa wo?,Te mafee tɛɛ maye mabua bo?,Aleke mate ŋu akpe ɖe ŋuwòe?,Comment puis-je vous aider ?,,MACHINE_TRANSLATED
+32,GREETING_012,Social,GREETING,What are you looking for?,Dɛn na worehwehwɛ?,Mɛni otaoɔ?,Nuka dim nèle?,Qu'est-ce que tu cherches?,,MACHINE_TRANSLATED
+33,GREETING_013,Social,GREETING,Can I help you find something?,So metumi aboa wo ma woanya biribi?,Ani manyɛ maye mabua ni ona nɔ ko lo?,Ðe mate ŋu akpe ɖe ŋuwò nàke ɖe nane ŋua?,Puis-je vous aider à trouver quelque chose ?,,MACHINE_TRANSLATED
+34,GREETING_014,Social,GREETING,Feel free to look around.,Fa ahofadi hwɛ wo ho hyia.,Feel ni aheee nɔ ko akɛ ebaakwɛ he ni eyɔɔ lɛ.,Mite ŋu lé ŋku ɖe nu ŋu faa.,N'hésitez pas à regarder autour de vous.,,MACHINE_TRANSLATED
+35,GREETING_015,Social,GREETING,Thank you for coming.,Yɛda mo ase sɛ moaba.,Shidaa aha bo akɛ oba.,Akpe na wò be nèva.,Merci d'être venu.,,MACHINE_TRANSLATED
+36,GREETING_016,Social,GREETING,Have a seat.,Nya akongua.,Na sɛi,Zikpui nanɔ asiwò.,Asseyez-vous.,,MACHINE_TRANSLATED
+37,GREETING_017,Social,GREETING,Good to see you again.,Eye sɛ yebehu wo bio.,Ehi akɛ ooona bo ekoŋŋ.,Enyo be míagakpɔ wò ake.,Content de vous revoir.,,MACHINE_TRANSLATED
+38,GREETING_018,Social,GREETING,You're welcome here.,Woama wo akwaaba wɔ ha.,Ahere bo atuu yɛ biɛ.,Woxɔ wò nyuie le afisia.,Vous êtes le bienvenu ici.,,MACHINE_TRANSLATED
+39,GREETING_019,Social,GREETING,How can I assist you today?,Mɛyɛ dɛn aboa wo nnɛ?,Te mafee tɛɛ maye mabua bo ŋmɛnɛ?,Aleke mate ŋu akpe ɖe ŋuwò egbea?,Comment puis-je vous aider aujourd'hui ?,,MACHINE_TRANSLATED
+40,GREETING_020,Social,GREETING,What would you like to buy?,Dɛn na wobɛpɛ sɛ wotɔ?,Te obaasumɔ ni ohe?,Nukae nàdi be yeaƒle?,Que souhaiteriez-vous acheter ?,,MACHINE_TRANSLATED
+41,INTRO_001,Social,SELF_INTRODUCTION,What is your name?,Wo din de sɛn?,Te atsɛɔ bo tɛŋŋ?,Ŋkɔwò ɖɛ?,Quel est ton nom?,,MACHINE_TRANSLATED
+42,INTRO_002,Social,SELF_INTRODUCTION,My name is Kofi.,Me din de Kofi.,Atsɛɔ mi Kofi.,Nye ŋkɔe nye Kofi.,Je m'appelle Kofi.,,MACHINE_TRANSLATED
+43,INTRO_003,Social,SELF_INTRODUCTION,Nice to meet you.,Ɛyɛ sɛ mahyia wo.,Nijaa ni okɛ bo akpee.,Enyo be míedo go.,Ravi de vous rencontrer.,,MACHINE_TRANSLATED
+44,INTRO_004,Social,SELF_INTRODUCTION,Where are you from?,Wofiri he?,Nɛgbɛ ojɛ?,Afi kae nètso?,D'où venez-vous?,,MACHINE_TRANSLATED
+45,INTRO_005,Social,SELF_INTRODUCTION,I am from Accra.,Meyɛ obi a ofi Accra.,Ejɛ Ga,Accra ye metso.,Je viens d'Accra.,,MACHINE_TRANSLATED
+46,INTRO_006,Social,SELF_INTRODUCTION,What do you do for work?,Dɛn na woyɛ ma adwuma?,Mɛni ofeɔ kɛhaa nitsumɔ?,Nukae nèwɔna hena dɔwɔwɔ?,Que fais-tu comme travail ?,,MACHINE_TRANSLATED
+47,INTRO_007,Social,SELF_INTRODUCTION,I am a trader.,Meyɛ aguadifo.,Miyɛ jarayelɔ.,Asitsalae menye.,Je suis commerçant.,,MACHINE_TRANSLATED
+48,INTRO_008,Social,SELF_INTRODUCTION,How old are you?,Woadi mfeɛ sɛn?,Afii enyiɛ oye?,Ƒe nenie nèxɔ?,Quel âge as-tu?,,MACHINE_TRANSLATED
+49,WELLBEING_001,Social,WELLBEING_CHECK,How are you?,Wo ho te sɛn?,Te oyɔɔ tɛŋŋ?,Efɔ̃a?,Comment vas-tu?,,MACHINE_TRANSLATED
+50,WELLBEING_002,Social,WELLBEING_CHECK,"I am fine, thank you.","Me ho ye, meda wo ase.",Miida bo shi,"Mele nyuie, akpe na wò.",Je vais bien merci.,,MACHINE_TRANSLATED
+51,WELLBEING_003,Social,WELLBEING_CHECK,And you?,Ne wo?,Ni bo hu?,Kple wò?,Et toi?,,MACHINE_TRANSLATED
+52,WELLBEING_004,Social,WELLBEING_CHECK,I am doing well.,Mereyɛ yiye.,miifee ojogbaŋŋ,Mele edzi dzem nyuie.,Je vais bien.,,MACHINE_TRANSLATED
+53,WELLBEING_005,Social,WELLBEING_CHECK,How is your family?,W’abusua te dɛn?,Te oyɔɔ tɛɛ?,Aleke wò ƒomea le?,Comment va ta famille?,,MACHINE_TRANSLATED
+54,WELLBEING_006,Social,WELLBEING_CHECK,I am a little tired today.,Mebrɛ kakra nnɛ.,Etɔ mi fioo ŋmɛnɛ.,Ðeɖi te ŋunye vie egbea.,Je suis un peu fatigué aujourd'hui.,,MACHINE_TRANSLATED
+55,WELLBEING_007,Social,WELLBEING_CHECK,I am very happy today.,M’ani agye yiye nnɛ.,"ŋmɛnɛ lɛ, miyɛ miishɛɛ waa.",Dzi le dzɔyem ŋutɔ egbea.,Je suis très heureux aujourd'hui.,,MACHINE_TRANSLATED
+56,WELLBEING_008,Social,WELLBEING_CHECK,Not too bad.,Ɛnyɛ bɔne dodo.,Ejeee nɔ ni ehiii tsɔ.,Menye nu gbegblẽ akpa o.,Pas trop mal.,,MACHINE_TRANSLATED
+57,THANKS_001,Social,GRATITUDE,Thank you.,Meda wo ase.,Shidaa aha bo.,Akpe na wò.,Merci.,,MACHINE_TRANSLATED
+58,THANKS_002,Social,GRATITUDE,Thank you very much.,Meda wo ase pa ara.,Shidaa aha bo waa diɛŋtsɛ.,Akpe na wò kakaaka.,Merci beaucoup.,,MACHINE_TRANSLATED
+59,THANKS_003,Social,GRATITUDE,You're welcome.,Akwaaba.,Ahere bo atuu,Wòe zɔ.,Vous êtes les bienvenus.,,MACHINE_TRANSLATED
+60,THANKS_004,Social,GRATITUDE,I really appreciate it.,M’ani sɔ no ankasa.,mihiɛ sɔɔɔ waa diɛŋtsɛ.,Mekpɔ ŋudzedze ɖe eŋu ŋutɔ.,Je l'apprécie vraiment.,,MACHINE_TRANSLATED
+61,THANKS_005,Social,GRATITUDE,Thanks for your help.,Yɛda mo ase wɔ mo mmoa no ho.,Shidaa aha oyelikɛbuamɔ lɛ.,Akpe na wò ɖe wò kpekpeɖeŋu ta.,Merci pour votre aide.,,MACHINE_TRANSLATED
+62,THANKS_006,Social,GRATITUDE,No problem.,Ɔhaw nni hɔ.,Naagba ko bɛ.,Megblẽ naneke o.,Aucun problème.,,MACHINE_TRANSLATED
+63,FAREWELL_001,Social,FAREWELL,Goodbye.,Akyire.,Gbekɛ nuu kpakpa.,De nyuie.,Au revoir.,,MACHINE_TRANSLATED
+64,FAREWELL_002,Social,FAREWELL,See you later.,Akyire yɛbɛhyia.,Naa bo yɛ sɛɛ mli.,Miado go emegbe.,À plus tard.,,MACHINE_TRANSLATED
+65,FAREWELL_003,Social,FAREWELL,Take care.,Hwɛ yie.,Kwɛmɔ.,Lebenɛ.,Prends soin de toi.,,MACHINE_TRANSLATED
+66,FAREWELL_004,Social,FAREWELL,See you tomorrow.,Ɔkyena yɛbɛhyia.,Naa bo wɔ.,Tsɔ míado go.,À demain.,,MACHINE_TRANSLATED
+67,FAREWELL_005,Social,FAREWELL,Have a good day.,Ɛda no nkɔ yie mma wo.,Na gbi kpakpa.,Ŋkekea me nenyo.,Passe une bonne journée.,,MACHINE_TRANSLATED
+68,FAREWELL_006,Social,FAREWELL,Safe travels.,Akwantu a ahobammɔ wom.,Gbɛfaa ni yɔɔ shweshweeshwe.,Mɔzɔzɔ siwo le dedie.,Voyages en toute sécurité.,,MACHINE_TRANSLATED
+69,POLITE_001,Social,POLITENESS,I'm sorry.,Kafra.,,Medze agᴐ.,Je suis désolé.,,MACHINE_TRANSLATED
+70,POLITE_002,Social,POLITENESS,Excuse me.,Ma me kwan.,,Ago nam.,Excusez-moi.,,MACHINE_TRANSLATED
+71,POLITE_003,Social,POLITENESS,Please.,Mesrɛ wo.,,Taflatsɛ.,S'il te plaît.,,MACHINE_TRANSLATED
+72,POLITE_004,Social,POLITENESS,Please help me.,"Mesrɛ mo, mommoa me.",,Taflatse kpe ɖe ŋunye.,S'il vous plaît aidez-moi.,,MACHINE_TRANSLATED
+73,POLITE_005,Social,POLITENESS,Sorry to bother you.,Yɛpa wo kyɛw sɛ mahaw wo.,,Kpeɖeŋutɔ be meɖe fu na wò.,Désolé de vous déranger.,,MACHINE_TRANSLATED
+74,POLITE_006,Social,POLITENESS,"It's okay, no worries.","Ɛnyɛ hwee, dadwen biara nni ho.",,"Menyo o, dzimaɖitsitsi aɖeke meganɔ eme o.","C'est bon, pas de soucis.",,MACHINE_TRANSLATED
+75,AFFIRM_001,Social,AFFIRMATION,Yes.,Aane.,,Ɛ̃.,Oui.,,MACHINE_TRANSLATED
+76,AFFIRM_002,Social,AFFIRMATION,No.,Daabi.,,Ao.,Non.,,MACHINE_TRANSLATED
+77,AFFIRM_003,Social,AFFIRMATION,Maybe.,Ebia.,,Ɖewohĩ.,Peut être.,,MACHINE_TRANSLATED
+78,CLARIFY_001,Social,CLARIFICATION,I understand.,Mete aseɛ.,,Mese egᴐme.,Je comprends.,,MACHINE_TRANSLATED
+79,CLARIFY_002,Social,CLARIFICATION,I don't understand.,Mente aseɛ.,,Nye mese egɔme o.,Je ne comprends pas.,,MACHINE_TRANSLATED
+80,CLARIFY_003,Social,CLARIFICATION,"Could you repeat that, please?","Mesrɛ wo, so wubetumi atĩ saa asɛm no mu?",,Taflatse àte ŋu agbugbɔ nya ma agblɔ?,"Pourriez-vous répéter, s'il vous plaît?",,MACHINE_TRANSLATED
+81,CLARIFY_004,Social,CLARIFICATION,"Can you speak slowly, please?","Mesrɛ wo, wubetumi akasa brɛoo?",,"Meɖe kuku, àte ŋu aƒo nu blewua?","Pouvez-vous parler lentement, s'il vous plaît ?",,MACHINE_TRANSLATED
+82,CLARIFY_005,Social,CLARIFICATION,I don't speak the language well.,Menka kasa no yiye.,,Nyemedoa gbea nyuie o.,Je ne parle pas bien la langue.,,MACHINE_TRANSLATED

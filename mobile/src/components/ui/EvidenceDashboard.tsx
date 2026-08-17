@@ -1,6 +1,6 @@
 import LottieView from "lottie-react-native";
 import React from "react";
-import { ActivityIndicator, ScrollView, Text, View } from "react-native";
+import { ActivityIndicator, ScrollView, Text, useWindowDimensions, View } from "react-native";
 import { BarChart, PieChart } from "react-native-gifted-charts";
 import { StatCard } from "@/components/ui/StatCard";
 import { useTheme } from "@/contexts/ThemeContext";
@@ -18,6 +18,7 @@ function humanizeIntent(intent: string): string {
 export function EvidenceDashboard({ bottomPadding }: Readonly<{ bottomPadding: number }>) {
   const { theme } = useTheme();
   const colors = getThemeColors(theme);
+  const { width: windowWidth } = useWindowDimensions();
   const { data, isLoading, isError, refetch } = useEvidenceSummary();
 
   if (isLoading) {
@@ -74,9 +75,17 @@ export function EvidenceDashboard({ bottomPadding }: Readonly<{ bottomPadding: n
     frontColor: colors.secondary,
   }));
 
+  // Horizontal-bar value-axis length, sized to actually fit inside its
+  // card: screen width minus the ScrollView's own padding (16*2), the
+  // card's padding (16*2), the row labels (labelWidth, 100), and a little
+  // breathing room - a fixed guess here previously ran wider than the
+  // card on smaller phones, which is what pushed the dashed rule lines
+  // past the card's rounded edges.
+  const barChartValueAxisLength = Math.max(windowWidth - 32 - 32 - 100 - 40, 120);
+
   return (
     <ScrollView
-      contentContainerStyle={{ padding: 16, paddingBottom: bottomPadding, gap: 16 }}
+      contentContainerStyle={{ padding: 16, paddingBottom: bottomPadding + 32, gap: 16 }}
       showsVerticalScrollIndicator={false}
     >
       <View className="flex-row gap-3">
@@ -134,7 +143,7 @@ export function EvidenceDashboard({ bottomPadding }: Readonly<{ bottomPadding: n
         </View>
       </View>
 
-      <View className="rounded-2xl bg-card p-4 dark:bg-zinc-900">
+      <View className="overflow-hidden rounded-2xl bg-card p-4 dark:bg-zinc-900">
         <Text className="mb-4 text-base font-semibold text-foreground dark:text-zinc-50">
           Translations by Intent
         </Text>
@@ -146,7 +155,13 @@ export function EvidenceDashboard({ bottomPadding }: Readonly<{ bottomPadding: n
           // props.height) - `width` is what actually controls the vertical
           // space reserved for all the bar rows here, not `height`.
           width={Math.max(barData.length * 34, 120)}
-          height={220}
+          height={barChartValueAxisLength}
+          // Explicitly bounded to the same value-axis length as the bars
+          // themselves - left as the library's own default, the dashed
+          // horizontal rule lines were computed against the wrong axis
+          // under horizontal={true} and rendered wider than the card,
+          // spilling past its rounded edges.
+          rulesLength={barChartValueAxisLength}
           barWidth={16}
           spacing={22}
           barBorderRadius={4}
@@ -157,6 +172,7 @@ export function EvidenceDashboard({ bottomPadding }: Readonly<{ bottomPadding: n
           noOfSections={3}
           xAxisColor="transparent"
           yAxisColor="transparent"
+          disableScroll
           isAnimated
         />
       </View>

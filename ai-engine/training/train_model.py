@@ -3,22 +3,22 @@ train_model.py
 
 Fine-tune DuoConvo Sentence Transformer using sentence-transformers v5.
 
-Uses MultipleNegativesRankingLoss (MNRL) on anchor/positive pairs, not
-CosineSimilarityLoss on labeled pairs (the original recipe, still built by
-build_pairs.py as sentence_pairs.csv for comparison). Two prior experiments
-both regressed accuracy with CosineSimilarityLoss (hard-negative mining;
-then a full multilingual retrain that dropped English 68.42%->57.89% and
-left Twi/Ewe at ~10%) - MNRL is the standard loss for retrieval-style
-sentence embeddings and was never actually tried before.
-
-Uses the *symmetric* variant (query_to_doc + doc_to_query, computed per
-direction) rather than the default query-only direction. The curated
-cross-lingual pairs are always built as (english, translation) - under the
-default asymmetric MNRL, only the "given an English query, find the right
-translation" direction gets trained; "given a Twi/Ga/Ewe query, find the
-right English concept" (i.e. local-language-to-English retrieval, reported
-as noticeably weaker in practice) is exactly the direction the asymmetric
-loss does NOT explicitly train. The symmetric variant trains both.
+Uses CosineSimilarityLoss on labeled pairs (sentence_pairs.csv) - the
+originally-proven recipe (68.42% unseen English accuracy). A same-index
+A/B test (see ai-engine/models/duoconvo-model-backup-mnrl-symmetric-26pct)
+showed a symmetric MultipleNegativesRankingLoss retrain performing
+statistically identically to this recipe once both were evaluated against
+the same expanded 82-concept index (52.94% English / 2.94% twi / ~0-3% ewe
+/ 47% french either way) - the loss function was NOT what caused the
+accuracy drop after expanding from 40 to 82 concepts. The real cause is the
+larger, more mutually-overlapping concept set itself (many short
+near-duplicate conversational phrases - "Yes"/"No"/"Maybe", "Thank you"/
+"Thank you very much" - that are intrinsically hard to discriminate via
+nearest-neighbor retrieval at this data scale, independent of loss
+function). Reverted to the proven, simpler recipe rather than keep the
+unproven MNRL swap; build_pairs.py still also produces the MNRL-format
+dataset (sentence_pairs_mnrl.csv) in case that's worth revisiting later
+with a larger/cleaner concept set.
 """
 
 # Allow this script to be run directly from the project root.
@@ -36,15 +36,14 @@ from config import (
   BATCH_SIZE,
   EPOCHS,
   MODEL_OUTPUT_DIR,
-  SENTENCE_PAIRS_MNRL_DATASET,
+  SENTENCE_PAIRS_DATASET,
 )
 from sentence_transformers import SentenceTransformer
-from sentence_transformers.sentence_transformer.losses import MultipleNegativesRankingLoss
+from sentence_transformers.sentence_transformer.losses import CosineSimilarityLoss
 from sentence_transformers.sentence_transformer.trainer import (
   SentenceTransformerTrainer,
 )
 from sentence_transformers.sentence_transformer.training_args import (
-  BatchSamplers,
   SentenceTransformerTrainingArguments,
 )
 
@@ -52,9 +51,19 @@ from datasets import Dataset
 
 
 def load_dataset():
-  # load the anchor/positive-only dataset (no labels - MNRL uses in-batch
-  # negatives instead of explicit negative pairs)
-  df = pd.read_csv(SENTENCE_PAIRS_MNRL_DATASET)
+  # load dataset from CSV
+  df = pd.read_csv(SENTENCE_PAIRS_DATASET)
+
+  # rename columns to match expected input for SentenceTransformerTrainer
+  df = df.rename(
+    columns={
+      "sentence_a": "sentence1",
+      "sentence_b": "sentence2",
+      "label": "score",
+    }
+  )
+  # make labels float type
+  df["score"] = df["score"].astype(float)
 
   # convert to HuggingFace Dataset and return
   return Dataset.from_pandas(df)
@@ -70,14 +79,8 @@ def main():
   # load dataset
   train_dataset = load_dataset()
 
-  # symmetric: train both english->translation and translation->english
-  # retrieval directions (see module docstring) - the asymmetric default
-  # only trains the former.
-  loss = MultipleNegativesRankingLoss(
-    model,
-    directions=("query_to_doc", "doc_to_query"),
-    partition_mode="per_direction",
-  )
+  # define loss function
+  loss = CosineSimilarityLoss(model)
 
   # define training arguments
   args = SentenceTransformerTrainingArguments(
@@ -89,10 +92,6 @@ def main():
     fp16=False,
     bf16=False,
     logging_steps=10,
-    # Recommended for MultipleNegativesRankingLoss - ensures no in-batch
-    # negative is accidentally a duplicate of the anchor/positive, which
-    # would give the model a false "negative" that's actually correct.
-    batch_sampler=BatchSamplers.NO_DUPLICATES,
     # "no", not "epoch" - main() already calls model.save() with the final
     # weights below. Per-epoch checkpoints aren't used for anything in this
     # workflow (no training resumption, no mid-training eval) and previously

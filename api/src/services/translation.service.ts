@@ -19,33 +19,34 @@ type ResolveParams = {
 
 /**
  * Core pipeline shared by both translate endpoints:
- * text -> AI retrieval -> knowledge base lookup -> (LLM fallback only if no
- * DB translation exists) -> TTS -> conversation log.
+ * text -> AI retrieval -> knowledge base lookup (skipped if confidence is
+ * too low to trust) -> LLM fallback if there's still nothing to show ->
+ * TTS -> conversation log.
  *
- * Deliberately does NOT gate the DB lookup on confidence level - always
- * shows the real model's top match + real database translation when one
- * exists for the target language, even if the match itself turns out
- * wrong. LLM fallback is reserved for when there's genuinely nothing to
- * show (no match at all, or - currently - Ga, which has no verified
- * translations yet for any concept). Low-confidence matches are still
- * logged to unknown_phrases either way, for future retraining.
+ * A LOW_CONFIDENCE match is never shown as-is - the model's top result at
+ * that confidence tier is about as likely to be wrong as right, so we go
+ * straight to the LLM fallback instead of risking a confidently-wrong
+ * answer. MEDIUM/HIGH confidence matches are trusted and shown directly
+ * when a verified DB translation exists for the target language; LLM
+ * fallback only kicks in beyond that for concepts with no translation yet.
+ * Low-confidence matches are still logged to unknown_phrases either way,
+ * for future retraining.
  */
 async function resolveTranslation(params: ResolveParams): Promise<TranslationResult> {
   const { originalText, sttText, spokenLanguage, targetLanguage, startedAt } = params;
 
   const aiResult = await aiService.retrieve(sttText, spokenLanguage);
   const best: AiMatch | undefined = aiResult.topMatches[0];
+  const isLowConfidence = aiResult.decision === "LOW_CONFIDENCE";
 
   let translatedText: string | null = null;
   let source: TranslationSource = "llm_fallback";
-  let detectedIntent: string | null = null;
+  let detectedIntent: string | null = best?.intent ?? null;
   let predictedPhraseId: string | null = null;
 
-  if (best) {
+  if (best && !isLowConfidence) {
     const phrase = await marketPhraseRepository.findByConceptCode(best.conceptCode);
     const candidate = phrase ? getTranslatedField(phrase, targetLanguage) : null;
-
-    detectedIntent = best.intent;
 
     if (phrase && candidate) {
       translatedText = candidate;
@@ -55,14 +56,14 @@ async function resolveTranslation(params: ResolveParams): Promise<TranslationRes
   }
 
   if (translatedText === null) {
-    // Either nothing matched at all, or the matched concept has no
-    // verified translation stored yet for the requested target language
-    // (currently: any concept targeting Ga).
+    // Confidence was too low to trust, nothing matched at all, or the
+    // matched concept has no verified translation stored yet for the
+    // requested target language.
     translatedText = await llmFallbackService.translate(sttText, spokenLanguage, targetLanguage);
     source = "llm_fallback";
   }
 
-  if (aiResult.decision === "LOW_CONFIDENCE") {
+  if (isLowConfidence) {
     await unknownPhraseService.record({
       inputText: sttText,
       language: spokenLanguage,

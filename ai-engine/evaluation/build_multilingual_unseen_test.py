@@ -9,7 +9,7 @@ from pathlib import Path
 
 from deep_translator import GoogleTranslator
 
-sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+sys.stdout.reconfigure(encoding="utf-8", errors="replace") # pyright: ignore[reportAttributeAccessIssue]
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 ENGLISH_UNSEEN_PATH = PROJECT_ROOT / "ai-engine" / "evaluation" / "unseen_test.csv"
